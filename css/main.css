@@ -1,0 +1,18 @@
+/* ===== ГЛАВНЫЙ ФАЙЛ СТИЛЕЙ ===== */
+/* Импортируем все необходимые стили для многостраничного сайта */
+
+/* 1. Базовые стили */
+@import url('./base/variables.css');
+@import url('./base/reset.css');
+@import url('./base/typography.css');
+
+/* 2. Утилиты */
+@import url('./utils/layout.css');
+@import url('./utils/buttons.css');
+@import url('./utils/typography-utils.css');
+@import url('./utils/cards.css');
+
+/* 3. Компоненты */
+@import url('./components/header.css');
+@import url('./components/footer.css');
+@import url('./components/cookie.css');

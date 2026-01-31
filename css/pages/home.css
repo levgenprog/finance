@@ -1,0 +1,1193 @@
+/* ===== СТИЛИ ГЛАВНОЙ СТРАНИЦЫ ===== */
+
+/* Импорт общих стилей */
+@import url('../main.css');
+
+/* Импорт секций, используемых на главной странице */
+@import url('../sections/service-links.css');
+
+/* ===== ОСНОВНОЙ КОНТЕНТ ГЛАВНОЙ СТРАНИЦЫ ===== */
+
+/* Контейнер главной секции */
+.main-top-1{
+  width: 100%;
+  height: 525px;
+  background-image: url(../../foto/fon.png);
+  background-position: 100% 105%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+}
+
+.main-top-1-mini {
+  display: none;
+}
+
+.main {
+  width: 100%;
+}
+
+.main-top-1-content {
+  display: flex;
+  flex-direction: column;
+  padding: 57px 0 120px 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.main-bottom-1 {
+  width: 100%;
+  padding: 50px 30px 80px 30px;
+  box-sizing: border-box;
+  background: var(--color-secondary-bg);
+}
+
+.main-top-1-content:last-child {
+  margin-top: auto;
+}
+
+.est {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 120%;
+  color: var(--color-gold);
+}
+
+.grid h2 {
+  max-width: 100%;
+}
+
+.mini img {
+  margin-right: 50px;
+}
+
+.main-top-1-button {
+  margin-top: 70px;
+}
+
+.main .space {
+  margin-bottom: 70px;
+}
+
+.main-bottom-1-content h2 {
+  font-size: 52px;
+  margin-bottom: 50px;
+}
+
+/* ===== БЛОК РЕЗУЛЬТАТОВ И ИНФОРМАЦИИ ===== */
+
+.cf-results,
+.container-results {
+  padding: 44px 0 70px;
+}
+
+.cf-results__wrap {
+  width: 100%;
+}
+
+.cf-hero__content {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  align-items: flex-start;
+  gap: 56px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.cf-results__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.cf-results__row {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 56px;
+  align-items: start;
+}
+
+.cf-results__visual {
+  padding-top: 30px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.cf-results__visual-mobile {
+  display: none;
+}
+
+.cf-results__content {
+  padding-top: 30px;
+  padding-bottom: 80px;
+  border-top: 1px solid var(--cf-line);
+  color: var(--cf-text);
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+
+/* Breadcrumbs (навигационная цепочка) */
+.cf-breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 0 0 18px;
+  letter-spacing: 0.2px;
+}
+
+.cf-breadcrumbs__item {
+  color: var(--cf-text);
+  text-decoration: none;
+}
+
+.cf-breadcrumbs__item:hover {
+  color: var(--cf-gold);
+}
+
+.cf-breadcrumbs__sep {
+  color: rgba(246, 247, 248, 0.45);
+}
+
+/* Hero секция с результатами */
+.cf-hero {
+  padding: 6px 0 2px;
+}
+
+.cf-hero__title {
+  color: var(--cf-text);
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 113%;
+}
+
+.cf-results__wrap .space {
+  display: flex;
+  flex-direction: column;
+}
+
+.cf-hero__value {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 50px;
+}
+
+.cf-hero__value p {
+  font-size: 80px;
+  font-weight: 500;
+  letter-spacing: 10%;
+  color: var(--cf-gold);
+  line-height: 113%;
+}
+
+.cf-hero__value span {
+  font-size: 56px;
+  font-weight: 500;
+  letter-spacing: 10%;
+  color: var(--cf-gold);
+  line-height: 113%;
+}
+
+/* Разделители */
+.cf-divider {
+  height: 1px;
+  background: var(--cf-line);
+  margin: 26px 0;
+  width: 50%;
+}
+
+/* Цитата */
+.cf-quote {
+  margin: 0;
+  padding: 2px 0;
+}
+
+/* Секции (О компании, Лицензии, Инвестиционные идеи) */
+.cf-section {
+  padding: 2px 0;
+}
+
+.cf-section__title {
+  margin: 0 0 26px;
+}
+
+.cf-section__text {
+  max-width: 100%;
+}
+
+.cf-results .gold-button {
+  width: 50%;
+}
+
+.cf-results .gold-button button {
+  width: 100%;
+}
+
+.cf-breadcrumbs-content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Левая колонка - персоналии */
+.cf-person {
+  display: grid;
+  grid-template-columns: 95px 1fr;
+  gap: 32px;
+  align-items: center;
+}
+
+.cf-person__avatar {
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  border: 1px solid rgba(246, 247, 248, 0.14);
+  overflow: hidden;
+}
+
+.cf-person__avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.9;
+}
+
+.cf-person__name {
+  color: var(--cf-gold) !important;
+}
+
+.cf-person__role {
+  margin-top: 2px;
+}
+
+/* Команда */
+.cf-team {
+  display: grid;
+  gap: 10px;
+}
+
+.cf-team__row {
+  display: flex;
+  align-items: center;
+  padding-left: 2px;
+}
+
+.cf-team__avatar {
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid var(--cf-bbg);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  margin-left: -25px;
+  background: rgba(246, 247, 248, 0.06);
+}
+
+.cf-team__avatar:first-child {
+  margin-left: 0;
+}
+
+.cf-team__avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.95;
+}
+
+.cf-team__caption {
+  margin-top: 32px;
+}
+
+/* Документ/лицензия */
+.cf-doc {
+  display: flex;
+  align-items: flex-start;
+}
+
+.cf-doc__paper {
+  width: 138px;
+  height: 178px;
+  border-radius: 4px;
+  border: 1px solid rgba(246, 247, 248, 0.18);
+  background: linear-gradient(180deg, #f3f0e8 0%, #d7d0c1 100%);
+  position: relative;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+}
+
+.cf-doc__paper::before {
+  content: "";
+  position: absolute;
+  inset: 10px;
+  border: 1px dashed rgba(15, 25, 41, 0.25);
+  border-radius: 3px;
+}
+
+.cf-doc__paper::after {
+  content: "ЛИЦЕНЗИЯ";
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 12px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  color: rgba(15, 25, 41, 0.65);
+  text-align: center;
+}
+
+/* Таблица инвестиционных идей */
+.cf-ideas {
+  margin-top: 6px;
+  max-width: 620px;
+}
+
+.cf-ideas__head {
+  display: grid;
+  grid-template-columns: 1fr 140px;
+  gap: 18px;
+  color: rgba(246, 247, 248, 0.55);
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.cf-ideas__row {
+  display: grid;
+  grid-template-columns: 1fr 140px;
+  gap: 18px;
+  padding: 4px 0;
+  font-size: 27px;
+  color: rgba(246, 247, 248, 0.92);
+}
+
+.cf-ideas__col--right,
+.cf-ideas__val {
+  text-align: right;
+  font-weight: 700;
+}
+
+.cf-hero-section-visual {
+  display: none;
+}
+
+/* ===== СЕКЦИЯ СТРАТЕГИИ ИНВЕСТИРОВАНИЯ ===== */
+
+.strategy-section {
+  width: 100%;
+  background: var(--color-secondary-bg);
+  padding: 80px 30px 120px 30px;
+  position: relative;
+  overflow: hidden;
+  height: 1074px;
+}
+
+.strategy-section .container {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.strategy-title {
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 108%;
+  margin: 0;
+  color: var(--color-white);
+}
+
+.strategy-content {
+  display: flex;
+  justify-content: flex-end;
+  gap: 80px;
+  width: 100%;
+  padding-top: 70px;
+}
+
+/* Графический элемент */
+.strategy-visual {
+  position: absolute;
+  top: 250px;
+  left: -366px;
+}
+
+.strategy-visual img {
+  width: clamp(300px, 45vw, 600px);
+  height: auto;
+  max-width: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+.strategy-curve {
+  width: 100%;
+  height: 300px;
+}
+
+/* Список услуг */
+.strategy-services {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.service-item {
+  border-bottom: 1px solid rgba(246, 247, 248, 0.18);
+  padding: 30px 0;
+}
+
+.service-item:first-child {
+  border-top: 1px solid rgba(246, 247, 248, 0.18);
+}
+
+.service-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.service-title {
+  font-size: 44px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--color-white);
+  margin: 0;
+  max-width: 400px;
+}
+
+.service-toggle {
+  background: none;
+  border: none;
+  color: var(--color-white);
+  font-size: 32px;
+  font-weight: 300;
+  cursor: pointer;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.service-toggle:hover {
+  transform: scale(1.2);
+}
+
+.service-icon {
+  display: block;
+  line-height: 1;
+}
+
+/* Контент услуги (скрыт по умолчанию) */
+.service-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  padding: 0;
+}
+
+.service-item--active .service-content {
+  max-height: 500px;
+  padding-top: 24px;
+}
+
+.service-description {
+  margin: 0 0 30px;
+  max-width: 700px;
+}
+
+.strategy-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 52px;
+  padding: 0 40px;
+  background: linear-gradient(
+    180deg,
+    rgba(201, 183, 151, 0.95) 0%,
+    rgba(194, 157, 93, 0.95) 50%,
+    rgba(163, 136, 90, 0.95) 100%
+  );
+  color: var(--color-primary-bg);
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: opacity 0.3s ease, transform 0.2s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.strategy-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.strategy-btn:active {
+  transform: translateY(0);
+}
+
+/* ===== СЕКЦИЯ СОБЫТИЙ И ГАЛЕРЕИ ===== */
+
+.events-section {
+  width: 100%;
+  max-width: 100vw;
+  background: var(--color-primary-bg);
+  padding: 80px 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.events-section .container {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.events-section-contact-link {
+  display: none;
+}
+
+/* Layout с боковой панелью */
+.events-layout {
+  display: flex;
+  width: 100%;
+}
+
+/* Боковая панель */
+.events-sidebar {
+  width: 20%;
+  min-width: 200px;
+  background: var(--color-tertiary-bg);
+  flex-shrink: 0;
+}
+
+.events-block-container {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 60px;
+  width: 100%;
+  max-width: 100%;
+  padding-bottom: 120px;
+  box-sizing: border-box;
+}
+
+.events-block {
+  width: 60%;
+}
+
+.events-block-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.events-title {
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 113%;
+  margin: 0;
+  color: var(--color-white);
+}
+
+.events-text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 117%;
+  margin: 0;
+  color: var(--color-white);
+  max-width: 600px;
+}
+
+.events-subtitle {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+  color: var(--color-white);
+}
+
+.events-block-container .btn-outline-gold{
+  width: 345px;
+  max-width: 100%;
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+
+/* Галерея изображений - Swiper */
+.gallery-swiper {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  height: auto;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+/* Пагинация Swiper - скрыта по умолчанию */
+.gallery-swiper .swiper-pagination {
+  display: none;
+}
+
+.gallery-swiper .swiper-wrapper {
+  align-items: flex-start;
+  height: auto;
+}
+
+.gallery-swiper .swiper-slide {
+  width: auto;
+  height: 300px;
+}
+
+.gallery-item {
+  position: relative;
+  width: auto;
+  height: 300px;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  background: var(--color-primary-bg);
+}
+
+.gallery-item img {
+  height: 300px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+/* Overlay для текста на изображениях */
+.gallery-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  padding: 20px;
+  pointer-events: none;
+}
+
+.gallery-text {
+  color: var(--color-white);
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ===== АДАПТИВНОСТЬ ===== */
+
+@media (max-width: 1024px) {
+  .main-top-1 {
+    height: auto;
+    background-position: 100% 115%;
+  }
+
+  .space{
+    margin-bottom: 0px;
+  }
+
+  .est {
+    font-size: 16px;
+  }
+
+  .main-bottom-1-content h2 {
+    font-size: 44px;
+    margin-bottom: 40px;
+  }
+
+  .cf-section__title {
+    margin-bottom: 21px;
+  }
+
+  .cf-hero__content {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 20px;
+  }
+
+  .cf-breadcrumbs {
+    flex-direction: column;
+    margin: 0;
+    width: 50%;
+  }
+
+  .cf-breadcrumbs.text-caption {
+    width: 40%;
+  }
+
+  .cf-breadcrumbs-content {
+    width: 60%;
+    justify-content: space-between;
+  }
+
+  .cf-person {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  
+  .cf-results__row {
+    grid-template-columns: 2fr 3fr;
+    gap: 36px;
+  }
+
+  .cf-person__avatar, .cf-team__avatar {
+    width: 75px;
+    height: 75px;
+  }
+
+  .cf-hero__title {
+    font-size: 34px;
+    margin-bottom: 25px;
+    font-weight: 400;
+    line-height: 1.13;
+  }
+
+  .cf-hero__value p {
+    font-size: 64px;
+  }
+
+  .cf-hero__value span {
+    font-size: 44.8px;
+  }
+
+  .cf-team__row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding-left: 0;
+  }
+
+  .cf-team__avatar {
+    margin-left: -45px;
+  }
+
+  .cf-team__avatar:first-child,
+  .cf-team__avatar:nth-child(4) {
+    margin-left: 0;
+  }
+
+  .cf-team__avatar:nth-child(3) {
+    margin-left: -85px;
+  }
+
+  .cf-team__avatar:nth-child(n+4) {
+    margin-top: -45px;
+  }
+
+  .cf-team__caption {
+    margin-top: 0;
+  }
+
+  .strategy-section {
+    padding: 30px 20px;
+    height: 100%;
+  }
+
+  .strategy-title {
+    font-size: 40px;
+  }
+
+  .strategy-content {
+    gap: 60px;
+  }
+
+  .strategy-curve {
+    height: 250px;
+  }
+
+  .service-title {
+    font-size: 34px;
+    max-width: 100%;
+  }
+
+  .strategy-visual {
+    top: 185px;
+    left: -200px;
+  }
+
+  .events-section {
+    padding: 60px 0;
+  }
+
+  .events-sidebar {
+    width: 15%;
+    min-width: 150px;
+  }
+
+  .events-content {
+    padding: 60px 40px;
+  }
+
+  .events-title {
+    font-size: 44px;
+  }
+
+  .events-text,
+  .events-subtitle {
+    font-size: 18px;
+  }
+
+  .gallery-item {
+    height: 174px;
+  }
+
+  .gallery-item img {
+    height: 174px;
+  }
+
+  .gallery-swiper .swiper-slide {
+    width: auto;
+    height: 174px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main .space {
+    margin-bottom: 40px;
+  }
+
+  .main-top-1-content .gold-button {
+    width: 100%;
+  }
+
+  .main-top-1-content h1 {
+    font-size: 40px;
+    line-height: 103%;
+    margin-bottom: 10px;
+  }
+
+  .main-top-1-mini {
+    display: block;
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    top: 23%;
+    left: 43%;
+  }
+
+  .main-top-1-mini img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .main-top-1 {
+    position: relative;
+    background-image: url(../../foto/bg-main.png);
+    background-position: 50% 0;
+  }
+
+  .main-top-1-content {
+    padding: 205px 0 55px 0;
+  }
+
+  .main-bottom-1-content h2 {
+    font-size: 32px;
+    margin-bottom: 35px;
+  }
+
+  .main-bottom-1 {
+    padding: 35px 15px;
+  }
+
+  .est {
+    font-size: 15px;
+  }
+
+  .main-top-1-button {
+    margin-top: 50px;
+  }
+
+  .mini img {
+    display: none;
+  }
+
+  .container-results {
+    padding-bottom: 55px;
+    padding-inline: 15px;
+  }
+
+  .cf-results__visual {
+    display: none;
+  }
+
+  .cf-team__avatar {
+    margin-left: -10px !important;
+    margin-top: 0 !important;
+  }
+
+  .cf-team__avatar:first-child {
+    margin-left: 0px !important;
+  }
+
+  .cf-team__row {
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+  }
+
+  .cf-results__row {
+    grid-template-columns: 1fr;
+  }
+
+  .cf-results__visual-mobile {
+    display: block;
+    margin-bottom: 35px;
+  }
+
+  .cf-results__row .cf-results__visual-mobile {
+    order: 2;
+  }
+
+  .cf-results__row .cf-results__content {
+    order: 1;
+  }
+
+  .cf-results .gold-button {
+    width: 100%;
+  }
+  
+  .cf-hero__content {
+    grid-template-columns: 1fr;
+  }
+
+  .cf-hero-section-visual {
+    display: block;
+    color: var(--cf-text);
+    font-size: 13px;
+    line-height: 120%;
+    margin: 25px 0 35px 0
+  }
+
+  .cf-breadcrumbs.text-caption {
+    display: none;
+  }
+
+  .cf-person__avatar, .cf-team__avatar {
+    width: 46px;
+    height: 46px;
+  }
+  
+  .cf-person__name {
+    font-size: 16px !important;
+  }
+
+  .cf-person__role {
+    font-size: 16px !important;
+  }
+
+  .cf-person {
+    grid-template-columns: 46px 1fr;
+  }
+
+  .cf-results {
+    padding: 34px 0 54px;
+  }
+
+  .cf-hero__title {
+    font-size: 27px;
+  }
+
+  .cf-hero__value {
+    font-size: 44px;
+  }
+
+  .cf-ideas__head,
+  .cf-ideas__row {
+    grid-template-columns: 1fr 110px;
+    font-size: 16px;
+  }
+
+  .strategy-services {
+    width: 100%;
+  }
+
+  .strategy-visual {
+    display: none;
+  }
+
+  .strategy-section {
+    padding: 30px 15px;
+  }
+
+  .strategy-section .container {
+    gap: 40px;
+  }
+
+  .strategy-title {
+    font-size: 32px;
+  }
+
+  .strategy-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .service-title {
+    font-size: 18px;
+  }
+
+  .events-section-contact-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    color: var(--cf-text);
+    text-decoration: none;
+    font-family: "TT Norms Pro Trial", sans-serif;
+    font-size: 19px;
+    -webkit-tap-highlight-color: transparent;
+    padding: 8px;
+    margin: -8px;
+  }
+
+  .mobile-menu__contact-link img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .events-section {
+    padding: 25px 0;
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+
+  /* Скрываем первый Swiper на мобильных */
+  .gallery-swiper:not(.gallery-swiper-reverse) {
+    display: none;
+  }
+
+  .events-section .container {
+    padding-inline: 15px;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .events-layout {
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .events-block-container {
+    gap: 40px;
+    width: 100%;
+    max-width: 100%;
+    align-items: stretch;
+    padding-bottom: 60px;
+    box-sizing: border-box;
+  }
+
+  .events-block {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .events-block-content {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .events-sidebar {
+    width: 100%;
+    height: 60px;
+    min-width: auto;
+  }
+
+  .events-content {
+    padding: 40px 15px;
+  }
+
+  .events-title {
+    font-size: 36px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .events-text,
+  .events-subtitle {
+    font-size: 16px;
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .events-block-container .btn-outline-gold {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    white-space: normal;
+  }
+
+  .gallery-swiper {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+
+  .gallery-item {
+    height: 174px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .gallery-item img {
+    height: 174px;
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+  }
+
+  .gallery-swiper .swiper-slide {
+    width: 100% !important;
+    height: 174px;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Пагинация Swiper для мобильных (только для второго Swiper) */
+  .gallery-swiper-reverse .swiper-pagination {
+    display: block;
+    position: relative;
+    margin-top: 20px;
+    bottom: auto;
+    text-align: center;
+  }
+
+  .gallery-swiper-reverse .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background: rgba(246, 247, 248, 0.5);
+    opacity: 1;
+    margin: 0 4px;
+  }
+
+  .gallery-swiper-reverse .swiper-pagination-bullet-active {
+    background: var(--cf-gold);
+    width: 8px;
+    height: 8px;
+  }
+}
+

@@ -1,0 +1,108 @@
+/* ===== КАРТОЧКИ ===== */
+
+.card {
+  background-color: var(--color-secondary-bg);
+  border-radius: 8px;
+  padding: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(199, 171, 107, 0.2);
+}
+
+/* Маски для изображений */
+.image-mask-circle {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+/* Социальные иконки */
+.social-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-gray);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  border-color: var(--color-gold);
+  background-color: var(--color-gold);
+}
+
+.social-icon:hover svg path {
+  stroke: var(--color-primary-bg);
+  fill: var(--color-primary-bg);
+}
+
+/* Универсальный блок социальных иконок */
+.social-icons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.social-icons__icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.social-icons__icon img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  transition: filter 0.3s ease;
+}
+
+.social-icons__icon:hover {
+  border-color: var(--color-gold);
+  background-color: var(--color-gold);
+}
+
+.social-icons__icon:hover img {
+  filter: brightness(0) invert(0);
+}
+
+/* Компактный вариант для мобильного меню */
+.social-icons--compact .social-icons__icon {
+  width: 40px;
+  height: 40px;
+}
+
+.social-icons--compact .social-icons__icon img {
+  width: 24px;
+  height: 24px;
+  opacity: 0.7;
+}
+
+.social-icons--compact .social-icons__icon:hover img {
+  opacity: 1;
+}
+
+/* Футер ссылки */
+.footer-link {
+  color: var(--color-white);
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: var(--color-gold);
+}
+

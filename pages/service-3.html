@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Подключение общих стилей -->
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <!-- Стили для страницы service -->
+  <link rel="stylesheet" href="../css/pages/service-3.css">
+  <title>CRESCO FINANCE</title>
+</head>
+
+<body>
+  <!-- Header загружается из отдельного файла: components/header.html -->
+  <header></header>
+
+  <main class="main">
+    <!-- Hero секция страницы service -->
+    <section class="service-hero">
+      <div class="container">
+        <div class="service-hero__content">
+          <!-- Левая колонка с текстом -->
+          <div class="service-hero__text">
+            <!-- Breadcrumbs -->
+            <nav class="service-breadcrumbs text-caption">
+              <a href="home.html" class="service-breadcrumbs__item">Home</a>
+              <span class="service-breadcrumbs__sep">→</span>
+              <span class="service-breadcrumbs__item">Услуги</span>
+              <span class="service-breadcrumbs__sep">→</span>
+              <span class="service-breadcrumbs__item">Брокерское обслуживание</span>
+            </nav>
+            
+            <!-- Заголовок -->
+            <h1 class="service-hero__title w">Брокерское обслуживание</h1>
+            
+            <!-- Описание -->
+            <p class="service-hero__description text-section-body w">
+                Мы предлагаем идеи, обеспечиваем аналитикой и оказываем техническую поддержку. Доступ ко всем инструментам российского фогдового рынка. 
+                <br>
+                Вы принимаете решения — мы их реализовываем.
+            </p>
+            
+            <!-- Кнопка -->
+            <div class="gold-button">
+              <button>ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
+            </div>
+          </div>
+          
+          <div class="service-hero__image">
+            <img src="../foto/compass-service-3.png" alt="compass-service">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="container for-who-block">
+      <div class="for-who-block__inner">
+        <h2 class="for-who-block__title w">Для кого</h2>
+        <ul class="for-who-block__list">
+          <li class="for-who-block__item w">
+            <img src="../foto/ArrowRight.png" alt="arrow">
+            <span class="for-who-block__text">Опытные частные инвесторы</span>
+          </li>
+          <li class="for-who-block__item w">
+            <img src="../foto/ArrowRight.png" alt="arrow">
+            <span class="for-who-block__text">Трейдеры, работающие с аналитикой</span>
+          </li>
+          <li class="for-who-block__item w">
+            <img src="../foto/ArrowRight.png" alt="arrow">
+            <span class="for-who-block__text">Предприниматели, контролирующие активы лично</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="container example-block">
+      <div class="example-block__inner">
+        <!-- Левая колонка: Эксперт -->
+        <div class="example-block__expert">
+          <div class="cf-person">
+            <div class="cf-person__avatar">
+              <img src="../foto/7.jpg" alt="Степан Сумин">
+            </div>
+            <div>
+                <div class="cf-person__name text-caption-medium">
+                    <span class="cf-person__name-text w">Ваш эксперт</span>
+                    <span>Степан Сумин -</span>
+                </div>
+                <div class="cf-person__role text-caption">Инвестиционный советник</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Правая колонка: Портфель -->
+        <div class="example-block__content">
+          <h2 class="example-block__title w">Пример портфеля клиента</h2>
+          <p class="example-block__description w">
+            Брокерское обслуживание портфеля в сопровождении инвестиционного советника. Результаты за III квартал 2025 года.
+          </p>
+
+          <!-- График -->
+          <div class="example-block__chart">
+            <!-- Панель управления -->
+
+            <!-- График -->
+            <div class="example-chart__visual">
+              <img src="../foto/graphic.png" alt="График портфеля">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="container service-conditions">
+        <div class="strategy-conditions">
+            <h4 class="strategy-conditions__title w">Условия</h4>
+            <div class="strategy-conditions__content">
+                <div class="strategy-conditions__list">
+                    <div class="strategy-conditions__labels">
+                    <span class="strategy-conditions__label w">Вход</span>
+                    <span class="strategy-conditions__label w">Фондовый рынок</span>
+                    <span class="strategy-conditions__label w">Внебиржевой</span>
+                    <span class="strategy-conditions__label w">Срочный рынок</span>
+                    </div>
+                    <div class="strategy-conditions__values">
+                    <span class="strategy-conditions__value w">от 3 000 000 ₽</span>
+                    <span class="strategy-conditions__value w">комиссия 0,2%</span>
+                    <span class="strategy-conditions__value w">0,21%</span>
+                    <span class="strategy-conditions__value w">2,5 ₽ за контракт</span>
+                    </div>
+                </div>
+                <div class="gold-button">
+                    <button>ОБСУДИТЬ СТРАТЕГИЮ</button>
+                </div>
+            </div>
+        </div>
+    </section>
+  </main>
+
+  <!-- Cookie banner загружается из отдельного файла: components/cookie-banner.html -->
+  <div id="cookieBannerContainer"></div>
+
+  <!-- Footer загружается из отдельного файла: components/footer.html -->
+  <div id="footerContainer"></div>
+
+  <!-- Загрузка header из отдельного файла -->
+  <script src="../js/header-loader.js"></script>
+  <!-- Загрузка cookie banner из отдельного файла -->
+  <script src="../js/cookie-banner-loader.js"></script>
+  <!-- Загрузка footer из отдельного файла -->
+  <script src="../js/footer-loader.js"></script>
+  <!-- Основной JavaScript -->
+  <script src="../javascript.js"></script>
+  <!-- Аккордеон стратегий -->
+  <script src="../js/service-strategy-accordion.js"></script>
+</body>
+
+</html>

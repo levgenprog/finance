@@ -1,0 +1,106 @@
+/* Подключение шрифта через CDN */
+@import url("https://fonts.cdnfonts.com/css/tt-norms-pro-trial");
+
+/* Основной стиль сайта */
+/* Подключение шрифта */
+@font-face {
+  font-family: 'Wix Madefor Display';
+  src: url(../fonts/WixMadeforDisplay-VariableFont_wght.ttf) format('truetype');
+  font-weight: 100 900;
+  /* Для variable fonts указываем диапазон */
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-primary: "Wix Madefor Display", sans-serif;
+  --font-secondary: Arial, Helvetica, sans-serif;
+}
+
+/* Основной стиль сайта */
+body {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-style: normal;
+  line-height: 120%;
+  margin: 0;
+  background: var(--cf-bg);
+}
+
+
+h1 {
+  font-size: 64px;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 52px;
+  font-style: Regular;
+  line-height: 105%;
+}
+
+button {
+  font-weight: 700;
+  font-style: bold;
+}
+
+/* Общие утилиты */
+.w {
+  color: var(--color-white);
+}
+
+a {
+  text-decoration: none;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.space {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.grid {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  justify-items: stretch;
+}
+
+/* CSS переменные для результатов */
+:root {
+  --cf-bg: #0f1929;
+  --cf-bbg: #0f1929;
+  --cf-panel: #0f1b2c;
+  --cf-text: #f6f7f8;
+  --cf-muted: rgba(246, 247, 248, 0.72);
+  --cf-line: rgba(246, 247, 248, 0.18);
+  --cf-gold: #c7ab6b;
+  --cf-light-gold: #E6DAC1;
+}
+
+@media (max-width: 1024px) {
+
+  h1 {
+    font-size: 46px;
+  }
+
+  h2 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 28px;
+    line-height: 103%;
+  }
+}

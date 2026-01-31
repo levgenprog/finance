@@ -1,0 +1,797 @@
+/* ===== СТИЛИ СТРАНИЦЫ SERVICE-2 ===== */
+
+/* Импорт общих стилей (как в service-1) */
+@import url("../main.css");
+
+/* Hero секция страницы service */
+.service-hero {
+  width: 100%;
+  background: var(--color-primary-bg);
+  padding: 10px 0 40px;
+}
+
+.service-hero__content {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  gap: 80px;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.service-hero__image {
+  width: 100%;
+  max-width: 350px;
+}
+
+.service-hero__image img {
+  width: 100%;
+}
+
+/* Левая колонка с текстом */
+.service-hero__text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Breadcrumbs */
+.service-breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 50px;
+}
+
+.service-breadcrumbs__item {
+  color: #7a848f;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 1.2;
+  transition: color 0.3s ease;
+}
+
+.service-breadcrumbs__item:hover {
+  color: var(--color-gold);
+}
+
+.service-breadcrumbs__sep {
+  color: rgba(246, 247, 248, 0.5);
+  font-size: 20px;
+}
+
+/* Заголовок */
+.service-hero__title {
+  font-size: 52px;
+  font-weight: 500;
+  line-height: 1.1;
+  color: var(--color-white);
+  margin: 0;
+  max-width: 100%;
+}
+
+.service-conditions {
+  padding-top: 45px;
+  padding-bottom: 120px;
+  border-bottom: 1px solid var(--color-gray);
+}
+
+/* Описание */
+.service-hero__description {
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-white);
+  margin: 0;
+  max-width: 100%;
+}
+
+/* Кнопка */
+.service-hero__text .gold-button {
+  margin-top: 20px;
+  width: fit-content;
+}
+
+.service-hero__text .gold-button button {
+  width: auto;
+  padding: 20px 50px;
+}
+
+.width_pc_block {
+  display: block;
+}
+
+.width_pc_none {
+  display: none;
+}
+
+/* Адаптивность hero */
+@media (max-width: 1024px) {
+  .width_1024_block {
+    display: block;
+  }
+
+  .width_1024_none {
+    display: none;
+  }
+
+  .service-hero {
+    padding: 50px 0 80px;
+  }
+
+  .service-hero__content {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .service-hero__title {
+    font-size: 44px;
+  }
+
+  .service-hero__description {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 768px) {
+  .width_768_block {
+    display: block;
+  }
+
+  .width_768_none {
+    display: none;
+  }
+
+  .service-hero {
+    padding: 40px 0 60px;
+  }
+
+  .service-hero__content {
+    gap: 40px;
+  }
+
+  .service-hero__text {
+    gap: 24px;
+  }
+
+  .service-breadcrumbs {
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+
+  .service-breadcrumbs__item,
+  .service-breadcrumbs__sep {
+    font-size: 16px;
+  }
+
+  .service-hero__title {
+    font-size: 36px;
+    line-height: 1.06;
+  }
+
+  .service-hero__description {
+    font-size: 17px;
+    line-height: 1.17;
+  }
+
+  .service-hero__text .gold-button {
+    width: 100%;
+    margin-top: 16px;
+  }
+
+  .service-hero__text .gold-button button {
+    width: 100%;
+    padding: 16px 30px;
+  }
+}
+
+/* ===== СЕКЦИЯ "КАК ЭТО РАБОТАЕТ" (how-it-works) ===== */
+
+.how-it-works {
+  width: 100%;
+  background: var(--color-secondary-bg);
+  padding-top: 40px;
+  padding-bottom: 110px;
+}
+
+.how-it-works.container {
+  padding-inline: var(--container-padding);
+}
+
+.how-it-works__inner {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.how-it-works__title {
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--color-white);
+  margin: 0 0 30px 0;
+}
+
+.how-it-works__steps {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.how-it-works__step {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  align-items: flex-start;
+}
+
+.how-it-works__content {
+  display: grid;
+  grid-template-columns: 40% 1fr;
+}
+
+.how-it-works__step:last-child {
+  border-bottom: none;
+}
+
+.how-it-works__number {
+  font-size: 27px;
+  font-weight: 500;
+  line-height: 1;
+  color: var(--color-white);
+  font-family: "TT Norms Pro Trial", sans-serif;
+}
+
+.how-it-works__content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.how-it-works__step-title {
+  font-size: 27px;
+  font-weight: 500;
+  line-height: 1.17;
+  color: var(--color-white);
+  margin: 0;
+  font-family: "TT Norms Pro Trial", sans-serif;
+  width: 40%;
+}
+
+.how-it-works__step-description {
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 1.17;
+  color: var(--color-white);
+  margin: 0;
+  font-family: "TT Norms Pro Trial", sans-serif;
+  width: 55%;
+}
+
+/* Адаптивность для блока "Как это работает" */
+@media (max-width: 1024px) {
+  .how-it-works {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+
+  .how-it-works.container {
+    padding-inline: 20px;
+  }
+
+  .how-it-works__title {
+    font-size: 44px;
+    margin-bottom: 50px;
+  }
+
+  .how-it-works__step {
+    grid-template-columns: 60px 1fr;
+    gap: 250px;
+    padding: 25px 0;
+  }
+
+  .how-it-works__number {
+    font-size: 36px;
+  }
+
+  .how-it-works__step-title {
+    font-size: 34px;
+  }
+
+  .how-it-works__step-description {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .how-it-works {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+
+  .how-it-works.container {
+    padding-inline: 15px;
+  }
+
+  .how-it-works__title {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  .how-it-works__step {
+    grid-template-columns: 50px 1fr;
+    gap: 20px;
+    padding: 20px 0;
+  }
+
+  .how-it-works__number {
+    font-size: 28px;
+  }
+
+  .how-it-works__step-title {
+    font-size: 27px;
+  }
+
+  .how-it-works__step-description {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+}
+
+/* ===== АККОРДЕОН ИНВЕСТИЦИОННЫХ ИДЕЙ ===== */
+
+.investment-ideas {
+  padding-bottom: 108px;
+  display: grid;
+  grid-template-columns: 40% 1fr;
+}
+
+.investment-ideas__title {
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 1.17;
+  color: var(--color-white);
+  margin: 0 0 40px 0;
+  font-family: "TT Norms Pro Trial", sans-serif;
+}
+
+.investment-ideas__inner,
+.investment-ideas__accordion {
+  padding-top: 28px;
+  border-top: 1px solid rgba(246, 247, 248, 0.18);
+}
+
+.strategy-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.strategy-item {
+  padding: 16px 0 24px 0;
+}
+
+.strategy-item__header {
+  display: grid;
+  grid-template-columns: 1fr 220px;
+  align-items: flex-start;
+  cursor: pointer;
+  user-select: none;
+}
+
+.strategy-item__info {
+  display: grid;
+  grid-template-columns: 1fr 40px;
+  gap: 12px;
+  align-items: center;
+  justify-items: end;
+}
+
+.strategy-item__toggle-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.strategy-item__return {
+  font-size: 32px;
+  font-weight: 500;
+  color: var(--color-white);
+  font-family: "TT Norms Pro Trial", sans-serif;
+  white-space: nowrap;
+}
+
+.strategy-item__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding-top 0.4s ease;
+  padding-top: 0;
+}
+
+.strategy-item--active .strategy-item__content {
+  max-height: 500px;
+  padding-top: 24px;
+}
+
+.investment-ideas__name {
+  font-size: 27px;
+  font-weight: 400;
+  color: var(--color-white);
+  font-family: "TT Norms Pro Trial", sans-serif;
+}
+
+.investment-ideas__body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.investment-ideas__description {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.investment-ideas__dates {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  width: 40%;
+}
+
+.investment-ideas__date {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.investment-ideas__label {
+  opacity: 0.7;
+  margin-bottom: 4px;
+}
+
+.investment-ideas__value {
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .investment-ideas {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .investment-ideas__title {
+    font-size: 32px;
+  }
+
+  .strategy-item__header {
+    grid-template-columns: 1fr;
+    row-gap: 8px;
+  }
+
+  .strategy-item__info {
+    justify-items: start;
+  }
+
+  .strategy-item__return {
+    font-size: 27px;
+  }
+}
+
+/* ===== БЛОК "УСЛОВИЯ" (strategy-conditions) ===== */
+
+.strategy-conditions {
+  display: grid;
+  grid-template-columns: 40% 1fr;
+}
+
+.strategy-conditions__title {
+  font-size: 27px;
+  font-weight: 500;
+  color: var(--color-white);
+  margin: 0;
+  font-family: "TT Norms Pro Trial", sans-serif;
+}
+
+.strategy-conditions__list {
+  display: grid;
+  grid-template-columns: 60% 1fr;
+  gap: 20px 40px;
+}
+
+.strategy-conditions__labels {
+  display: flex;
+  flex-direction: column;
+  gap: 51px;
+}
+
+.strategy-conditions__values {
+  display: flex;
+  flex-direction: column;
+  gap: 51px;
+  text-align: left;
+}
+
+.strategy-conditions__label {
+  font-size: 27px;
+  font-weight: 400;
+  color: var(--color-white);
+  font-family: "TT Norms Pro Trial", sans-serif;
+  line-height: 1.17;
+}
+
+.strategy-conditions__content .gold-button {
+  margin-top: 50px;
+  justify-content: flex-start;
+}
+
+.strategy-conditions__value {
+  font-size: 27px;
+  font-weight: 400;
+  color: var(--color-white);
+  font-family: "TT Norms Pro Trial", sans-serif;
+  line-height: 1.17;
+  white-space: nowrap;
+}
+
+.strategy-conditions__note {
+  margin-top: 51px;
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 1.17;
+  color: var(--color-white);
+  font-family: "TT Norms Pro Trial", sans-serif;
+}
+
+/* Адаптивность блока "Условия" */
+@media (max-width: 1024px) {
+  .strategy-conditions__title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .strategy-conditions {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .strategy-conditions,
+  .strategy-conditions__list {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .strategy-conditions__note {
+    margin-top: 30px;
+  }
+
+  .strategy-conditions__label,
+  .strategy-conditions__value {
+    font-size: 18px;
+  }
+
+  .strategy-conditions__content .gold-button {
+    width: 100%;
+  }
+}
+
+/* ===== БЛОК ПЕРСОНАЛИИ (cf-person) ===== */
+
+.cf-person {
+  display: grid;
+  grid-template-columns: 95px 1fr;
+  gap: 32px;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.cf-person__avatar {
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  border: 1px solid rgba(246, 247, 248, 0.14);
+  overflow: hidden;
+}
+
+.cf-person__avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.9;
+}
+
+.cf-person__name {
+  color: var(--cf-gold) !important;
+}
+
+.cf-person__role {
+  margin-top: 2px;
+}
+
+/* Адаптивность cf-person (по образцу home.css) */
+@media (max-width: 1024px) {
+  .cf-person {
+    display: flex;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .cf-person__avatar {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cf-person__avatar {
+    width: 46px;
+    height: 46px;
+  }
+
+  .cf-person__name {
+    font-size: 16px !important;
+  }
+
+  .cf-person__role {
+    font-size: 16px !important;
+  }
+
+  .cf-person {
+    grid-template-columns: 46px 1fr;
+  }
+}
+
+/* Адаптация под Планшет */
+@media (max-width: 1024px) {
+  .service-hero__text {
+    width: 168%;
+  }
+
+  .service-hero__content {
+    grid-template-columns: 0fr;
+  }
+
+  .service-hero__title {
+    font-size: 40px;
+  }
+
+  .investment-ideas__dates {
+    width: 50%;
+  }
+
+  .investment-ideas__accordion {
+    border: 0;
+  }
+
+  .investment-ideas__inner,
+  .investment-ideas__accordion {
+    border-top: 1px solid rgba(246, 247, 248, 0.18);
+  }
+
+  .how-it-works__title {
+    font-size: 34px;
+  }
+
+  .how-it-works__number,
+  .how-it-works__step-title,
+  .strategy-conditions__title,
+  .footer__nav-title,
+  .footer__title {
+    font-size: 21px;
+    font-weight: 500;
+  }
+
+  .how-it-works__step-description,
+  .strategy-conditions__label,
+  .strategy-conditions__value,
+  .strategy-conditions__note,
+  .footer__nav-link,
+  .footer__text {
+    font-size: 21px;
+  }
+
+  .strategy-conditions {
+    grid-template-columns: 32% 1fr;
+  }
+
+  .footer__main {
+    grid-template-columns: 0fr 1fr;
+    gap: 125px;
+  }
+
+  .footer__info_bottom {
+    font-size: 16px;
+  }
+}
+
+/* Адаптация под Телефон */
+@media (max-width: 768px) {
+  .service-hero__text {
+    width: 100%;
+  }
+
+  .service-hero__content {
+    display: block;
+  }
+
+  .investment-ideas__title {
+    font-size: 27px;
+  }
+
+  .service-hero__title {
+    font-size: 36px;
+  }
+
+  .investment-ideas {
+    grid-template-columns: 1fr;
+  }
+
+  .investment-ideas__name {
+    font-size: 17px;
+  }
+
+  .investment-ideas__description,
+  .investment-ideas__label,
+  .investment-ideas__value {
+    font-size: 13px;
+  }
+
+  .how-it-works__title {
+    width: 100%;
+    font-size: 27px;
+  }
+
+  .how-it-works__step-description {
+    width: 100%;
+  }
+
+  .how-it-works__number,
+  .how-it-works__step-title,
+  .strategy-conditions__title,
+  .how-it-works__step-description,
+  .strategy-conditions__content,
+  .strategy-conditions__label,
+  .strategy-conditions__value,
+  .strategy-conditions__note,
+  .footer__nav-title,
+  .footer__nav-link,
+  .footer__title,
+  .footer__text {
+    font-size: 17px;
+  }
+
+  .how-it-works__content {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .cf-person {
+    justify-content: flex-start;
+  }
+
+  .strategy-item__header,
+  .strategy-item__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .strategy-item__info {
+    width: 55%;
+  }
+
+  .investment-ideas__dates {
+    width: 60%;
+  }
+
+  .conditions__design {
+    grid-template-columns: 1fr;
+  }
+
+  .strategy-conditions__labels,
+  .strategy-conditions__values {
+    gap: 0;
+  }
+
+  .footer__main {
+    grid-template-columns: 1fr;
+  }
+}

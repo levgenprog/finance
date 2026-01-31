@@ -1,0 +1,52 @@
+/* ===== УТИЛИТЫ ТИПОГРАФИКИ ===== */
+
+/* Цвета текста */
+.w {
+  color: var(--color-white);
+}
+
+.text-gold {
+  color: var(--color-gold);
+}
+
+.text-white {
+  color: var(--color-white);
+}
+
+.text-gray {
+  color: var(--color-gray);
+}
+
+.text-gray-dark {
+  color: var(--color-gray-dark);
+}
+
+/* Навигационные ссылки */
+.nav-link {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: -0.18px;
+  text-transform: uppercase;
+  color: var(--color-white);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--color-gold);
+}
+
+.nav-link.active {
+  color: var(--color-gold);
+}
+
+/* Статистические числа */
+.stat-number {
+  font-family: var(--font-primary);
+  font-weight: 300;
+  font-size: 80px;
+  line-height: 1.13;
+  color: var(--color-gold);
+}
+

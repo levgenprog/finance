@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Подключение общих стилей -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/pages/home.css">
+    <!-- Стили для страницы contacts -->
+    <link rel="stylesheet" href="../css/pages/contacts.css">
+    <title>CRESCO FINANCE</title>
+</head>
+
+<body>
+    <!-- Header загружается из отдельного файла: components/header.html -->
+    <header></header>
+
+    <main class="contacts-page">
+        <div class="container container--contacts">
+
+            <nav class="contacts-breadcrumbs text-caption">
+                <a href="home.html" class="contacts-breadcrumbs__item">Home</a>
+                <span class="contacts-breadcrumbs__sep">→</span>
+                <span class="contacts-breadcrumbs__item">Контакты</span>
+            </nav>
+
+            <h1 class="contacts-title">Контакты</h1>
+
+            <div class="contacts-list">
+                <!-- Адрес -->
+                <div class="contacts-item">
+                    <div class="contacts-item__label">Адрес</div>
+                    <div class="contacts-item__content">
+                        <p>127473, город Москва, переулок Чернышевского, 15</p>
+                        <p class="contacts-item__note">Наш офис работает:<br>понедельник – пятница с 09:30 до 19:30</p>
+                    </div>
+                </div>
+
+                <!-- Телефон -->
+                <div class="contacts-item">
+                    <div class="contacts-item__label">Телефон</div>
+                    <div class="contacts-item__content">
+                        <a href="tel:88005114877" class="contacts-link contacts-link--tel">8 (800) 511-48-77</a>
+                    </div>
+                </div>
+
+                <!-- Электронная почта -->
+                <div class="contacts-item">
+                    <div class="contacts-item__label">Электронная почта</div>
+                    <div class="contacts-item__content">
+                        <a href="mailto:info@crescofinance.ru" class="contacts-link">info@crescofinance.ru</a>
+                    </div>
+                </div>
+
+                <!-- Пресс-центр -->
+                <div class="contacts-item">
+                    <div class="contacts-item__label">Пресс-центр</div>
+                    <div class="contacts-item__content">
+                        <p class="contacts-item__description">Для получения комментариев, участия в радио- и теле-эфирах
+                            экспертов и руководства ИК «CRESCO Finance» просьба обращаться в пресс-службу компании:</p>
+                        <p>+7 (495) 632-02-01 доб. 888</p>
+                        <a href="mailto:info@crescofinance.ru" class="contacts-link">info@crescofinance.ru</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contacts-map" id="map">
+                <!-- Карта будет загружена здесь -->
+                <div
+                    style="width: 100%; height: 450px; background-color: var(--color-secondary-bg); display: flex; align-items: center; justify-content: center; border-radius: 4px; overflow: hidden;">
+                    <span class="text-gray">Интерактивная карта</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Cookie banner загружается из отдельного файла: components/cookie-banner.html -->
+    <div id="cookieBannerContainer"></div>
+
+    <!-- Footer загружается из отдельного файла: components/footer.html -->
+    <div id="footerContainer"></div>
+
+    <script src="../js/header-loader.js"></script>
+    <!-- Загрузка header из отдельного файла -->
+    <script src="../js/header-dropdown.js"></script>
+    <!-- Загрузка cookie banner из отдельного файла -->
+    <script src="../js/cookie-banner-loader.js"></script>
+    <!-- Загрузка footer из отдельного файла -->
+    <script src="../js/footer-loader.js"></script>
+    <!-- Основной JavaScript -->
+    <script src="../javascript.js"></script>
+    <!-- Аккордеон стратегий -->
+    <script src="../js/service-strategy-accordion.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+/* ===== УТИЛИТЫ МАКЕТА ===== */
+
+/* Контейнер */
+.container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+  padding-inline: var(--container-padding);
+}
+
+.container-results {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  width: 100%;
+  padding-inline: var(--container-padding);
+  box-sizing: border-box;
+}
+
+/* Утилиты flex */
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.space {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex {
+  display: flex;
+}
+
+/* Утилиты grid */
+.grid {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  justify-items: stretch;
+}
+
+/* Блоки контента */
+.content-block {
+  background-color: var(--color-primary-bg);
+  color: var(--color-white);
+  padding: 60px 30px;
+}
+
+.content-block-secondary {
+  background-color: var(--color-secondary-bg);
+  color: var(--color-white);
+  padding: 60px 30px;
+}
+
+/* Разделители */
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-gray);
+}
+
+.divider-vertical {
+  width: 1px;
+  height: 100%;
+  background-color: var(--color-gray);
+}
+
+/* Адаптивность */
+@media (max-width: 1024px) {
+  .container,
+  .container-results {
+    padding-inline: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container,
+  .container-results {
+    padding-inline: 15px;
+  }
+  
+  .content-block,
+  .content-block-secondary {
+    padding: 40px 20px;
+  }
+}
+

@@ -1,0 +1,120 @@
+html {
+    -webkit-font-smoothing: antialiased;
+}
+.bottom.center{
+    background-color: var(--color-primary-bg);
+}
+.drop-menu a {
+    text-decoration: none;
+}
+.drop-menu ul, .drop-menu li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.drop-menu {
+    background-color: transparent;
+    color: #F6F7F8;
+    line-height: 70px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+}
+
+.drop-menu li {
+    cursor: default;
+    user-select: none;
+    display: block;
+    position: relative;
+}
+.drop-menu .nav-item .link-wrapper {
+    color: #F6F7F8;
+    text-transform: uppercase;
+}
+.drop-menu .nav-item span.active{
+    color: #C7AB6B;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 0 12px;
+}
+.drop-menu li:last-child {
+    margin-left: auto;
+}
+
+.drop-menu li .link-wrapper:hover {
+    color: #C7AB6B;
+}
+.drop-menu li .sub{
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(3, auto);
+    gap: 0 60px;
+}
+.drop-menu li .sub .nav-item {
+}
+.drop-menu li:hover .sub {
+    opacity: 1;
+    visibility: visible;
+}
+.drop-menu a {
+    user-select: none;
+    padding: 0 12px;
+    display: block;
+}
+.drop-menu a:hover {
+    color: inherit;
+}
+.drop-menu .sub {
+    background-color: #323A48;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    line-height: 32px;
+    padding: 16px;
+    transition: height 0s linear 0.4s, visibility 0s linear, opacity 0.4s;
+}
+.drop-menu .sub {
+    color: #C7AB6B;
+}
+.drop-menu .sub .nav-item a{
+    padding: 4px 0;
+}
+.drop-menu .sub .nav-item a .link-wrapper {
+    font-size: 14px;
+    text-transform: none;
+    line-height: 160%;
+    width: max-content;
+}
+.drop-menu .sub .nav-item a .link-wrapper:hover {
+    color: #C7AB6B;
+}
+.drop-menu .sub li:hover {
+    background-color: transparent;
+}
+
+@media screen and (max-width: 890px) {
+    .drop-menu {
+        flex-direction: column;
+        padding: 0 12px;
+    }
+    .drop-menu .sub {
+        height: 0;
+        position: relative;
+    }
+    .drop-menu .sub li {
+        padding-left: 20px;
+    }
+    .drop-menu li:hover > .sub {
+        opacity: 1;
+        visibility: visible;
+        height: auto;
+    }
+    .drop-menu li:last-child {
+        margin-left: 0;
+    }
+}

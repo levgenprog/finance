@@ -1,0 +1,92 @@
+/* ===== СЕКЦИЯ С ССЫЛКАМИ НА УСЛУГИ ===== */
+
+.service-links {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.service-section-link {
+  padding: 0
+}
+
+.service-links__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  padding: 0;
+}
+
+.service-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  font-family: "TT Norms Pro Trial", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 120%;
+  color: var(--cf-text);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  text-align: left;
+}
+
+.service-link:hover {
+  color: var(--cf-gold);
+}
+
+.service-link--active {
+  color: var(--cf-gold);
+}
+
+.service-links__divider {
+  height: 1px;
+  background: var(--cf-line);
+  width: 100%;
+}
+
+.service-links__row .service-links__divider {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .service-link {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-section-link.container {
+    padding-inline: 0;
+    max-width: 100%;
+  }
+
+  .service-links__row .service-links__divider {
+    display: block;
+  }
+
+  .service-links {
+    width: 100%;
+  }
+
+  .service-links__row {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .service-link {
+    font-size: 18px;
+    padding: 16px 20px;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+
+  .service-links__divider {
+    width: 100%;
+    margin: 0;
+  }
+}
+

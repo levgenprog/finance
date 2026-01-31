@@ -1,0 +1,1202 @@
+/* ===== СТИЛИ СТРАНИЦЫ SERVICE ===== */
+
+/* Импорт общих стилей */
+@import url("../main.css");
+
+.service-strategy-accordion--container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Hero секция страницы service */
+.service-hero {
+  width: 100%;
+  background: var(--color-primary-bg);
+  padding: 10px 0 100px;
+}
+
+.service-hero__content {
+  display: grid;
+  grid-template-columns: 50% 40%;
+  gap: 10%;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.service-hero__image {
+  width: 100%;
+  max-width: 350px;
+}
+
+.service-hero__image img {
+  width: 100%;
+}
+
+/* Левая колонка с текстом */
+.service-hero__text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Breadcrumbs */
+.service-breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 50px;
+}
+
+.service-breadcrumbs__item {
+  color: #7a848f;
+  text-decoration-color: #7a848f;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 1.2;
+  transition: color 0.3s ease;
+}
+
+.service-breadcrumbs__item:hover {
+  color: var(--color-gold);
+}
+
+.service-breadcrumbs__sep {
+  color: rgba(246, 247, 248, 0.5);
+  font-size: 20px;
+}
+
+/* Заголовок */
+.service-hero__title {
+  font-size: 52px;
+  font-weight: 500;
+  line-height: 1.1;
+  color: var(--color-white);
+  margin: 0;
+  max-width: 100%;
+}
+
+/* Описание */
+.service-hero__description {
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-white);
+  margin: 0;
+  max-width: 100%;
+}
+
+/* Кнопка */
+.service-hero__text .gold-button {
+  margin-top: 20px;
+  width: fit-content;
+}
+
+.service-hero__text .gold-button button {
+  width: auto;
+  padding: 20px 50px;
+}
+
+/* Правая колонка с графикой */
+.service-hero__visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+.service-diagram {
+  width: 100%;
+  max-width: 500px;
+  aspect-ratio: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-diagram__svg {
+  width: 100%;
+  height: 100%;
+}
+
+.service-diagram__circle {
+  transition: stroke-opacity 0.3s ease;
+}
+
+.service-diagram__circle--outer {
+  stroke: rgba(199, 171, 107, 0.3);
+}
+
+.service-diagram__circle--middle {
+  stroke: rgba(199, 171, 107, 0.4);
+}
+
+.service-diagram__circle--inner {
+  stroke: rgba(199, 171, 107, 0.5);
+}
+
+.service-diagram__letter {
+  font-family: "TT Norms Pro Trial", sans-serif;
+  font-weight: 700;
+}
+
+.service-diagram__text {
+  font-family: "TT Norms Pro Trial", sans-serif;
+  font-weight: 400;
+}
+
+.service-diagram__point {
+  transition: r 0.3s ease;
+}
+
+.service-diagram__point:hover {
+  r: 6;
+}
+
+.service-diagram__label {
+  font-family: "TT Norms Pro Trial", sans-serif;
+  font-weight: 400;
+}
+
+.service-diagram__line {
+  stroke: rgba(246, 247, 248, 0.3);
+  stroke-width: 1;
+}
+
+/* ===== АДАПТИВНОСТЬ ===== */
+
+@media (max-width: 1024px) {
+  .service-breadcrumbs {
+    display: none;
+  }
+
+  .service-hero {
+    padding: 30px 0 80px;
+  }
+
+  .service-hero__content {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .service-hero__title {
+    font-size: 40px;
+  }
+
+  .service-hero__description {
+    font-size: 21px;
+  }
+
+  .service-diagram {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-hero {
+    padding: 20px 0 60px;
+  }
+
+  .service-hero__content {
+    gap: 40px;
+  }
+
+  .service-hero__text {
+    gap: 24px;
+  }
+
+  .service-breadcrumbs {
+    display: none;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+
+  .service-breadcrumbs__item,
+  .service-breadcrumbs__sep {
+    font-size: 16px;
+  }
+
+  .service-hero__title {
+    font-size: 36px;
+    /* line-height: 1.06%; */
+  }
+
+  .service-hero__description {
+    font-size: 17px;
+    line-height: 1.17;
+  }
+
+  .service-hero__text .gold-button {
+    width: 100%;
+    margin-top: 16px;
+  }
+
+  .service-hero__text .gold-button button {
+    width: 100%;
+    padding: 16px 30px;
+  }
+
+  .service-diagram {
+    max-width: 100%;
+    min-height: 300px;
+  }
+
+  .service-diagram__letter {
+    font-size: 36px;
+  }
+
+  .service-diagram__text {
+    font-size: 12px;
+  }
+
+  .service-diagram__label {
+    font-size: 14px;
+  }
+}
+
+/* ===== СЕКЦИЯ "КАК ЭТО РАБОТАЕТ" ===== */
+
+.how-it-works {
+  width: 100%;
+  background: var(--color-secondary-bg);
+  padding-top: 40px;
+  padding-bottom: 110px;
+}
+
+.how-it-works.container {
+  padding-inline: var(--container-padding);
+}
+
+.how-it-works__inner {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.how-it-works__title {
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--color-white);
+  margin: 0 0 30px 0;
+}
+
+.how-it-works__steps {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.how-it-works__step {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.how-it-works__step:last-child {
+  border-bottom: none;
+}
+
+.how-it-works__number {
+  font-size: 27px;
+  font-weight: 500;
+  line-height: 1;
+  color: var(--color-white);
+  font-family: "TT Norms Pro Trial", sans-serif;
+}
+
+.how-it-works__content {
+  display: flex;
+  align-items: flex-start;
+}
+
+.how-it-works__step-title {
+  font-size: 27px;
+  font-weight: 500;
+  line-height: 1.17;
+  color: var(--color-white);
+  margin: 0;
+  font-family: "TT Norms Pro Trial", sans-serif;
+  width: 40%;
+}
+
+.how-it-works__step-description {
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 1.17;
+  color: var(--color-white);
+  margin: 0;
+  font-family: "TT Norms Pro Trial", sans-serif;
+  width: 55%;
+}
+
+/* Адаптивность для блока "Как это работает" */
+@media (max-width: 1024px) {
+  .how-it-works {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+
+  .how-it-works.container {
+    padding: 20px;
+  }
+
+  .how-it-works__title {
+    font-size: 34px;
+    margin-bottom: 30px;
+  }
+
+  .how-it-works__step {
+    grid-template-columns: 60px 1fr;
+    gap: 30px;
+  }
+
+  .how-it-works__number {
+    font-size: 21px;
+  }
+
+  .how-it-works__step-title {
+    font-size: 21px;
+  }
+
+  .how-it-works__step-description {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 768px) {
+  .how-it-works {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+
+  .how-it-works.container {
+    padding-inline: 15px;
+  }
+
+  .how-it-works__title {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  .how-it-works__step {
+    grid-template-columns: 50px 1fr;
+    gap: 20px;
+    padding: 20px 0;
+  }
+
+  .how-it-works__number {
+    font-size: 28px;
+  }
+
+  .how-it-works__step-title {
+    font-size: 27px;
+  }
+
+  .how-it-works__step-description {
+    width: 100%;
+    font-size: 18px;
+    line-height: 1.4;
+  }
+}
+
+/* ===== СЕКЦИЯ АККОРДЕОНА СТРАТЕГИЙ ===== */
+
+.service-strategy-accordion {
+  width: 100%;
+  background: var(--color-primary-bg);
+  padding-top: 80px;
+}
+
+.service-strategy-accordion.container {
+  padding-inline: var(--container-padding);
+}
+
+.service-strategy-accordion__inner {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.service-strategy-accordion__title {
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 1.17;
+  color: var(--color-white);
+  font-family: "TT Norms Pro Trial", sans-serif;
+}
+
+/* Аккордеон стратегий */
+.strategy-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.strategy-item {
+  padding: 10px 0 36px 0;
+}
+
+.strategy-item:last-child {
+  border-bottom: none;
+}
+
+.strategy-item.strategy-item--active {
+  background: var(--color-secondary-bg);
+}
+
+.strategy-item__header {
+  display: grid;
+  grid-template-columns: 40% 1fr;
+  align-items: flex-start;
+  cursor: pointer;
+  user-select: none;
+  padding-inline: var(--container-padding);
+}
+
+.strategy-item__info {
+  display: grid;
+  grid-template-columns: 35% 45% 15%;
+  gap: 15px;
+  flex-shrink: 0;
+}
+
+.strategy-item__toggle-wrapper {
+  padding-top: 8px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.strategy-item__header-description {
+  font-size: 20px;
+  font-weight: 400;
+  padding-top: 9px;
+  line-height: 1.5;
+  color: var(--color-white);
+  margin: 0;
+  font-family: "TT Norms Pro Trial", sans-serif;
+}
+
+.strategy-item__title {
+  font-size: 27px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-top: 14px;
+  letter-spacing: 0.5px;
+  color: var(--color-white);
+  margin: 0;
+  font-family: "TT Norms Pro Trial", sans-serif;
+}
+
+.strategy-item__return {
+  font-size: 44px;
+  font-weight: 500;
+  color: var(--color-white);
+  font-family: "TT Norms Pro Trial", sans-serif;
+  white-space: nowrap;
+}
+
+.service-strategy-accordion__content {
+  display: grid;
+  grid-template-columns: 40% 1fr;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-inline: var(--container-padding);
+}
+
+.service-strategy-accordion__description {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--color-gray-dark);
+  font-family: "TT Norms Pro Trial", sans-serif;
+  margin: 0;
+}
+
+.service-strategy-accordion__description span {
+  color: var(--color-gold);
+}
+
+/* Стили для кнопки аккордеона наследуются из utils/buttons.css (.accordion-toggle) */
+
+/* Контент стратегии (скрыт по умолчанию) */
+.strategy-item__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  padding: 0;
+}
+
+.strategy-item--active .strategy-item__content {
+  max-height: 5000px;
+  padding-inline: var(--container-padding);
+}
+
+.strategy-item__description {
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-white);
+  margin: 0 0 40px 0;
+  font-family: "TT Norms Pro Trial", sans-serif;
+}
+
+/* Детали стратегии */
+.strategy-item__details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 16px;
+}
+
+.strategy_divider {
+  width: 100%;
+  height: 1px;
+  background: rgba(246, 247, 248, 0.18);
+  margin: 44px 0;
+}
+
+.strategy-assets__chart-list {
+  padding-top: 36px;
+  height: 426px;
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  position: relative;
+}
+
+.strategy-assets__chart-wrapper {
+  flex-shrink: 0;
+  position: absolute;
+  left: -30px;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.strategy-assets__chart-wrapper img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Классы активов */
+.strategy-assets {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.strategy-assets__title {
+  font-size: 27px;
+  font-weight: 500;
+  color: var(--color-white);
+  margin: 0;
+  font-family: "TT Norms Pro Trial", sans-serif;
+}
+
+.strategy-assets__list {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  z-index: 1;
+}
+
+.strategy-assets__group {
+  display: flex;
+  flex-direction: column;
+}
+
+.strategy-assets__group-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 55%;
+}
+
+.strategy-assets__group-header-text {
+  font-size: 27px;
+  font-weight: 500;
+  color: var(--color-gold);
+  text-align: center;
+  line-height: 1.17;
+}
+
+.strategy-assets__group-header-text-wrapper {
+  font-size: 27px;
+  font-weight: 500;
+  color: var(--color-gold);
+  text-align: center;
+  font-family: "TT Norms Pro Trial", sans-serif;
+  margin: 0;
+  line-height: 1.17;
+}
+
+.divider-assets {
+  height: 1px;
+  background: rgba(246, 247, 248, 0.18);
+  margin: 12px 0 26px 0;
+  width: 303px;
+}
+
+.divider-assets-1 {
+  margin-left: 36%;
+}
+
+.divider-assets-2 {
+  margin-left: 33%;
+  width: 317px;
+}
+
+.strategy-assets__items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding-left: 55%;
+  margin-bottom: 26px;
+}
+
+.strategy-assets__items li {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--color-white);
+  font-family: "TT Norms Pro Trial", sans-serif;
+  line-height: 1.17;
+  text-align: left;
+}
+
+.strategy-assets__note.table {
+  display: none;
+}
+
+/* Блок с примечанием о стратегиях */
+.strategy-assets__note .table {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 300px;
+  padding-left: 30px;
+  border-left: 1px solid rgba(246, 247, 248, 0.18);
+  z-index: 3;
+}
+
+.strategy-assets__note-text .table {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--color-white);
+  margin: 0;
+  font-family: "TT Norms Pro Trial", sans-serif;
+}
+
+/* Информация о стратегии (график и условия) */
+.width_pc_block {
+  display: block;
+}
+
+.width_pc_none {
+  display: none;
+}
+
+.strategy-items {
+  display: flex;
+}
+
+.strategy-info {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.strategy-chart {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.strategy-chart__title {
+  font-size: 27px;
+  font-weight: 500;
+  color: var(--color-white);
+  margin: 0;
+  font-family: "TT Norms Pro Trial", sans-serif;
+}
+
+.strategy-chart__period {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--color-white);
+  font-family: "TT Norms Pro Trial", sans-serif;
+}
+
+.strategy-chart__value {
+  display: flex;
+  align-items: baseline;
+  gap: 15px;
+}
+
+.strategy-chart__amount {
+  font-size: 44px;
+  font-weight: 500;
+  color: var(--color-white);
+  font-family: "TT Norms Pro Trial", sans-serif;
+}
+
+.strategy-chart__percent {
+  font-size: 27px;
+  font-weight: 400;
+  color: var(--color-gold);
+  font-family: "TT Norms Pro Trial", sans-serif;
+}
+
+.strategy-chart__visual {
+  min-height: 200px;
+
+  height: 426px;
+}
+
+.strategy-chart__placeholder {
+  font-size: 18px;
+  color: rgba(246, 247, 248, 0.5);
+  font-family: "TT Norms Pro Trial", sans-serif;
+}
+
+.strategy-chart__note {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--color-white);
+  margin: 0;
+  font-family: "TT Norms Pro Trial", sans-serif;
+}
+
+/* Условия */
+.strategy-conditions {
+  display: grid;
+  grid-template-columns: 40% 1fr;
+}
+
+.strategy-conditions__title {
+  font-size: 27px;
+  font-weight: 500;
+  color: var(--color-white);
+  margin: 0;
+  font-family: "TT Norms Pro Trial", sans-serif;
+}
+
+.strategy-conditions__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 40px;
+}
+
+.strategy-conditions__labels {
+  display: flex;
+  flex-direction: column;
+  gap: 51px;
+}
+
+.strategy-conditions__values {
+  display: flex;
+  flex-direction: column;
+  gap: 51px;
+  text-align: left;
+}
+
+.strategy-conditions__label {
+  font-size: 27px;
+  font-weight: 400;
+  color: var(--color-white);
+  font-family: "TT Norms Pro Trial", sans-serif;
+  line-height: 1.17;
+}
+
+.strategy-conditions__content .gold-button {
+  margin-top: 50px;
+  justify-content: flex-start;
+}
+
+.strategy-conditions__value {
+  font-size: 27px;
+  font-weight: 400;
+  color: var(--color-white);
+  font-family: "TT Norms Pro Trial", sans-serif;
+  line-height: 1.17;
+  white-space: nowrap;
+}
+
+.strategy-assets__chart-wrapper.table {
+  display: none;
+}
+
+/* Адаптивность для аккордеона стратегий */
+@media (max-width: 1024px) {
+  .width_1024_block {
+    display: block;
+  }
+
+  .width_1024_none {
+    display: none;
+  }
+
+  .service-hero__image {
+    display: none;
+  }
+
+  .service-strategy-accordion {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+
+  .service-strategy-accordion.container {
+    padding-inline: 20px;
+  }
+
+  .service-strategy-accordion__title {
+    font-size: 34px;
+  }
+
+  .service-strategy-accordion__description {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  .strategy-item__title {
+    font-size: 21px;
+    line-height: 1.17;
+  }
+
+  .strategy-item__return {
+    font-size: 35px;
+    line-height: 1.13;
+  }
+
+  .strategy-item__description {
+    font-size: 21px;
+    line-height: 1.13;
+  }
+
+  .strategy-assets__title {
+    position: absolute;
+    top: 80px;
+    max-width: 70px;
+    font-size: 21px;
+    line-height: 1.17;
+  }
+
+  .strategy-assets__chart-wrapper.desktop {
+    display: none;
+  }
+
+  .strategy-assets__chart-wrapper.table {
+    display: block;
+  }
+
+  .strategy-conditions {
+    grid-template-columns: 25% 1fr;
+  }
+
+  .strategy-item__details {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+
+  .strategy-assets__group-header {
+    flex-direction: row;
+    gap: 8px;
+    padding-left: 25%;
+  }
+
+  .strategy-assets__items {
+    padding-left: 25%;
+    margin-bottom: 10%;
+  }
+
+  .strategy-chart__note {
+    width: 300px;
+  }
+  .divider-assets2 {
+    height: 1px;
+    background: rgba(246, 247, 248, 0.18);
+    margin: 12px 0 26px 0;
+    width: 303px;
+  }
+
+  .divider-assets-2-1 {
+    margin: 10px 0 10px 0;
+    margin-left: 0%;
+    width: 300px;
+  }
+
+  .strategy-chart__note_buttom {
+    position: absolute;
+    margin: 87% 0 0 33%;
+  }
+
+  .strategy-assets__note.table {
+    display: block;
+  }
+
+  .strategy-info {
+    width: 100%;
+    align-items: flex-end;
+  }
+
+  .strategy-chart__visual,
+  .strategy-chart__visual img {
+    width: 100%;
+    height: auto;
+  }
+
+  .strategy-chart {
+    width: 75%;
+  }
+
+  .strategy-assets__group-header-text-wrapper,
+  .strategy-assets__group-header-text {
+    font-size: 21px;
+    line-height: 1.17;
+  }
+
+  .divider-assets {
+    margin: 3% 0 3% 0;
+    margin-left: 14%;
+    width: 311px;
+  }
+
+  .divider-assets-2 {
+    margin-left: 16%;
+    width: 290px;
+  }
+
+  .strategy-assets__items li {
+    font-size: 16px;
+    line-height: 1.17;
+  }
+
+  .strategy-chart__amount {
+    font-size: 34px;
+  }
+
+  .strategy-chart__percent {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .width_768_block {
+    display: block;
+  }
+
+  .width_768_none {
+    display: none;
+  }
+
+  .strategy-items__tetle {
+    width: 100%;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #7a848f;
+  }
+
+  .service-strategy-accordion {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+
+  .service-strategy-accordion.container {
+    padding-inline: 15px;
+  }
+
+  .service-strategy-accordion__title {
+    font-size: 27px;
+  }
+
+  .how-it-works__content {
+    flex-direction: column;
+  }
+
+  .strategy-item {
+    padding: 20px 0;
+  }
+
+  .strategy-item__title {
+    font-size: 17px;
+  }
+
+  .strategy-item__return {
+    display: flex;
+    flex-direction: column;
+    font-size: 27px;
+  }
+
+  .strategy-item__return p {
+    font-size: 13px;
+    color: #7a848f;
+  }
+
+  .strategy-item__info {
+    display: grid;
+    grid-template-columns: 35% 50%;
+    gap: 15px;
+    flex-shrink: 0;
+  }
+
+  .strategy-item__header-description {
+    width: 120%;
+    font-size: 17px;
+  }
+
+  .strategy-items {
+    display: flex;
+    margin-top: 14px;
+  }
+
+  .strategy-items p {
+    margin: 0;
+    padding: 0;
+  }
+
+  .strategy-item__header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .strategy-item__description {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  .strategy-item__details {
+    gap: 30px;
+  }
+
+  .strategy-chart {
+    width: 100%;
+  }
+
+  .strategy-assets__title {
+    max-width: 150px;
+    top: 0;
+  }
+
+  .strategy-assets__group-header-text-wrapper,
+  .strategy-assets__group-header-text {
+    font-size: 17px;
+  }
+
+  .strategy-assets__group {
+    position: relative;
+  }
+
+  .divider-assets {
+    margin: 10px 0 10px 0;
+    margin-left: 30%;
+    width: 70%;
+  }
+
+  .strategy-assets__group-header {
+    padding-left: 40%;
+  }
+
+  .strategy-assets__items {
+    padding-left: 40%;
+    margin-bottom: 20px;
+  }
+
+  .strategy-assets__chart-wrapper img {
+    max-width: 70%;
+  }
+
+  .strategy-chart__visual img {
+    width: 100%;
+  }
+
+  .strategy-assets__title,
+  .strategy-chart__title,
+  .strategy-conditions__title {
+    font-size: 20px;
+  }
+
+  .strategy-assets__chart-list {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .strategy-assets__chart-wrapper {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .strategy-assets__group-title,
+  .strategy-assets__group-percent,
+  .strategy-assets__items li,
+  .strategy-chart__period,
+  .strategy-conditions__label,
+  .strategy-conditions__value {
+    font-size: 13px;
+  }
+
+  .strategy-conditions__list {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .strategy-conditions__values {
+    text-align: left;
+    gap: 0;
+  }
+
+  .strategy-conditions__content {
+    margin-top: 20px;
+  }
+
+  .strategy-conditions__label {
+    font-weight: 500;
+  }
+
+  .strategy-chart__amount {
+    font-size: 27px;
+  }
+
+  .strategy-chart__percent {
+    font-size: 18px;
+  }
+
+  .strategy-chart__visual {
+    min-height: 150px;
+  }
+
+  .strategy-chart__note {
+    font-size: 14px;
+  }
+
+  .strategy-chart__note_buttom {
+    position: absolute;
+    margin: 100% 0 0 0;
+  }
+
+  .strategy_divider {
+    margin: 0 0 30px 0;
+  }
+
+  .service-strategy-accordion__content {
+    display: flex;
+    margin-bottom: 20px;
+    padding-inline: var(--container-padding);
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

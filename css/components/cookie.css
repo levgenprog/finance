@@ -1,0 +1,75 @@
+/* ===== COOKIE BANNER ===== */
+
+.cookie-banner {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  right: 30px;
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid black;
+  font-size: 20px;
+  background-color: white;
+  max-width: calc(100% - 60px);
+  box-sizing: border-box;
+}
+
+.cookie-banner button {
+  width: 350px;
+  height: 60px;
+  background: linear-gradient(
+    90deg,
+    #c9b797 0%,
+    #c29d5d 10%,
+    #a3885a 70%,
+    #c29d5d 120%
+  );
+  border: none;
+  padding: 10px 18px;
+  color: #000;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1024px) {
+  .cookie-banner {
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    max-width: calc(100% - 40px);
+    font-size: 18px;
+  }
+
+  .cookie-banner button {
+    width: 300px;
+    height: 56px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cookie-banner {
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+    max-width: calc(100% - 32px);
+    padding: 12px 16px;
+    font-size: 16px;
+    gap: 16px;
+  }
+
+  .cookie-banner button {
+    width: 100%;
+    max-width: 280px;
+    height: 52px;
+    font-size: 16px;
+  }
+}
+

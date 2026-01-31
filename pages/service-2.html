@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Подключение общих стилей -->
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <!-- Стили для страницы service -->
+  <link rel="stylesheet" href="../css/pages/service-2.css">
+  <title>CRESCO FINANCE</title>
+</head>
+
+<body>
+  <!-- Header загружается из отдельного файла: components/header.html -->
+  <header></header>
+
+  <main class="main">
+    <!-- Hero секция страницы service -->
+    <section class="service-hero">
+      <div class="container">
+        <div class="service-hero__content">
+          <!-- Левая колонка с текстом -->
+          <div class="service-hero__text">
+            <!-- Breadcrumbs -->
+            <nav class="service-breadcrumbs text-caption width_768_none width_1024_none">
+              <a href="home.html" class="service-breadcrumbs__item">Home</a>
+              <span class="service-breadcrumbs__sep">→</span>
+              <span class="service-breadcrumbs__item">Услуги</span>
+              <span class="service-breadcrumbs__sep">→</span>
+              <span class="service-breadcrumbs__item">Персональный советник</span>
+            </nav>
+
+            <!-- Заголовок -->
+            <h1 class="service-hero__title w">Персональный инвестиционный советник</h1>
+
+            <!-- Описание -->
+            <p class="service-hero__description text-section-body w">
+              Индивидуальная стратегия, построенная на вашей инициативе и нашем опыте. Вы контролируете счет,
+              а мы подбираем идеи, формируем портфель и сопровождаем вас в процессе.
+            </p>
+
+            <!-- Кнопка -->
+            <div class="gold-button">
+              <button>ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
+            </div>
+          </div>
+
+          <div class="service-hero__image width_1024_none width_768_none">
+            <img src="../foto/compass-service-2.png" alt="compass-service">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="container investment-ideas">
+      <div class="investment-ideas__inner width_768_none"></div>
+      <div class="investment-ideas__accordion">
+        <h2 class="investment-ideas__title w">Актуальные инвестиционные идеи</h2>
+
+        <div class="strategy-accordion">
+          <!-- Идея 1 -->
+          <div class="strategy-item strategy-item--active">
+            <div class="strategy-item__header">
+              <div class="investment-ideas__left">
+                <div class="investment-ideas__name w">ЕвроТранс 6</div>
+              </div>
+              <div class="strategy-item__info investment-ideas__right">
+                <div class="strategy-item__return w">+16%</div>
+                <div class="strategy-item__toggle-wrapper">
+                  <button class="strategy-item__toggle accordion-toggle" aria-label="Свернуть">
+                    <span class="strategy-item__icon accordion-icon accordion-icon--minus"></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="strategy-item__content">
+              <div class="investment-ideas__body">
+                <p class="investment-ideas__description w">
+                  Один из крупнейших российских операторов железнодорожных перевозок с развитым парком вагонов
+                  и стабильной дивидендной политикой.
+                </p>
+                <div class="investment-ideas__dates w">
+                  <div class="investment-ideas__date">
+                    <div class="investment-ideas__label">Дата покупки</div>
+                    <div class="investment-ideas__value">10.04.2025</div>
+                  </div>
+                  <div class="investment-ideas__date">
+                    <div class="investment-ideas__label">Дата продажи</div>
+                    <div class="investment-ideas__value">18.08.2025</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Идея 2 -->
+          <div class="strategy-item">
+            <div class="strategy-item__header">
+              <div class="investment-ideas__left">
+                <div class="investment-ideas__name w">ЕвроТранс 7</div>
+              </div>
+              <div class="strategy-item__info investment-ideas__right">
+                <div class="strategy-item__return w">+12.50%</div>
+                <div class="strategy-item__toggle-wrapper">
+                  <button class="strategy-item__toggle accordion-toggle" aria-label="Развернуть">
+                    <span class="strategy-item__icon accordion-icon"></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="strategy-item__content">
+              <div class="investment-ideas__body">
+                <p class="investment-ideas__description w">
+                  Облигации крупного эмитента с устойчивым денежным потоком и прогнозируемой доходностью.
+                </p>
+                <div class="investment-ideas__dates w">
+                  <div class="investment-ideas__date">
+                    <div class="investment-ideas__label">Дата покупки</div>
+                    <div class="investment-ideas__value">10.04.2025</div>
+                  </div>
+                  <div class="investment-ideas__date">
+                    <div class="investment-ideas__label">Дата продажи</div>
+                    <div class="investment-ideas__value">18.08.2025</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Остальные идеи (без раскрытия) -->
+          <div class="strategy-item">
+            <div class="strategy-item__header">
+              <div class="investment-ideas__left">
+                <div class="investment-ideas__name w">ОФЗ 26238</div>
+              </div>
+              <div class="strategy-item__info investment-ideas__right">
+                <div class="strategy-item__return w">+9.50%</div>
+                <div class="strategy-item__toggle-wrapper">
+                  <button class="strategy-item__toggle accordion-toggle" aria-label="Развернуть">
+                    <span class="strategy-item__icon accordion-icon"></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="strategy-item">
+            <div class="strategy-item__header">
+              <div class="investment-ideas__left">
+                <div class="investment-ideas__name w">ЛСР БО1Р10</div>
+              </div>
+              <div class="strategy-item__info investment-ideas__right">
+                <div class="strategy-item__return w">+5.40%</div>
+                <div class="strategy-item__toggle-wrapper">
+                  <button class="strategy-item__toggle accordion-toggle" aria-label="Развернуть">
+                    <span class="strategy-item__icon accordion-icon"></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="strategy-item">
+            <div class="strategy-item__header">
+              <div class="investment-ideas__left">
+                <div class="investment-ideas__name w">TLCB ETF</div>
+              </div>
+              <div class="strategy-item__info investment-ideas__right">
+                <div class="strategy-item__return w">+0.50%</div>
+                <div class="strategy-item__toggle-wrapper">
+                  <button class="strategy-item__toggle accordion-toggle" aria-label="Развернуть">
+                    <span class="strategy-item__icon accordion-icon"></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="strategy-item">
+            <div class="strategy-item__header">
+              <div class="investment-ideas__left">
+                <div class="investment-ideas__name w">iКарРус1Р5</div>
+              </div>
+              <div class="strategy-item__info investment-ideas__right">
+                <div class="strategy-item__return w">-0.50%</div>
+                <div class="strategy-item__toggle-wrapper">
+                  <button class="strategy-item__toggle accordion-toggle" aria-label="Развернуть">
+                    <span class="strategy-item__icon accordion-icon"></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="how-it-works container">
+      <div class="how-it-works__inner">
+        <div class="how-it-works__content">
+          <div></div>
+          <div>
+            <h2 class="how-it-works__title w">Как работает советник</h2>
+          </div>
+          <div></div>
+
+        </div>
+        <div class="how-it-works__steps">
+          <!-- Шаг 1 -->
+          <div class="how-it-works__step">
+            <div class="how-it-works__number">01 .</div>
+            <div class="how-it-works__content">
+              <h3 class="how-it-works__step-title w">Определяем цели</h3>
+              <p class="how-it-works__step-description w">Подбор инструментов</p>
+            </div>
+          </div>
+
+          <!-- Шаг 2 -->
+          <div class="how-it-works__step">
+            <div class="how-it-works__number">02 .</div>
+            <div class="how-it-works__content">
+              <h3 class="how-it-works__step-title w">Согласуем параметры</h3>
+              <p class="how-it-works__step-description w">Адаптация под цели клиента</p>
+            </div>
+          </div>
+
+          <!-- Шаг 3 -->
+          <div class="how-it-works__step">
+            <div class="how-it-works__number">03 .</div>
+            <div class="how-it-works__content">
+              <h3 class="how-it-works__step-title w">Подбираем идеи</h3>
+              <p class="how-it-works__step-description w">Управление рисками</p>
+            </div>
+          </div>
+
+          <!-- Шаг 4 -->
+          <div class="how-it-works__step">
+            <div class="how-it-works__number">04 .</div>
+            <div class="how-it-works__content">
+              <h3 class="how-it-works__step-title w">Отслеживаем вместе</h3>
+              <p class="how-it-works__step-description w">Регулярные рекомендации и идеи</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cf-person cf-person--compact">
+        <div class="cf-person__avatar">
+          <img src="../foto/7.jpg" alt="Степан Сумин">
+        </div>
+        <div>
+          <div class="cf-person__name text-caption-medium">
+            <span class="cf-person__name-text w">Ваш эксперт</span>
+            Степан Сумин
+          </div>
+          <div class="cf-person__role text-caption">Инвестиционный советник <br> с 15-летним опытом</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Условия в PC и Планшетном варианте -->
+    <section class="container service-conditions width_768_none">
+      <div class="strategy-conditions">
+        <h4 class="strategy-conditions__title w">Условия</h4>
+        <div class="strategy-conditions__content">
+          <div class="strategy-conditions__list">
+            <div class="strategy-conditions__labels">
+              <span class="strategy-conditions__label w">Рекомендуемый вход</span>
+              <span class="strategy-conditions__label w">Вознаграждение советника</span>
+            </div>
+            <div class="strategy-conditions__values">
+              <span class="strategy-conditions__value w">от 3 000 000 ₽</span>
+              <span class="strategy-conditions__value w">20% от прироста</span>
+            </div>
+          </div>
+          <p class="strategy-conditions__note w">Счет остается под вашим контролем</p>
+          <div class="gold-button">
+            <button>ОБСУДИТЬ СТРАТЕГИЮ</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Условия в телефонном варианте -->
+    <section class="container service-conditions width_pc_none width_768_block">
+      <div class="strategy-conditions conditions__design">
+        <h4 class="strategy-conditions__title w">Условия</h4>
+        <div class="strategy-conditions__content">
+          <div class="strategy-conditions__list">
+            <div class="strategy-conditions__labels">
+              <span class="strategy-conditions__label w">Рекомендуемый вход</span>
+              <span class="strategy-conditions__value w">от 3 000 000 ₽</span>
+            </div>
+            <div class="strategy-conditions__values">
+              <span class="strategy-conditions__label w">Вознаграждение советника</span>
+              <span class="strategy-conditions__value w">20% от прироста</span>
+            </div>
+          </div>
+          <p class="strategy-conditions__note w">Счет остается под вашим контролем</p>
+          <div class="gold-button">
+            <button>ОБСУДИТЬ СТРАТЕГИЮ</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Cookie banner загружается из отдельного файла: components/cookie-banner.html -->
+  <div id="cookieBannerContainer"></div>
+
+  <!-- Footer загружается из отдельного файла: components/footer.html -->
+  <div id="footerContainer"></div>
+
+  <!-- Загрузка header из отдельного файла -->
+  <script src="../js/header-loader.js"></script>
+  <!-- Загрузка cookie banner из отдельного файла -->
+  <script src="../js/cookie-banner-loader.js"></script>
+  <!-- Загрузка footer из отдельного файла -->
+  <script src="../js/footer-loader.js"></script>
+  <!-- Основной JavaScript -->
+  <script src="../javascript.js"></script>
+  <!-- Аккордеон стратегий -->
+  <script src="../js/service-strategy-accordion.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Подключение общих стилей -->
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <!-- Стили для страницы service -->
+  <link rel="stylesheet" href="../css/pages/service-1.css">
+  <title>CRESCO FINANCE</title>
+</head>
+
+<body>
+  <!-- Header загружается из отдельного файла: components/header.html -->
+  <header></header>
+
+  <main class="main">
+    <!-- Hero секция страницы service -->
+    <section class="service-hero">
+      <div class="container">
+        <div class="service-hero__content">
+          <!-- Левая колонка с текстом -->
+          <div class="service-hero__text">
+            <!-- Breadcrumbs -->
+            <nav class="service-breadcrumbs text-caption">
+              <a href="home.html" class="service-breadcrumbs__item">Home</a>
+              <span class="service-breadcrumbs__sep">→</span>
+              <span class="service-breadcrumbs__item">Услуги</span>
+              <span class="service-breadcrumbs__sep">→</span>
+              <span class="service-breadcrumbs__item">Доверительное управление</span>
+            </nav>
+
+            <!-- Заголовок -->
+            <h1 class="service-hero__title w">Индивидуальные стратегии доверительного управления</h1>
+
+            <!-- Описание -->
+            <p class="service-hero__description text-section-body w">
+              Мы предлагаем доверительное управление активами с учетом ваших целей, сроков инвестирования и допустимого
+              риска. Стратегии формируются на основе рыночной аналитики и подбираются индивидуально: с прогнозируемой
+              доходностью и полной прозрачностью.
+            </p>
+
+            <!-- Кнопка -->
+            <div class="gold-button">
+              <button>
+                <span>ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="service-hero__image">
+            <img src="../foto/compass-service.png" alt="compass-service">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="how-it-works container">
+      <div class="how-it-works__inner">
+        <h2 class="how-it-works__title w">Как это работает</h2>
+
+        <div class="how-it-works__steps">
+          <!-- Шаг 1 -->
+          <div class="how-it-works__step">
+            <div class="how-it-works__number">01 .</div>
+            <div class="how-it-works__content">
+              <h3 class="how-it-works__step-title w">Аудит</h3>
+              <p class="how-it-works__step-description w">Финансовый аудит и анализ задач</p>
+            </div>
+          </div>
+
+          <!-- Шаг 2 -->
+          <div class="how-it-works__step">
+            <div class="how-it-works__number">02 .</div>
+            <div class="how-it-works__content">
+              <h3 class="how-it-works__step-title w">Цель</h3>
+              <p class="how-it-works__step-description w">Определение целей: рост, сохранение капитала, получение дохода
+              </p>
+            </div>
+          </div>
+
+          <!-- Шаг 3 -->
+          <div class="how-it-works__step">
+            <div class="how-it-works__number">03 .</div>
+            <div class="how-it-works__content">
+              <h3 class="how-it-works__step-title w">Стратегия</h3>
+              <p class="how-it-works__step-description w">Стратегическое планирование и подбор инструментов</p>
+            </div>
+          </div>
+
+          <!-- Шаг 4 -->
+          <div class="how-it-works__step">
+            <div class="how-it-works__number">04 .</div>
+            <div class="how-it-works__content">
+              <h3 class="how-it-works__step-title w">Контроль</h3>
+              <p class="how-it-works__step-description w">Контроль и сопровождение на каждом этапе</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Варианты стратегий для РС и Планшет(1024px) -->
+    <section class="service-strategy-accordion service-strategy-accordion--container width_768_none">
+      <div class="service-strategy-accordion__inner">
+        <div class="service-strategy-accordion__content">
+          <h2 class="service-strategy-accordion__title w">Варианты стратегий</h2>
+          <p class="service-strategy-accordion__description w">
+            <style>
+              @media (max-width: 768px) {
+                .service-strategy-accordion__description {
+                  display: none;
+                }
+              }
+            </style>
+            Целевая доходность в год
+          </p>
+        </div>
+
+
+        <div class="strategy-accordion">
+
+          <!-- Стратегия 2: Сбалансированная -->
+          <div class="strategy-item">
+            <div class="strategy-item__header">
+
+              <h3 class="strategy-item__title w">СБАЛАНСИРОВАННАЯ</h3>
+              <div class="strategy-item__info">
+                <div class="strategy-item__return w">25-40% </div>
+
+                <p class="strategy-item__header-description w">Рост с умеренным риском. Подходит тем, кто хочет
+                  сохранять и приумножать капитал</p>
+                <div class="strategy-item__toggle-wrapper">
+                  <button class="strategy-item__toggle accordion-toggle" aria-label="Развернуть">
+                    <span class="strategy-item__icon accordion-icon"></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="strategy-item__content">
+
+              <div class="strategy-item__details">
+                <!-- Левая колонка: Классы активов -->
+                <div class="strategy-assets">
+                  <h4 class="strategy-assets__title w">Классы активов</h4>
+
+                  <div class="strategy-assets__chart-list">
+                    <div class="strategy-assets__chart-wrapper desktop">
+                      <img src="../foto/Ellipse-accordion-service.png" alt="strategy-assets-chart">
+                    </div>
+
+                    <div class="strategy-assets__chart-wrapper table">
+                      <img src="../foto/Ellipse-accordion-service-table.png" alt="strategy-assets-chart">
+                    </div>
+
+                    <div class="strategy-assets__list">
+                      <!-- Акции -->
+                      <div class="strategy-assets__group">
+                        <div class="strategy-assets__group-header">
+                          <p class="strategy-assets__group-header-text-wrapper">Акции
+                          </p>
+                          <p class="strategy-assets__group-header-text-wrapper">до 80%
+                          </p>
+                        </div>
+                        <div class="divider-assets divider-assets-1"></div>
+                        <ul class="strategy-assets__items">
+                          <li class="w">Лукойл</li>
+                          <li class="w">ПАО «Полюс»</li>
+                          <li class="w">Роснефть</li>
+                          <li class="w">OZON – АДР</li>
+                          <li class="w">КЦ Х5</li>
+                          <li class="w">ПАО ГМК «Норильский никель»</li>
+                        </ul>
+                      </div>
+
+                      <!-- Фонды -->
+                      <div class="strategy-assets__group">
+                        <div class="strategy-assets__group-header">
+                          <p class="strategy-assets__group-header-text">Фонды
+                          </p>
+                          <p class="strategy-assets__group-header-text">до 20%
+                          </p>
+                        </div>
+                        <div class="divider-assets divider-assets-2"></div>
+                        <ul class="strategy-assets__items">
+                          <li class="w">LQDT</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Правая колонка: График и условия -->
+                <div class="strategy-info">
+                  <!-- График -->
+                  <div class="strategy-chart">
+                    <h4 class="strategy-chart__title w">Актуальный график</h4>
+                    <div class="strategy-chart__visual">
+                      <img src="../foto/graphic.png" alt="chart-service">
+                    </div>
+                    <p class="strategy-chart__note w">С 01.01.2025 все стратегии формируются индивидуально. Примеры выше
+                      отражают наш подход.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="strategy_divider"></div>
+
+              <div class="strategy-conditions">
+                <h4 class="strategy-conditions__title w">Условия</h4>
+                <div class="strategy-conditions__content">
+                  <div class="strategy-conditions__list">
+                    <div class="strategy-conditions__labels">
+                      <span class="strategy-conditions__label w">Вход</span>
+                      <span class="strategy-conditions__label w">Горизонт</span>
+                      <span class="strategy-conditions__label w">Вознаграждение за успех</span>
+                      <span class="strategy-conditions__label w">Комиссия за управление</span>
+                    </div>
+                    <div class="strategy-conditions__values">
+                      <span class="strategy-conditions__value w">от 3 000 000 ₽</span>
+                      <span class="strategy-conditions__value w">от 1 до 3 лет</span>
+                      <span class="strategy-conditions__value w">от 10%</span>
+                      <span class="strategy-conditions__value w">0,25% – 0,5% в квартал</span>
+                    </div>
+                  </div>
+                  <div class="gold-button">
+                    <button>ОБСУДИТЬ СТРАТЕГИЮ</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Стратегия 3: Агрессивная -->
+          <div class="strategy-item">
+            <div class="strategy-item__header">
+              <h3 class="strategy-item__title w">АГРЕССИВНАЯ</h3>
+              <div class="strategy-item__info">
+                <div class="strategy-item__return w">45% </div>
+
+                <p class="strategy-item__header-description w">Более высокая доходность при повышенном риске</p>
+                <div class="strategy-item__toggle-wrapper">
+                  <button class="strategy-item__toggle accordion-toggle" aria-label="Развернуть">
+                    <span class="strategy-item__icon accordion-icon"></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="strategy-item__content">
+
+              <div class="strategy-item__details">
+                <!-- Левая колонка: Классы активов -->
+                <div class="strategy-assets">
+                  <h4 class="strategy-assets__title w">Классы активов</h4>
+
+                  <div class="strategy-assets__chart-list">
+                    <div class="strategy-assets__chart-wrapper">
+                      <img src="../foto/Ellipse-accordion-service.png" alt="strategy-assets-chart">
+                    </div>
+
+                    <div class="strategy-assets__list">
+                      <!-- Акции -->
+                      <div class="strategy-assets__group">
+                        <div class="strategy-assets__group-header">
+                          <p class="strategy-assets__group-header-text-wrapper">Акции
+                          </p>
+                          <p class="strategy-assets__group-header-text-wrapper">до 90%
+                          </p>
+                        </div>
+                        <div class="divider-assets divider-assets-1"></div>
+                        <ul class="strategy-assets__items">
+                          <li class="w">Сбербанк</li>
+                          <li class="w">ФосАгро</li>
+                          <li class="w">Сургутнефтегаз</li>
+                          <li class="w">НЛМК</li>
+                          <li class="w">ММК</li>
+                          <li class="w">Артген АВІО</li>
+                          <li class="w">Новатэк</li>
+                          <li class="w">Т-Технологии</li>
+                        </ul>
+                      </div>
+
+                      <!-- Фонды -->
+                      <div class="strategy-assets__group">
+                        <div class="strategy-assets__group-header">
+                          <p class="strategy-assets__group-header-text">Фонды
+                          </p>
+                          <p class="strategy-assets__group-header-text">до 10%
+                          </p>
+                        </div>
+                        <div class="divider-assets divider-assets-2"></div>
+                        <ul class="strategy-assets__items">
+                          <li class="w">LQDT</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Правая колонка: График и условия -->
+                <div class="strategy-info">
+                  <!-- График -->
+                  <div class="strategy-chart">
+                    <h4 class="strategy-chart__title w">Актуальный график</h4>
+                    <div class="strategy-chart__visual">
+                      <img src="../foto/graphic.png" alt="chart-service">
+                    </div>
+                    <p class="strategy-chart__note w">С 01.01.2025 все стратегии формируются индивидуально. Примеры
+                      выше отражают наш подход.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="strategy_divider"></div>
+
+              <div class="strategy-conditions">
+                <h4 class="strategy-conditions__title w">Условия</h4>
+                <div class="strategy-conditions__content">
+                  <div class="strategy-conditions__list">
+                    <div class="strategy-conditions__labels">
+                      <span class="strategy-conditions__label w">Вход</span>
+                      <span class="strategy-conditions__label w">Горизонт</span>
+                      <span class="strategy-conditions__label w">Вознаграждение за успех</span>
+                      <span class="strategy-conditions__label w">Комиссия за управление</span>
+                    </div>
+                    <div class="strategy-conditions__values">
+                      <span class="strategy-conditions__value w">от 400 000 ₽</span>
+                      <span class="strategy-conditions__value w">от 1 года</span>
+                      <span class="strategy-conditions__value w">от 10%</span>
+                      <span class="strategy-conditions__value w">0,25% – 0,5% в квартал</span>
+                    </div>
+                  </div>
+                  <div class="gold-button">
+                    <button>ОБСУДИТЬ СТРАТЕГИЮ</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Стратегия 1: Консервативная (развернута по умолчанию) -->
+          <div class="strategy-item strategy-item--active">
+            <div class="strategy-item__header">
+              <h3 class="strategy-item__title w">КОНСЕРВАТИВНАЯ</h3>
+              <div class="strategy-item__info">
+                <div class="strategy-item__return w">25% </div>
+
+                <p class="strategy-item__header-description w">Стратегия с акцентом на облигации для минимизации рисков
+                </p>
+                <div class="strategy-item__toggle-wrapper">
+                  <button class="strategy-item__toggle accordion-toggle" aria-label="Свернуть">
+                    <span class="strategy-item__icon accordion-icon accordion-icon--minus"></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="strategy-item__content">
+
+              <div class="strategy-item__details">
+                <!-- Левая колонка: Классы активов -->
+                <div class="strategy-assets">
+                  <h4 class="strategy-assets__title w">Классы активов</h4>
+
+                  <div class="strategy-assets__chart-list">
+                    <div class="strategy-assets__chart-wrapper">
+                      <img src="../foto/Ellipse-accordion-service.png" alt="strategy-assets-chart">
+                    </div>
+
+                    <div class="strategy-assets__list">
+                      <!-- Облигации -->
+                      <div class="strategy-assets__group">
+                        <div class="strategy-assets__group-header">
+                          <p class="strategy-assets__group-header-text-wrapper">Облигации
+                          </p>
+                          <p class="strategy-assets__group-header-text-wrapper">до 80%
+                          </p>
+                        </div>
+                        <div class="divider-assets divider-assets-1"></div>
+                        <ul class="strategy-assets__items">
+                          <li class="w">ЛСР БО-1Р10</li>
+                          <li class="w">Евро Транс 7</li>
+                          <li class="w">Магнит 5РО2</li>
+                          <li class="w">ОФЗ 26238</li>
+                          <li class="w">Норникель БО-1Р7</li>
+                          <li class="w">СИБУР Х1Р04</li>
+                        </ul>
+                        <div class="strategy-assets__group-header">
+                          <p class="strategy-assets__group-header-text">Фьючерс</p>
+                          <p class="strategy-assets__group-header-text">до 20%</p>
+                        </div>
+                        <div class="divider-assets divider-assets-2"></div>
+                        <ul class="strategy-assets__items">
+                          <li class="w">IMOEXF</li>
+                        </ul>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Правая колонка: График и условия -->
+                <div class="strategy-info">
+                  <!-- График -->
+                  <div class="strategy-chart">
+                    <h4 class="strategy-chart__title w">Актуальный график</h4>
+                    <div class="strategy-chart__visual">
+                      <img src="../foto/graphic.png" alt="chart-service">
+                    </div>
+                    <div class="strategy-chart__note_buttom">
+                      <div class="divider-assets2 divider-assets-2-1"></div>
+                      <p class="strategy-chart__note w">С 01.01.2025 все стратегии формируются индивидуально. Примеры
+                        выше
+                        отражают наш подход.</p>
+                    </div>
+                  </div>
+
+                  <!-- Условия -->
+
+
+                  <!-- Кнопка -->
+
+                </div>
+              </div>
+
+              <div class="strategy_divider"></div>
+
+              <div class="strategy-conditions">
+                <h4 class="strategy-conditions__title w">Условия</h4>
+                <div class="strategy-conditions__content">
+                  <div class="strategy-conditions__list">
+                    <div class="strategy-conditions__labels">
+                      <span class="strategy-conditions__label w">Вход</span>
+                      <span class="strategy-conditions__label w">Горизонт</span>
+                      <span class="strategy-conditions__label w">Вознаграждение за успех</span>
+                      <span class="strategy-conditions__label w">Комиссия за управление</span>
+                    </div>
+                    <div class="strategy-conditions__values">
+                      <span class="strategy-conditions__value w">от 1 000 000 ₽</span>
+                      <span class="strategy-conditions__value w">от 1 года</span>
+                      <span class="strategy-conditions__value w">от 10%</span>
+                      <span class="strategy-conditions__value w">0,25% – 0,5% в квартал</span>
+                    </div>
+                  </div>
+                  <div class="gold-button">
+                    <button>ОБСУДИТЬ СТРАТЕГИЮ</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Варианты стратегий для Мобильного(768px) -->
+    <section class="service-strategy-accordion service-strategy-accordion--container width_pc_none width_768_block">
+      <div class="service-strategy-accordion__inner">
+        <div class="service-strategy-accordion__content">
+          <h2 class="service-strategy-accordion__title w">Варианты стратегий</h2>
+          <p class="service-strategy-accordion__description w">
+            Целевая доходность в год
+          </p>
+        </div>
+
+
+        <div class="strategy-accordion">
+
+          <!-- Стратегия 2: Сбалансированная -->
+          <div class="strategy-item">
+            <div class="strategy-item__header">
+              <div class="strategy-items__tetle width_pc_none">
+                <h3 class="strategy-item__title w">СБАЛАНСИРОВАННАЯ</h3>
+                <div class="strategy-item__toggle-wrapper">
+                  <button class="strategy-item__toggle accordion-toggle" aria-label="Развернуть">
+                    <span class="strategy-item__icon accordion-icon"></span>
+                  </button>
+                </div>
+              </div>
+              <div class="strategy-item__info">
+                <!-- <div class="strategy-items"> -->
+                <div class="strategy-item__return w">
+                  25-40%
+                  <p class="service-strategy-accordion__descriptions w"> Целевая <br>доходность в год </p>
+                </div>
+                <p class="strategy-item__header-description w">Рост с умеренным риском. Подходит тем, кто хочет
+                  сохранять и приумножать капитал</p>
+                <!-- </div> -->
+              </div>
+            </div>
+            <div class="strategy-item__content">
+
+              <div class="strategy-item__details">
+                <!-- Левая колонка: Классы активов -->
+                <div class="strategy-assets">
+                  <h4 class="strategy-assets__title w">Классы активов</h4>
+
+                  <div class="strategy-assets__chart-list">
+                    <div class="strategy-assets__chart-wrapper desktop">
+                      <img src="../foto/Ellipse-accordion-service.png" alt="strategy-assets-chart">
+                    </div>
+
+                    <div class="strategy-assets__chart-wrapper table">
+                      <img src="../foto/Ellipse-accordion-service-table.png" alt="strategy-assets-chart">
+                    </div>
+
+                    <div class="strategy-assets__list">
+                      <!-- Акции -->
+                      <div class="strategy-assets__group">
+                        <div class="strategy-assets__group-header">
+                          <p class="strategy-assets__group-header-text-wrapper">Акции
+                          </p>
+                          <p class="strategy-assets__group-header-text-wrapper">до 80%
+                          </p>
+                        </div>
+                        <div class="divider-assets divider-assets-1"></div>
+                        <ul class="strategy-assets__items">
+                          <li class="w">Лукойл</li>
+                          <li class="w">ПАО «Полюс»</li>
+                          <li class="w">Роснефть</li>
+                          <li class="w">OZON – АДР</li>
+                          <li class="w">КЦ Х5</li>
+                          <li class="w">ПАО ГМК «Норильский никель»</li>
+                        </ul>
+                      </div>
+
+                      <div class="strategy-chart__note_buttom">
+                        <div class="divider-assets2 divider-assets-2-1 width_768_none"></div>
+                        <p class="strategy-chart__note w">С 01.01.2025 все стратегии формируются индивидуально. Примеры
+                          выше отражают наш подход.</p>
+                      </div>
+
+                      <!-- Фонды -->
+                      <div class="strategy-assets__group">
+                        <div class="strategy-assets__group-header">
+                          <p class="strategy-assets__group-header-text">Фонды
+                          </p>
+                          <p class="strategy-assets__group-header-text">до 20%
+                          </p>
+                        </div>
+                        <div class="divider-assets divider-assets-2"></div>
+                        <ul class="strategy-assets__items">
+                          <li class="w">LQDT</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Правая колонка: График и условия -->
+                <div class="strategy-info">
+                  <!-- График -->
+                  <div class="strategy-chart">
+                    <h4 class="strategy-chart__title w">Актуальный график</h4>
+                    <div class="strategy-chart__visual">
+                      <img src="../foto/graphic.png" alt="chart-service">
+                    </div>
+                    <p class="strategy-chart__note w width_768_none">С 01.01.2025 все стратегии формируются
+                      индивидуально. Примеры выше
+                      отражают наш подход.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="strategy_divider"></div>
+
+              <!-- Расстановка условий в PC и планшет(1024px) -->
+              <div class="strategy-conditions width_768_none">
+                <h4 class="strategy-conditions__title w">Условия</h4>
+                <div class="strategy-conditions__content">
+                  <div class="strategy-conditions__list">
+                    <div class="strategy-conditions__labels">
+                      <span class="strategy-conditions__label w">Вход</span>
+                      <span class="strategy-conditions__label w">Горизонт</span>
+                      <span class="strategy-conditions__label w">Вознаграждение за успех</span>
+                      <span class="strategy-conditions__label w">Комиссия за управление</span>
+                    </div>
+                    <div class="strategy-conditions__values">
+                      <span class="strategy-conditions__value w">от 3 000 000 ₽</span>
+                      <span class="strategy-conditions__value w">от 1 до 3 лет</span>
+                      <span class="strategy-conditions__value w">от 10%</span>
+                      <span class="strategy-conditions__value w">0,25% – 0,5% в квартал</span>
+                    </div>
+                  </div>
+                  <div class="gold-button">
+                    <button>ОБСУДИТЬ СТРАТЕГИЮ</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Расстановка условий для Мобильного(768px) -->
+              <div class="strategy-conditions width_768_block">
+                <h4 class="strategy-conditions__title w">Условия</h4>
+                <div class="strategy-conditions__content">
+                  <div class="strategy-conditions__list">
+                    <div class="strategy-conditions__labels">
+                      <div class="strategy-conditions__values">
+                        <span class="strategy-conditions__label w">Вход</span>
+                        <span class="strategy-conditions__value w">от 3 000 000 ₽</span>
+                      </div>
+                      <div class="strategy-conditions__values">
+                        <span class="strategy-conditions__label w">Горизонт</span>
+                        <span class="strategy-conditions__value w">от 1 до 3 лет</span>
+                      </div>
+                      <div class="strategy-conditions__values">
+                        <span class="strategy-conditions__label w">Вознаграждение за успех</span>
+                        <span class="strategy-conditions__value w">от 10%</span>
+                      </div>
+                      <div class="strategy-conditions__values">
+                        <span class="strategy-conditions__label w">Комиссия за управление</span>
+                        <span class="strategy-conditions__value w">0,25% - 0,5% в кв</span>
+                      </div>
+                    </div>
+                    <div class="gold-button">
+                      <button>ОБСУДИТЬ СТРАТЕГИЮ</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Стратегия 3: Агрессивная -->
+          <div class="strategy-item">
+            <div class="strategy-item__header">
+              <div class="strategy-items__tetle width_pc_none">
+                <h3 class="strategy-item__title w">АГРЕССИВНАЯ</h3>
+                <div class="strategy-item__toggle-wrapper">
+                  <button class="strategy-item__toggle accordion-toggle" aria-label="Развернуть">
+                    <span class="strategy-item__icon accordion-icon"></span>
+                  </button>
+                </div>
+              </div>
+              <div class="strategy-item__info">
+                <!-- <div class="strategy-items"> -->
+                <div class="strategy-item__return w">
+                  45%
+                  <p class="service-strategy-accordion__descriptions w"> Целевая <br>доходность в год </p>
+                </div>
+                <p class="strategy-item__header-description w">Более высокая доходность при повышенном риске</p>
+                <!-- </div> -->
+              </div>
+            </div>
+            <div class="strategy-item__content">
+
+              <div class="strategy-item__details">
+                <!-- Левая колонка: Классы активов -->
+                <div class="strategy-assets">
+                  <h4 class="strategy-assets__title w">Классы активов</h4>
+
+                  <div class="strategy-assets__chart-list">
+                    <div class="strategy-assets__chart-wrapper">
+                      <img src="../foto/Ellipse-accordion-service.png" alt="strategy-assets-chart">
+                    </div>
+
+                    <div class="strategy-assets__list">
+                      <!-- Акции -->
+                      <div class="strategy-assets__group">
+                        <div class="strategy-assets__group-header">
+                          <p class="strategy-assets__group-header-text-wrapper">Акции
+                          </p>
+                          <p class="strategy-assets__group-header-text-wrapper">до 90%
+                          </p>
+                        </div>
+                        <div class="divider-assets divider-assets-1"></div>
+                        <ul class="strategy-assets__items">
+                          <li class="w">Сбербанк</li>
+                          <li class="w">ФосАгро</li>
+                          <li class="w">Сургутнефтегаз</li>
+                          <li class="w">НЛМК</li>
+                          <li class="w">ММК</li>
+                          <li class="w">Артген АВІО</li>
+                          <li class="w">Новатэк</li>
+                          <li class="w">Т-Технологии</li>
+                        </ul>
+                      </div>
+
+                      <div class="strategy-chart__note_buttom">
+                        <div class="divider-assets2 divider-assets-2-1 width_768_none"></div>
+                        <p class="strategy-chart__note w">С 01.01.2025 все стратегии формируются индивидуально.
+                          Примеры
+                          выше отражают наш подход.</p>
+                      </div>
+
+                      <!-- Фонды -->
+                      <div class="strategy-assets__group">
+                        <div class="strategy-assets__group-header">
+                          <p class="strategy-assets__group-header-text">Фонды
+                          </p>
+                          <p class="strategy-assets__group-header-text">до 10%
+                          </p>
+                        </div>
+                        <div class="divider-assets divider-assets-2"></div>
+                        <ul class="strategy-assets__items">
+                          <li class="w">LQDT</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Правая колонка: График и условия -->
+                <div class="strategy-info">
+                  <!-- График -->
+                  <div class="strategy-chart">
+                    <h4 class="strategy-chart__title w">Актуальный график</h4>
+                    <div class="strategy-chart__visual">
+                      <img src="../foto/graphic.png" alt="chart-service">
+                    </div>
+                    <p class="strategy-chart__note w width_768_none">С 01.01.2025 все стратегии формируются
+                      индивидуально. Примеры
+                      выше отражают наш подход.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="strategy_divider"></div>
+
+              <!-- Расстановка условий в PC и планшет(1024px) -->
+              <div class="strategy-conditions width_768_none">
+                <h4 class="strategy-conditions__title w">Условия</h4>
+                <div class="strategy-conditions__content">
+                  <div class="strategy-conditions__list">
+                    <div class="strategy-conditions__labels">
+                      <span class="strategy-conditions__label w">Вход</span>
+                      <span class="strategy-conditions__label w">Горизонт</span>
+                      <span class="strategy-conditions__label w">Вознаграждение за успех</span>
+                      <span class="strategy-conditions__label w">Комиссия за управление</span>
+                    </div>
+                    <div class="strategy-conditions__values">
+                      <span class="strategy-conditions__value w">от 400 000 ₽</span>
+                      <span class="strategy-conditions__value w">от 1 года</span>
+                      <span class="strategy-conditions__value w">от 10%</span>
+                      <span class="strategy-conditions__value w">0,25% – 0,5% в квартал</span>
+                    </div>
+                  </div>
+                  <div class="gold-button">
+                    <button>ОБСУДИТЬ СТРАТЕГИЮ</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Расстановка условий для Мобильного(768px) -->
+              <div class="strategy-conditions width_768_block">
+                <h4 class="strategy-conditions__title w">Условия</h4>
+                <div class="strategy-conditions__content">
+                  <div class="strategy-conditions__list">
+                    <div class="strategy-conditions__labels">
+                      <div class="strategy-conditions__values">
+                        <span class="strategy-conditions__label w">Вход</span>
+                        <span class="strategy-conditions__value w">от 400 000 ₽</span>
+                      </div>
+                      <div class="strategy-conditions__values">
+                        <span class="strategy-conditions__label w">Горизонт</span>
+                        <span class="strategy-conditions__value w">от 1 года</span>
+                      </div>
+                      <div class="strategy-conditions__values">
+                        <span class="strategy-conditions__label w">Вознаграждение за успех</span>
+                        <span class="strategy-conditions__value w">от 10%</span>
+                      </div>
+                      <div class="strategy-conditions__values">
+                        <span class="strategy-conditions__label w">Комиссия за управление</span>
+                        <span class="strategy-conditions__value w">0,25% - 0,5% в кв</span>
+                      </div>
+                    </div>
+                    <div class="gold-button">
+                      <button>ОБСУДИТЬ СТРАТЕГИЮ</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Стратегия 1: Консервативная (развернута по умолчанию) -->
+          <div class="strategy-item strategy-item--active">
+            <div class="strategy-item__header">
+              <div class="strategy-items__tetle width_pc_none">
+                <h3 class="strategy-item__title w">КОНСЕРВАТИВНАЯ</h3>
+                <div class="strategy-item__toggle-wrapper">
+                  <button class="strategy-item__toggle accordion-toggle" aria-label="Развернуть">
+                    <span class="strategy-item__icon accordion-icon"></span>
+                  </button>
+                </div>
+              </div>
+              <div class="strategy-item__info">
+                <!-- <div class="strategy-items"> -->
+                <div class="strategy-item__return w">
+                  25%
+                  <p class="service-strategy-accordion__descriptions w"> Целевая <br>доходность в год </p>
+                </div>
+                <p class="strategy-item__header-description w">Стратегия с акцентом на облигации для минимизации
+                  рисков
+                </p>
+                <!-- </div> -->
+              </div>
+            </div>
+
+
+            <div class="strategy-item__content">
+
+              <div class="strategy-item__details">
+                <!-- Левая колонка: Классы активов -->
+                <div class="strategy-assets">
+                  <h4 class="strategy-assets__title w">Классы активов</h4>
+
+                  <div class="strategy-assets__chart-list">
+                    <div class="strategy-assets__chart-wrapper">
+                      <img src="../foto/Ellipse-accordion-service.png" alt="strategy-assets-chart">
+                    </div>
+
+                    <div class="strategy-assets__list">
+                      <!-- Облигации -->
+                      <div class="strategy-assets__group">
+                        <div class="strategy-assets__group-header">
+                          <p class="strategy-assets__group-header-text-wrapper">Облигации
+                          </p>
+                          <p class="strategy-assets__group-header-text-wrapper">до 80%
+                          </p>
+                        </div>
+                        <div class="divider-assets divider-assets-1"></div>
+                        <ul class="strategy-assets__items">
+                          <li class="w">ЛСР БО-1Р10</li>
+                          <li class="w">Евро Транс 7</li>
+                          <li class="w">Магнит 5РО2</li>
+                          <li class="w">ОФЗ 26238</li>
+                          <li class="w">Норникель БО-1Р7</li>
+                          <li class="w">СИБУР Х1Р04</li>
+                        </ul>
+                        <div class="strategy-assets__group-header">
+                          <p class="strategy-assets__group-header-text">Фьючерс</p>
+                          <p class="strategy-assets__group-header-text">до 20%</p>
+                        </div>
+                        <div class="divider-assets divider-assets-2"></div>
+                        <ul class="strategy-assets__items">
+                          <li class="w">IMOEXF</li>
+                        </ul>
+                      </div>
+
+                      <div class="strategy-chart__note_buttom">
+                        <div class="divider-assets2 divider-assets-2-1 width_768_none"></div>
+                        <p class="strategy-chart__note w">С 01.01.2025 все стратегии формируются индивидуально.
+                          Примеры
+                          выше отражают наш подход.</p>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Правая колонка: График и условия -->
+                <div class="strategy-info">
+                  <!-- График -->
+                  <div class="strategy-chart">
+                    <h4 class="strategy-chart__title w">Актуальный график</h4>
+                    <div class="strategy-chart__visual">
+                      <img src="../foto/graphic.png" alt="chart-service">
+                    </div>
+                  </div>
+
+                  <!-- Условия -->
+
+
+                  <!-- Кнопка -->
+
+                </div>
+              </div>
+
+              <div class="strategy_divider"></div>
+
+              <!-- Расстановка условий в PC и планшет(1024px) -->
+              <div class="strategy-conditions width_768_none">
+                <h4 class="strategy-conditions__title w">Условия</h4>
+                <div class="strategy-conditions__content">
+                  <div class="strategy-conditions__list">
+                    <div class="strategy-conditions__labels">
+                      <span class="strategy-conditions__label w">Вход</span>
+                      <span class="strategy-conditions__label w">Горизонт</span>
+                      <span class="strategy-conditions__label w">Вознаграждение за успех</span>
+                      <span class="strategy-conditions__label w">Комиссия за управление</span>
+                    </div>
+                    <div class="strategy-conditions__values">
+                      <span class="strategy-conditions__value w">от 1 000 000 ₽</span>
+                      <span class="strategy-conditions__value w">от 1 года</span>
+                      <span class="strategy-conditions__value w">от 10%</span>
+                      <span class="strategy-conditions__value w">0,25% – 0,5% в квартал</span>
+                    </div>
+                  </div>
+                  <div class="gold-button">
+                    <button>ОБСУДИТЬ СТРАТЕГИЮ</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Расстановка условий для Мобильного(768px) -->
+              <div class="strategy-conditions width_768_block">
+                <h4 class="strategy-conditions__title w">Условия</h4>
+                <div class="strategy-conditions__content">
+                  <div class="strategy-conditions__list">
+                    <div class="strategy-conditions__labels">
+                      <div class="strategy-conditions__values">
+                        <span class="strategy-conditions__label w">Вход</span>
+                        <span class="strategy-conditions__value w">от 1 000 000 ₽</span>
+                      </div>
+                      <div class="strategy-conditions__values">
+                        <span class="strategy-conditions__label w">Горизонт</span>
+                        <span class="strategy-conditions__value w">от 1 года</span>
+                      </div>
+                      <div class="strategy-conditions__values">
+                        <span class="strategy-conditions__label w">Вознаграждение за успех</span>
+                        <span class="strategy-conditions__value w">от 10%</span>
+                      </div>
+                      <div class="strategy-conditions__values">
+                        <span class="strategy-conditions__label w">Комиссия за управление</span>
+                        <span class="strategy-conditions__value w">0,25% - 0,5% в кв</span>
+                      </div>
+                    </div>
+                    <div class="gold-button">
+                      <button>ОБСУДИТЬ СТРАТЕГИЮ</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Cookie banner загружается из отдельного файла: components/cookie-banner.html -->
+  <div id="cookieBannerContainer"></div>
+
+  <!-- Footer загружается из отдельного файла: components/footer.html -->
+  <div id="footerContainer"></div>
+
+  <!-- Загрузка header из отдельного файла -->
+  <script src="../js/header-loader.js"></script>
+  <!-- Загрузка cookie banner из отдельного файла -->
+  <script src="../js/cookie-banner-loader.js"></script>
+  <!-- Загрузка footer из отдельного файла -->
+  <script src="../js/footer-loader.js"></script>
+  <!-- Основной JavaScript -->
+  <script src="../javascript.js"></script>
+  <!-- Аккордеон стратегий -->
+  <script src="../js/service-strategy-accordion.js"></script>
+</body>
+
+</html>

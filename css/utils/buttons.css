@@ -1,0 +1,281 @@
+/* ===== СТИЛИ КНОПОК ===== */
+
+/* Базовый класс кнопки */
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20.675px 51.688px;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.36px;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: opacity 0.3s ease, transform 0.2s ease;
+  border: none;
+  outline: none;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+/* Варианты кнопок */
+.btn-primary {
+  background-image: var(--gradient-gold);
+  color: var(--color-primary-bg);
+  border: 1px solid var(--color-gold);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--color-white);
+  border: 1.545px solid var(--color-gold);
+}
+
+.btn-dark {
+  background-color: var(--color-secondary-bg);
+  color: var(--color-white);
+}
+
+.btn-outline-white {
+  background-color: transparent;
+  color: var(--color-white);
+  border: 1px solid var(--color-white);
+}
+
+.btn-outline-gold {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 52px;
+  padding: 0 26px;
+  border: 1px solid rgba(199, 171, 107, 0.9);
+  color: var(--color-white);
+  background: transparent;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background 0.3s ease, border-color 0.3s ease;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.btn-outline-gold:hover {
+  background: rgba(199, 171, 107, 0.12);
+  border-color: var(--color-gold);
+}
+
+/* Золотая кнопка (градиент) */
+.gold-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gold-button button {
+  width: 350px;
+  height: 60px;
+  background: linear-gradient(92.91deg, #C9B797 0%, #C29D5D 22.22%, #A3885A 76.92%, #C29D5D 97.12%);
+  color: #000;
+  font-weight: bold;
+  font-size: 20px;
+  border: 1px solid var(--color-gold);
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.gold-button button:hover {
+  opacity: 0.9;
+}
+
+/* Специальные кнопки для результатов */
+.cf-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 52px;
+  border-radius: 0;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 120%;
+  font-size: 18px;
+  text-decoration: none;
+  user-select: none;
+  white-space: nowrap;
+  width: 50% !important;
+  margin-top: 42px;
+  padding: 0 !important;
+}
+
+.cf-btn--ghost {
+  border: 1px solid rgba(246, 247, 248, 0.55);
+  color: var(--cf-text);
+  background: transparent;
+  width: 100% !important;
+}
+
+.cf-btn--ghost:hover {
+  border-color: var(--cf-gold);
+  color: var(--cf-gold);
+}
+
+.cf-btn--muted {
+  background: rgba(246, 247, 248, 0.14);
+  color: rgba(246, 247, 248, 0.95);
+  border: 1px solid rgba(246, 247, 248, 0.08);
+}
+
+.cf-btn--muted:hover {
+  background: rgba(246, 247, 248, 0.18);
+}
+
+.cf-btn--outline-gold {
+  margin-top: 18px;
+  border: 1px solid rgba(199, 171, 107, 0.9);
+  color: var(--cf-text);
+  background: transparent;
+}
+
+.cf-btn--outline-gold:hover {
+  background: rgba(199, 171, 107, 0.12);
+}
+
+/* Адаптивность */
+@media (max-width: 1024px) {
+  .btn {
+    padding: 16px 40px;
+    font-size: 16px;
+  }
+
+  .gold-button button {
+    width: 279px;
+    font-size: 14px;
+    padding: 0;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn {
+    padding: 14px 32px;
+    font-size: 14px;
+  }
+
+  .gold-button {
+    width: 100%;
+  }
+
+  .gold-button button {
+    width: 100%;
+    height: 36px;
+    font-weight: 700;
+    font-size: 12px;
+  }
+
+  .cf-btn {
+    width: 100%;
+  }
+}
+
+/* ===== ИКОНКИ АККОРДЕОНА (ПЛЮС/МИНУС) ===== */
+
+/* Кнопка аккордеона */
+.accordion-toggle {
+  background: none;
+  border: none;
+  color: var(--color-white);
+  cursor: pointer;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.accordion-toggle:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.accordion-toggle:active {
+  transform: scale(0.95);
+}
+
+/* Иконка плюса/минуса */
+.accordion-icon {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  display: block;
+  flex-shrink: 0;
+}
+
+.accordion-icon::before,
+.accordion-icon::after {
+  content: '';
+  position: absolute;
+  background: currentColor;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Горизонтальная линия (для плюса и минуса) */
+.accordion-icon::before {
+  width: 30px;
+  height: 1px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Вертикальная линия (только для плюса) */
+.accordion-icon::after {
+  width: 1px;
+  height: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+
+/* Иконка минуса (скрываем вертикальную линию) */
+.accordion-icon--minus::after {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .accordion-toggle {
+    width: 24px;
+    height: 24px;
+  }
+
+  .accordion-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .accordion-icon::before {
+    width: 24px;
+  }
+
+  .accordion-icon::after {
+    height: 24px;
+  }
+}
+

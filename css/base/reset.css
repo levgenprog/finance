@@ -1,0 +1,70 @@
+/* ===== СБРОС И БАЗОВЫЕ СТИЛИ ===== */
+
+/* Плавная прокрутка */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-style: Medium;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  background: var(--cf-bg);
+  overflow-x: hidden;
+  color: var(--color-white);
+}
+
+/* Сброс отступов для заголовков и параграфов */
+h1, h2, h3, h4, h5, h6, p, span {
+  margin: 0;
+  padding: 0;
+}
+
+/* Базовые стили заголовков */
+h1 {
+  font-size: 64px;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 52px;
+  font-style: Regular;
+  line-height: 105%;
+}
+
+button {
+  font-weight: 700;
+  font-style: bold;
+}
+
+/* Базовые стили ссылок */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Адаптивность базовых стилей */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 46px;
+  }
+
+  h2 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 28px;
+    line-height: 103%;
+  }
+}
+

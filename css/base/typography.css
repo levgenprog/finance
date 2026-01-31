@@ -1,0 +1,178 @@
+/* ===== БАЗОВАЯ ТИПОГРАФИКА ===== */
+
+/* Заголовки */
+.heading-hero {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 1.03;
+  letter-spacing: -0.64px;
+  color: var(--color-white);
+}
+
+.heading-xl {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 1.08;
+  letter-spacing: -0.52px;
+  color: var(--color-white);
+}
+
+.heading-large {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 1.13;
+  letter-spacing: -0.44px;
+  color: var(--color-white);
+}
+
+.heading-medium {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 1.2;
+  color: var(--color-white);
+}
+
+.heading-small {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--color-white);
+}
+
+/* Основной текст */
+.body-text {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--color-white);
+}
+
+.body-text-medium {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--color-white);
+}
+
+/* Специальные классы типографики */
+.text-quote {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 1.2;
+  color: rgba(246, 247, 248, 0.92);
+}
+
+.text-section-title {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 113%;
+  color: var(--color-white);
+}
+
+.text-section-body {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 1.17;
+  color: var(--color-white);
+}
+
+.text-section-body-alt {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 1.6;
+  color: var(--color-white);
+}
+
+.text-caption {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--color-white);
+}
+
+.text-caption-medium {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--color-white);
+}
+
+.text-small {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+  color: var(--color-white);
+}
+
+/* Адаптивность типографики */
+@media (max-width: 1024px) {
+  .heading-hero {
+    font-size: 48px;
+  }
+  
+  .heading-xl {
+    font-size: 40px;
+  }
+  
+  .heading-large {
+    font-size: 36px;
+  }
+  
+  .heading-medium {
+    font-size: 24px;
+  }
+  
+  .text-quote,
+  .text-section-title {
+    font-size: 34px;
+  }
+  
+  .text-section-body,
+  .text-section-body-alt {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 768px) {
+  .heading-hero {
+    font-size: 36px;
+  }
+  
+  .heading-xl {
+    font-size: 32px;
+  }
+  
+  .heading-large {
+    font-size: 28px;
+  }
+  
+  .heading-medium {
+    font-size: 20px;
+  }
+  
+  .text-quote,
+  .text-section-title {
+    font-size: 27px;
+  }
+  
+  .text-section-body,
+  .text-section-body-alt,
+  .text-caption {
+    font-size: 13px;
+  }
+}
+
