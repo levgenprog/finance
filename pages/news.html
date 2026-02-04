@@ -9,74 +9,100 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/base.css">
+    <!-- Стили страниц -->
     <link rel="stylesheet" href="../css/pages/home.css">
-    <!-- Стили для страницы contacts -->
-    <link rel="stylesheet" href="../css/pages/contacts.css">
+    <link rel="stylesheet" href="../css/pages/news.css">
     <link rel="stylesheet" href="../css/components/callback-modal.css">
-    <title>CRESCO FINANCE</title>
+    <title>CRESCO FINANCE — Новости</title>
 </head>
 
-<body>
+<body class="news-page">
     <!-- Header загружается из отдельного файла: components/header.html -->
     <header></header>
 
-    <main class="contacts-page">
-        <div class="container container--contacts">
+    <main class="news-main">
+        <section class="news-header">
+            <div class="news-header__inner">
+                <nav class="news-breadcrumbs text-caption">
+                    <a href="home.html" class="news-breadcrumbs__item">Home</a>
+                    <span class="news-breadcrumbs__sep">→</span>
+                    <span class="news-breadcrumbs__item">О нас</span>
+                    <span class="news-breadcrumbs__sep">→</span>
+                    <span class="news-breadcrumbs__item news-breadcrumbs__item--current">Новости</span>
+                </nav>
 
-            <nav class="contacts-breadcrumbs text-caption">
-                <a href="home.html" class="contacts-breadcrumbs__item">Home</a>
-                <span class="contacts-breadcrumbs__sep">→</span>
-                <span class="contacts-breadcrumbs__item">Контакты</span>
-            </nav>
+                <div class="news-header__text">
+                    <h1 class="news-header__title">Новости</h1>
 
-            <h1 class="contacts-title">Контакты</h1>
-
-            <div class="contacts-list">
-                <!-- Адрес -->
-                <div class="contacts-item">
-                    <div class="contacts-item__label">Адрес</div>
-                    <div class="contacts-item__content">
-                        <p>127473, город Москва, переулок Чернышевского, 15</p>
-                        <p class="contacts-item__note">Наш офис работает:<br>понедельник – пятница с 09:30 до 19:30</p>
-                    </div>
-                </div>
-
-                <!-- Телефон -->
-                <div class="contacts-item">
-                    <div class="contacts-item__label">Телефон</div>
-                    <div class="contacts-item__content">
-                        <a href="tel:88005114877" class="contacts-link contacts-link--tel">8 (800) 511-48-77</a>
-                    </div>
-                </div>
-
-                <!-- Электронная почта -->
-                <div class="contacts-item">
-                    <div class="contacts-item__label">Электронная почта</div>
-                    <div class="contacts-item__content">
-                        <a href="mailto:info@crescofinance.ru" class="contacts-link">info@crescofinance.ru</a>
-                    </div>
-                </div>
-
-                <!-- Пресс-центр -->
-                <div class="contacts-item">
-                    <div class="contacts-item__label">Пресс-центр</div>
-                    <div class="contacts-item__content">
-                        <p class="contacts-item__description">Для получения комментариев, участия в радио- и теле-эфирах
-                            экспертов и руководства ИК «CRESCO Finance» просьба обращаться в пресс-службу компании:</p>
-                        <p>+7 (495) 632-02-01 доб. 888</p>
-                        <a href="mailto:info@crescofinance.ru" class="contacts-link">info@crescofinance.ru</a>
-                    </div>
+                    <p class="news-years">
+                        <span class="news-year news-year--active">2025</span>
+                        <span class="news-year">2024</span>
+                        <span class="news-year">2023</span>
+                        <span class="news-year">2022</span>
+                        <span class="news-year">2021</span>
+                        <span class="news-year">2020</span>
+                        <span class="news-year">2019</span>
+                        <span class="news-year">2018</span>
+                        <span class="news-year">2017</span>
+                        <span class="news-year">2016</span>
+                        <span class="news-year">2015</span>
+                        <span class="news-year">2014</span>
+                    </p>
                 </div>
             </div>
+        </section>
 
-            <div class="contacts-map" id="map">
-                <!-- Карта будет загружена здесь -->
-                <div
-                    style="width: 100%; height: 450px; background-color: var(--color-secondary-bg); display: flex; align-items: center; justify-content: center; border-radius: 4px; overflow: hidden;">
-                    <span class="text-gray">Интерактивная карта</span>
+        <section class="news-list">
+            <div class="news-list__inner">
+                <article class="news-item news-item--featured">
+                    <div class="news-item__date">21 июля 2025</div>
+                    <h2 class="news-item__title">
+                        Дайджест: неделя 14–21 июля
+                    </h2>
+                </article>
+
+                <article class="news-item">
+                    <div class="news-item__date">14 июля 2025</div>
+                    <h2 class="news-item__title">
+                        Дайджест: неделя 7–14 июля
+                    </h2>
+                </article>
+
+                <article class="news-item">
+                    <div class="news-item__date">07 июля 2025</div>
+                    <h2 class="news-item__title">
+                        Cresco Finance на крупнейшей промышленной выставке...
+                    </h2>
+                </article>
+
+                <article class="news-item news-item--with-description">
+                    <div class="news-item__date">01 июля 2025</div>
+                    <div class="title-desc">
+                        <h2 class="news-item__title">
+                            Подкаст: Инвестиционные перспективы и тренды на 20...
+                        </h2>
+                        <p class="news-item__excerpt">
+                            В новом вебинаре честный и предметный разговор с профессиональными практиками рынка —
+                            управляющими активами Cresco Finance.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="team-cta">
+            <div class="team-cta__content">
+                <h2 class="team-cta__title">
+                    Доверяя свой капитал под управление Cresco Finance, наши клиенты уверены, что их деньги работают
+                    эффективно
+                </h2>
+                <div class="gold-button">
+                    <button type="button" class="gold-button">
+                        Свяжитесь со мной
+                    </button>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
 
     <!-- Cookie banner загружается из отдельного файла: components/cookie-banner.html -->
@@ -101,6 +127,8 @@
     <script src="../javascript.js"></script>
     <!-- Аккордеон стратегий -->
     <script src="../js/service-strategy-accordion.js"></script>
+    <!-- Фильтр новостей -->
+    <script src="../js/news-filter.js"></script>
 </body>
 
 </html>
