@@ -8,6 +8,7 @@
   <!-- Подключение стилей -->
   <!-- Для главной страницы используем pages/home.css, который включает все необходимые стили -->
   <link rel="stylesheet" href="../css/pages/home.css">
+  <link rel="stylesheet" href="../css/components/callback-modal.css">
   <!-- Swiper CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <title>CRESCO FINANCE</title>
@@ -36,8 +37,8 @@
           </div>
         </div>
 
-        <div class="gold-button">
-          <button>ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
+        <div class="gold-button left">
+          <button onclick="openCallbackModal()">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
         </div>
       </div>
 
@@ -247,8 +248,15 @@
 
         <div class="strategy-content">
           <!-- Графический элемент слева -->
-          <div class="strategy-visual">
-            <img src="../foto/Ellipse.png" alt="strategy-visual">
+          <div class="strategy-visual" style="width: 400px; height: 400px; position: relative; left: -100px;">
+             <svg width="385" height="732" viewBox="0 0 385 732" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="366" r="365.5" stroke="#F6F7F8"/>
+              <circle cx="197" cy="52" r="14.25" fill="#323A48" stroke="#F6F7F8" stroke-width="1.5"/>
+              <circle cx="197" cy="52" r="9.25" fill="#C7AB6B" stroke="#C7AB6B" stroke-width="1.5"/>
+              <circle cx="356" cy="246" r="9.25" fill="#C7AB6B" stroke="#C7AB6B" stroke-width="1.5"/>
+              <circle cx="370" cy="442" r="15" fill="#F6F7F8"/>
+            </svg>
+
           </div>
 
           <!-- Список услуг справа -->
@@ -260,6 +268,14 @@
                   <span class="service-icon accordion-icon"></span>
                 </button>
               </div>
+              <div class="service-content">
+                <p class="service-description text-section-body-alt">
+                  Вы управляете счетом, а мы анализируем рынок, предлагаем идеи и подбираем активы. 
+                </p>
+                <div class="gold-button">
+                  <button onclick="openCallbackModal()">УЗНАТЬ ПОДРОБНЕЕ</button>
+                </div>
+              </div>
             </div>
 
             <div class="service-item">
@@ -268,6 +284,14 @@
                 <button class="service-toggle accordion-toggle" aria-label="Развернуть">
                   <span class="service-icon accordion-icon"></span>
                 </button>
+              </div>
+              <div class="service-content">
+                <p class="service-description text-section-body-alt">
+                  Работа с рынками в вашем темпе. Конкурентные тарифы, доступ к торгам, поддержка и безопасность.
+                </p>
+                <div class="gold-button">
+                  <button onclick="openCallbackModal()">УЗНАТЬ ПОДРОБНЕЕ</button>
+                </div>
               </div>
             </div>
 
@@ -282,7 +306,7 @@
                 <p class="service-description text-section-body-alt">Стратегии, адаптированные под ваш риск-профиль.
                   Управление активами с фокусом на сохранность капитала и контролируемую доходность.</p>
                 <div class="gold-button">
-                  <button>УЗНАТЬ ПОДРОБНЕЕ</button>
+                  <button onclick="openCallbackModal()">УЗНАТЬ ПОДРОБНЕЕ</button>
                 </div>
               </div>
             </div>
@@ -393,8 +417,8 @@
       <div class="main-bottom-1-content">
         <h2 class="w">Свяжемся с вами, чтобы обсудить <br> инвестиционные возможности</h2>
       </div>
-      <div class="gold-button">
-        <button>Свяжитесь со мной</button>
+      <div class="gold-button left">
+        <button onclick="openCallbackModal()">Свяжитесь со мной</button>
       </div>
     </div>
   </main>
@@ -403,6 +427,9 @@
   <!-- Cookie banner загружается из отдельного файла: components/cookie-banner.html -->
   <div id="cookieBannerContainer"></div>
 
+  <!-- Callback modal -->
+  <div id="callbackModalContainer"></div>
+
   <!-- Footer загружается из отдельного файла: components/footer.html -->
   <div id="footerContainer"></div>
   <script src="../js/header-loader.js"></script>
@@ -410,12 +437,18 @@
   <script src="../js/header-dropdown.js"></script>
   <!-- Загрузка cookie banner из отдельного файла -->
   <script src="../js/cookie-banner-loader.js"></script>
+  <!-- Загрузка callback modal -->
+  <script src="../js/callback-modal-loader.js"></script>
   <!-- Загрузка footer из отдельного файла -->
   <script src="../js/footer-loader.js"></script>
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <!-- Основной JavaScript -->
   <script src="../javascript.js"></script>
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Интерактивные графики -->
+  <script src="../js/charts.js"></script>
   <!-- Аккордеон услуг -->
   <script src="../js/strategy-accordion.js"></script>
   <!-- Инициализация Swiper -->

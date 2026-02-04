@@ -31,22 +31,22 @@
           <div class="osnova space zii">
             <ul class="dropdown" id="yw0">
               <li>
-                <a href="/about">
+                <span class="pointer" accesskey="/about">
                   <div class="link-wrapper">О НАС</div>
-                </a>
+                </span>
               </li>
               <li>
-                <a href="/strategy">
+                <span class="pointer" accesskey="/services">
                   <div class="link-wrapper">УСЛУГИ</div>
+                </span>
+              </li>
+              <li>
+                <a href="/pages/partners.html">
+                  <div class="link-wrapper">ПАРТНЕРАМ</div>
                 </a>
               </li>
               <li>
-                <a href="/public">
-                  <div class="link-wrapper">ПРЕСС-ЦЕНТР</div>
-                </a>
-              </li>
-              <li>
-                <a href="/contacts">
+                <a href="./contacts.html">
                   <div class="link-wrapper">КОНТАКТЫ</div>
                 </a>
               </li>
@@ -59,7 +59,7 @@
           </div>
 
           <div class="svazy">
-            <a href="#" class="w">СВЯЗАТЬСЯ С НАМИ</a>
+            <span class="pointer" onclick="openCallbackModal()">СВЯЗАТЬСЯ С НАМИ</span>
           </div>
         </div>
         <!-- Кнопка гамбургер-меню для планшетов -->
@@ -90,30 +90,28 @@
         <div class="mobile-menu__section">
           <h3 class="mobile-menu__title">О НАС</h3>
           <ul class="mobile-menu__list">
-            <li><a href="#" class="mobile-menu__link">Наша история</a></li>
-            <li><a href="#" class="mobile-menu__link">Команда</a></li>
-            <li><a href="#" class="mobile-menu__link">Новости</a></li>
-            <li><a href="#" class="mobile-menu__link">Документы клиентам</a></li>
-            <li><a href="#" class="mobile-menu__link">Раскрытие информации</a></li>
-            <li><a href="#" class="mobile-menu__link">Вакансии</a></li>
-          </ul>
+            <li><a href="/pages/history.html" class="mobile-menu__link">Наша история</a></li>
+            <li><a href="/pages/team.html" class="mobile-menu__link">Команда</a></li>
+            <li><a href="/pages/news.html" class="mobile-menu__link">Новости</a></li>
+            <li><a href="/pages/licence.html" class="mobile-menu__link">Документы клиентам</a></li>
+            <li><a href="/pages/information.html" class="mobile-menu__link">Раскрытие информации</a></li>
         </div>
 
         <div class="mobile-menu__section">
-          <h3 class="mobile-menu__title">ПАРТНЕРАМ</h3>
+          <h3 class="mobile-menu__title"><a href="/pages/partners.html">ПАРТНЕРАМ</a></h3>
         </div>
 
         <div class="mobile-menu__section">
           <h3 class="mobile-menu__title">УСЛУГИ</h3>
           <ul class="mobile-menu__list">
-            <li><a href="#" class="mobile-menu__link">Инвестиционное консультирование</a></li>
-            <li><a href="#" class="mobile-menu__link">Брокерское обслуживание</a></li>
-            <li><a href="#" class="mobile-menu__link">Доверительное управление</a></li>
+            <li><a href="/pages/service-pers.html" class="mobile-menu__link">Инвестиционное консультирование</a></li>
+            <li><a href="/pages/service-broker.html" class="mobile-menu__link">Брокерское обслуживание</a></li>
+            <li><a href="/pages/service-indiv.html" class="mobile-menu__link">Доверительное управление</a></li>
           </ul>
         </div>
 
         <div class="gold-button">
-          <button>Свяжитесь с нами</button>
+          <button onclick="openCallbackModal()">Свяжитесь с нами</button>
         </div>
 
         <div class="mobile-menu__footer">

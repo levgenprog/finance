@@ -16,6 +16,7 @@
   background-color: white;
   max-width: calc(100% - 60px);
   box-sizing: border-box;
+  color: #0F1929;
 }
 
 .cookie-banner button {

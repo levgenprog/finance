@@ -468,6 +468,10 @@
   .strategy-conditions__title {
     font-size: 24px;
   }
+
+  .service-hero__image {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -477,6 +481,10 @@
 
   .service-hero__content {
     gap: 40px;
+  }
+
+  .service-hero__image {
+    display: none;
   }
 
   .service-hero__text {
@@ -559,10 +567,6 @@
 
   .example-block__description {
     font-size: 16px;
-  }
-
-  .example-block__chart {
-    padding: 16px;
   }
 
   .example-chart__controls {

@@ -8,15 +8,22 @@ async function loadCookieBanner() {
   try {
     // Проверяем, не было ли уже принято согласие
     if (localStorage.getItem("cookiesAccepted")) {
+      console.log('Cookie banner not loaded: "cookiesAccepted" is true in localStorage. To reset, run localStorage.removeItem("cookiesAccepted") in console.');
       return; // Не загружаем banner, если согласие уже дано
     }
 
     // Определяем базовый путь в зависимости от местоположения страницы
     const currentPath = window.location.pathname;
-    let basePath = 'components/';
-    if (currentPath.includes('/pages/') || currentPath.endsWith('home.html') || currentPath.endsWith('service.html')) {
-      basePath = '../components/';
+    let basePath = '../components/';
+    if (currentPath.includes('/components/')) {
+      basePath = 'components/';
     }
+
+    // Debug: логируем пути для проверки
+    console.log('Current path:', currentPath);
+    console.log('Base path:', basePath);
+    console.log('Fetch URL:', basePath + 'cookie-banner.html');
+
     const response = await fetch(basePath + 'cookie-banner.html');
     if (!response.ok) {
       console.error('Не удалось загрузить cookie banner');
@@ -26,7 +33,7 @@ async function loadCookieBanner() {
     const container = document.getElementById('cookieBannerContainer');
     if (container) {
       container.innerHTML = bannerHTML;
-      
+
       // Инициализируем обработчик после загрузки
       const banner = document.getElementById("cookieBanner");
       const btn = document.getElementById("acceptCookies");
@@ -38,7 +45,7 @@ async function loadCookieBanner() {
       }
     } else {
       document.body.insertAdjacentHTML('beforeend', bannerHTML);
-      
+
       // Инициализируем обработчик после загрузки
       const banner = document.getElementById("cookieBanner");
       const btn = document.getElementById("acceptCookies");
@@ -60,4 +67,3 @@ if (document.readyState === 'loading') {
 } else {
   loadCookieBanner();
 }
-

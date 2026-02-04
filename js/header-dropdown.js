@@ -4,20 +4,16 @@
 
 const dropdownData = {
   '/about': [
-    { text: 'Команда', url: '/about/team' },
-    { text: 'Документы клиентам', url: '/about/documents' },
-    { text: 'Раскрытие информации', url: '/about/information' },
-    { text: 'Вакансии', url: '/about/careers' }
+    { text: 'История', url: '/pages/history.html' },
+    { text: 'Команда', url: '/pages/team.html' },
+    { text: 'Новости', url: '/pages/news.html' },
+    { text: 'Документы клиентам', url: '/pages/licence.html' },
+    { text: 'Раскрытие информации', url: '/pages/information.html' },
   ],
-  '/strategy': [
-    { text: 'Инвестиционное консультирование', url: '/strategy/ik' },
-    { text: 'Доверительное управление', url: '/strategy/du' },
-    { text: 'Cresco Баланс', url: '/strategy/balance' },
-    { text: 'Cresco Эксперт', url: '/strategy/expert' },
-    { text: 'Cresco Перспектива', url: '/strategy/perspective' },
-    { text: 'Cresco Привилегия', url: '/strategy/premium' },
-    { text: 'Cresco Бизнес', url: '/strategy/business' },
-    { text: 'Cresco Защита', url: '/strategy/protection' }
+  '/services': [
+    { text: 'Инвестиционное консультирование', url: '/pages/service-pers.html' },
+    { text: 'Брокерское обслуживание', url: '/pages/service-broker.html' },
+    { text: 'Доверительное управление', url: '/pages/service-indiv.html' },
   ],
   '/public': [
     { text: 'Новости', url: '/public/news' }
@@ -97,11 +93,14 @@ function initDropdown() {
   let timeoutId = null;
 
   dropdownItems.forEach((item, index) => {
-    const trigger = item.querySelector('a');
-    if (!trigger) return;
+    // Get category from span or li element
+    const trigger = item.querySelector('span[accesskey]');
+    if (!trigger) {
+      console.log(`Item ${index} has no span with accesskey`);
+      return;
+    }
 
-    // Используем href вместо data-dropdown-category
-    const category = trigger.getAttribute('href');
+    const category = trigger.getAttribute('accesskey');
     console.log(`Setting up item ${index}: category=${category}`);
 
     // Проверяем есть ли данные для этой категории в dropdownData
@@ -110,36 +109,24 @@ function initDropdown() {
       return;
     }
 
-    // При наведении на li элемент
-    item.addEventListener('mouseenter', () => {
+    // Функция для открытия dropdown
+    const openDropdown = () => {
       clearTimeout(timeoutId);
-
-      // Проверяем есть ли данные для этой категории
       const items = dropdownData[category];
       if (!items || items.length === 0) {
         console.log(`No items for category ${category}`);
         return;
       }
-
-      // Рендерим контент для этой категории
       renderDropdownContent(category);
-
-      // Показываем dropdown
       dropdownContent.style.display = 'block';
       setTimeout(() => {
         dropdownContent.style.opacity = '1';
         dropdownContent.style.visibility = 'visible';
       }, 10);
-    });
+    };
 
-    item.addEventListener('mouseleave', (e) => {
-      // Проверяем, не ушли ли мы на dropdown
-      const relatedTarget = e.relatedTarget;
-      if (relatedTarget && (relatedTarget === dropdownContent || dropdownContent.contains(relatedTarget))) {
-        console.log('Moving to dropdown, keeping it open');
-        return;
-      }
-
+    // Функция для закрытия dropdown
+    const closeDropdown = () => {
       timeoutId = setTimeout(() => {
         dropdownContent.style.opacity = '0';
         dropdownContent.style.visibility = 'hidden';
@@ -147,6 +134,28 @@ function initDropdown() {
           dropdownContent.style.display = 'none';
         }, 300);
       }, 150);
+    };
+
+    // При наведении на li элемент
+    item.addEventListener('mouseenter', openDropdown);
+
+    item.addEventListener('mouseleave', (e) => {
+      const relatedTarget = e.relatedTarget;
+      if (relatedTarget && (relatedTarget === dropdownContent || dropdownContent.contains(relatedTarget))) {
+        console.log('Moving to dropdown, keeping it open');
+        return;
+      }
+      closeDropdown();
+    });
+
+    // Also add hover listener to the span trigger
+    trigger.addEventListener('mouseenter', openDropdown);
+    trigger.addEventListener('mouseleave', (e) => {
+      const relatedTarget = e.relatedTarget;
+      if (relatedTarget && (relatedTarget === dropdownContent || dropdownContent.contains(relatedTarget))) {
+        return;
+      }
+      closeDropdown();
     });
   });
 

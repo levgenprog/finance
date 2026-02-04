@@ -169,29 +169,37 @@
 /* ===== АДАПТИВНОСТЬ ===== */
 
 @media (max-width: 1024px) {
-  .service-breadcrumbs {
-    display: none;
-  }
-
   .service-hero {
-    padding: 30px 0 80px;
+    padding: 20px 0 60px;
   }
 
   .service-hero__content {
     grid-template-columns: 1fr;
-    gap: 60px;
+    gap: 40px;
+    text-align: center;
+    justify-items: center;
+  }
+
+  .service-hero__text {
+    align-items: center;
+    gap: 24px;
   }
 
   .service-hero__title {
-    font-size: 40px;
+    font-size: 36px;
   }
 
   .service-hero__description {
-    font-size: 21px;
+    font-size: 18px;
+    line-height: 1.4;
   }
 
-  .service-diagram {
-    max-width: 400px;
+  .service-hero__text .gold-button {
+    width: 100%;
+  }
+
+  .service-hero__text .gold-button button {
+    width: 100%;
   }
 }
 
@@ -373,6 +381,10 @@
   .how-it-works {
     padding-top: 40px;
     padding-bottom: 60px;
+  }
+
+  .service-hero__image {
+    display: none;
   }
 
   .how-it-works.container {
@@ -925,6 +937,7 @@
   .strategy-chart__note {
     width: 300px;
   }
+
   .divider-assets2 {
     height: 1px;
     background: rgba(246, 247, 248, 0.18);

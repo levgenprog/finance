@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Подключение общих стилей -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <!-- Стили страниц -->
+    <link rel="stylesheet" href="../css/pages/home.css">
+    <link rel="stylesheet" href="../css/pages/team.css">
+    <link rel="stylesheet" href="../css/components/callback-modal.css">
+    <title>CRESCO FINANCE — Команда</title>
+</head>
+
+<body class="team-page">
+    <!-- Header загружается из отдельного файла: components/header.html -->
+    <header></header>
+
+    <main class="main">
+        <div class="team-hero">
+            <div class="team-hero__image-wrapper">
+                <img src="../img/team/team-hero.png" alt="Команда Cresco Finance" class="team-hero__image">
+            </div>
+            <div class="team-hero__content">
+                <nav class="team-breadcrumbs text-caption">
+                    <a href="home.html" class="team-breadcrumbs__item">Home</a>
+                    <span class="team-breadcrumbs__sep">→</span>
+                    <span class="team-breadcrumbs__item">О нас</span>
+                    <span class="team-breadcrumbs__sep">→</span>
+                    <span class="team-breadcrumbs__item team-breadcrumbs__item--current">Команда</span>
+                </nav>
+
+                <div class="team-hero__text-block">
+                    <h1 class="team-hero__title">Команда</h1>
+                    <p class="team-hero__description">
+                        Команда Cresco Finance — это профессионалы, которые обладают уникальными знаниями и
+                        многолетним опытом работы на российских и зарубежных финансовых рынках. Наши сотрудники имеют
+                        квалификационные аттестаты и специализируются на предоставлении комплексных финансовых решений
+                        в сфере управления активами.
+                    </p>
+                </div>
+
+                <div class="team-hero__meta">
+                    <span class="team-hero__est">est. 2009</span>
+                </div>
+            </div>
+        </div>
+
+        <section class="team-section">
+            <div class="team-section__inner">
+                <div class="team-section__header">
+                    <h2 class="team-section__title">Ключевые специалисты</h2>
+                    <p class="team-section__subtitle">
+                        Профессиональный опыт и экспертиза нашей команды помогают клиентам достигать
+                        финансовых целей в условиях постоянно меняющихся рынков.
+                    </p>
+                </div>
+
+                <div class="team-list">
+                    <article class="team-item">
+                        <div class="team-item__exp">
+                            Более 15 лет<br>опыта в инвестициях
+                        </div>
+                        <div class="team-item__photo-wrapper">
+                            <img src="../img/team/team-lead-1.png" alt="Руководитель инвестиционного блока" class="team-item__photo">
+                        </div>
+                        <div class="team-item__info">
+                            <h3 class="team-item__name">Иван Петров</h3>
+                            <div class="team-item__position">Генеральный директор</div>
+                            <p class="team-item__bio">
+                                Отвечает за стратегическое развитие компании, взаимодействие с ключевыми клиентами и
+                                партнёрами, а также реализацию комплексных инвестиционных решений для частных и
+                                институциональных инвесторов.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="team-item">
+                        <div class="team-item__exp">
+                            Более 12 лет<br>на финансовых рынках
+                        </div>
+                        <div class="team-item__photo-wrapper">
+                            <img src="../img/team/team-lead-2.png" alt="Руководитель направления управления активами" class="team-item__photo">
+                        </div>
+                        <div class="team-item__info">
+                            <h3 class="team-item__name">Анна Смирнова</h3>
+                            <div class="team-item__position">Руководитель управления активами</div>
+                            <p class="team-item__bio">
+                                Специализируется на построении индивидуальных инвестиционных стратегий, управлении
+                                портфелями ценных бумаг и разработке решений по сохранению и приумножению капитала
+                                клиентов.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="team-item">
+                        <div class="team-item__exp">
+                            Более 10 лет<br>в аналитике и рисках
+                        </div>
+                        <div class="team-item__photo-wrapper">
+                            <img src="../img/team/team-lead-3.png" alt="Руководитель аналитического направления" class="team-item__photo">
+                        </div>
+                        <div class="team-item__info">
+                            <h3 class="team-item__name">Дмитрий Иванов</h3>
+                            <div class="team-item__position">Директор по инвестиционной аналитике</div>
+                            <p class="team-item__bio">
+                                Отвечает за аналитическую поддержку инвестиционных решений, оценку рыночных рисков и
+                                формирование аналитических обзоров по ключевым сегментам финансового рынка.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="team-cta">
+            <div class="team-cta__content">
+                <h2 class="team-cta__title">
+                    Хотите обсудить индивидуальное решение<br>с экспертами Cresco Finance?
+                </h2>
+                <button type="button" class="team-cta__btn js-open-callback">
+                    Связаться с командой
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Cookie banner загружается из отдельного файла: components/cookie-banner.html -->
+    <div id="cookieBannerContainer"></div>
+
+    <!-- Callback modal -->
+    <div id="callbackModalContainer"></div>
+
+    <!-- Footer загружается из отдельного файла: components/footer.html -->
+    <div id="footerContainer"></div>
+
+    <script src="../js/header-loader.js"></script>
+    <!-- Загрузка header из отдельного файла -->
+    <script src="../js/header-dropdown.js"></script>
+    <!-- Загрузка cookie banner из отдельного файла -->
+    <script src="../js/cookie-banner-loader.js"></script>
+    <!-- Загрузка callback modal -->
+    <script src="../js/callback-modal-loader.js"></script>
+    <!-- Загрузка footer из отдельного файла -->
+    <script src="../js/footer-loader.js"></script>
+    <!-- Основной JavaScript -->
+    <script src="../javascript.js"></script>
+    <!-- Аккордеон стратегий -->
+    <script src="../js/service-strategy-accordion.js"></script>
+</body>
+
+</html>

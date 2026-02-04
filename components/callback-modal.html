@@ -1,0 +1,37 @@
+<div id="callbackModal" class="modal">
+    <div class="modal-content">
+        <button id="closeModal" class="modal-close" aria-label="Закрыть">&times;</button>
+        <div id="modalFormContainer">
+            <h2 class="modal-title w">Обсудим ваш запрос</h2>
+            <p class="modal-description w">Оставьте контакты, и мы свяжемся с вами в ближайшее время</p>
+            <form id="callbackForm" class="modal-form">
+                <div class="form-group">
+                    <input type="text" id="userName" name="name" placeholder="Ваше имя" required class="form-input">
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="userPhone" name="phone" placeholder="+7 (___) ___-__-__" required class="form-input">
+                </div>
+                <div class="form-group">
+                    <textarea id="userMessage" name="message" placeholder="Ваш комментарий (необязательно)" class="form-textarea"></textarea>
+                </div>
+                <div class="gold-button">
+                    <button type="submit">ОТПРАВИТЬ</button>
+                </div>
+                <p class="form-privacy text-small w">Нажимая на кнопку, вы соглашаетесь с <a href="#" class="text-gold">политикой конфиденциальности</a></p>
+            </form>
+        </div>
+        <div id="modalSuccessContainer" class="modal-success hidden">
+            <div class="success-icon">
+                <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="32" cy="32" r="31" stroke="#C7AB6B" stroke-width="2"/>
+                    <path d="M20 32L28 40L44 24" stroke="#C7AB6B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <h2 class="modal-title w">Спасибо!</h2>
+            <p class="modal-description w">Ваш запрос принят. Мы свяжемся с вами в течение рабочего дня.</p>
+            <div class="gold-button">
+                <button id="successCloseBtn">ПОНЯТНО</button>
+            </div>
+        </div>
+    </div>
+</div>

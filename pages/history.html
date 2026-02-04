@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Подключение общих стилей -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <!-- Стили страниц -->
+    <link rel="stylesheet" href="../css/pages/home.css">
+    <link rel="stylesheet" href="../css/pages/history.css">
+    <link rel="stylesheet" href="../css/components/callback-modal.css">
+    <title>CRESCO FINANCE — Наша история</title>
+</head>
+
+<body class="history-page">
+    <!-- Header загружается из отдельного файла: components/header.html -->
+    <header></header>
+
+    <main class="history-main">
+        <section class="history-hero">
+            <div class="history-hero__content">
+                <nav class="history-breadcrumbs text-caption">
+                    <a href="home.html" class="history-breadcrumbs__item">Home</a>
+                    <span class="history-breadcrumbs__sep">→</span>
+                    <span class="history-breadcrumbs__item">О нас</span>
+                    <span class="history-breadcrumbs__sep">→</span>
+                    <span class="history-breadcrumbs__item history-breadcrumbs__item--current">Наша история</span>
+                </nav>
+
+                <div class="history-hero__text-block">
+                    <div class="history-hero__meta">est. 2009</div>
+                    <h1 class="history-hero__title">Наша история</h1>
+                    <p class="history-hero__description">
+                        С 2009 года Cresco Finance последовательно развивается как независимая инвестиционная компания,
+                        объединяющая экспертизу, индивидуальный подход и многолетний опыт управления капиталом.
+                    </p>
+                </div>
+            </div>
+
+            <div class="history-hero__visual">
+                <div class="history-hero__compass-wrapper">
+                    <img src="../img/history/history-compass.png" alt="Независимая инвестиционная компания" class="history-hero__compass">
+                </div>
+            </div>
+        </section>
+
+        <section class="history-cta">
+            <div class="history-cta__content">
+                <h2 class="history-cta__title">
+                    Свяжемся с вами, чтобы обсудить инвестиционные возможности
+                </h2>
+                <button type="button" class="history-cta__btn js-open-callback">
+                    Свяжитесь со мной
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Cookie banner загружается из отдельного файла: components/cookie-banner.html -->
+    <div id="cookieBannerContainer"></div>
+
+    <!-- Callback modal -->
+    <div id="callbackModalContainer"></div>
+
+    <!-- Footer загружается из отдельного файла: components/footer.html -->
+    <div id="footerContainer"></div>
+
+    <script src="../js/header-loader.js"></script>
+    <!-- Загрузка header из отдельного файла -->
+    <script src="../js/header-dropdown.js"></script>
+    <!-- Загрузка cookie banner из отдельного файла -->
+    <script src="../js/cookie-banner-loader.js"></script>
+    <!-- Загрузка callback modal -->
+    <script src="../js/callback-modal-loader.js"></script>
+    <!-- Загрузка footer из отдельного файла -->
+    <script src="../js/footer-loader.js"></script>
+    <!-- Основной JavaScript -->
+    <script src="../javascript.js"></script>
+    <!-- Аккордеон стратегий -->
+    <script src="../js/service-strategy-accordion.js"></script>
+</body>
+
+</html>

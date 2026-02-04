@@ -153,7 +153,7 @@ header {
   color: var(--cf-gold);
 }
 
-.dropdown>li>a {
+.dropdown>li>a, .dropdown>li>span {
   color: var(--color-white);
   text-decoration: none;
   font-family: "TT Norms Pro Trial", sans-serif;
@@ -167,7 +167,7 @@ header {
   height: 100%;
 }
 
-.dropdown a {
+.dropdown a, .dropdown span {
   color: var(--color-white);
   text-decoration: none;
   font-family: "TT Norms Pro Trial", sans-serif;
@@ -184,8 +184,8 @@ header {
   visibility: visible;
 }
 
-.dropdown>li:hover>a,
-.dropdown a:hover {
+.dropdown>li:hover>a, .dropdown>li:hover>span,
+.dropdown a:hover, .dropdown span:hover {
   color: var(--cf-gold);
 }
 
@@ -194,7 +194,11 @@ header {
   margin-left: 170px;
 }
 
-.svazy a {
+.pointer {
+  cursor: pointer;
+}
+
+.svazy span {
   color: var(--color-white);
   text-decoration: none;
   font-family: "TT Norms Pro Trial", sans-serif;
@@ -205,7 +209,7 @@ header {
   display: inline-block;
 }
 
-.svazy a:hover {
+.svazy span:hover {
   color: var(--cf-gold);
 }
 

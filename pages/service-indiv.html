@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="../css/base.css">
   <!-- Стили для страницы service -->
   <link rel="stylesheet" href="../css/pages/service-1.css">
+  <link rel="stylesheet" href="../css/components/callback-modal.css">
   <title>CRESCO FINANCE</title>
 </head>
 
@@ -46,7 +47,7 @@
 
             <!-- Кнопка -->
             <div class="gold-button">
-              <button>
+              <button onclick="openCallbackModal()">
                 <span>ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</span>
               </button>
             </div>
@@ -149,12 +150,14 @@
                   <h4 class="strategy-assets__title w">Классы активов</h4>
 
                   <div class="strategy-assets__chart-list">
-                    <div class="strategy-assets__chart-wrapper desktop">
-                      <img src="../foto/Ellipse-accordion-service.png" alt="strategy-assets-chart">
+                    <div class="strategy-assets__chart-wrapper desktop" style="width: 300px; height: 300px;">
+                      <canvas class="asset-chart-canvas" data-assets="[80, 20]"
+                        data-labels='["Акции", "Фонды"]'></canvas>
                     </div>
 
-                    <div class="strategy-assets__chart-wrapper table">
-                      <img src="../foto/Ellipse-accordion-service-table.png" alt="strategy-assets-chart">
+                    <div class="strategy-assets__chart-wrapper table" style="width: 250px; height: 250px;">
+                      <canvas class="asset-chart-canvas" data-assets="[80, 20]"
+                        data-labels='["Акции", "Фонды"]'></canvas>
                     </div>
 
                     <div class="strategy-assets__list">
@@ -200,7 +203,7 @@
                   <div class="strategy-chart">
                     <h4 class="strategy-chart__title w">Актуальный график</h4>
                     <div class="strategy-chart__visual">
-                      <img src="../foto/graphic.png" alt="chart-service">
+                      <canvas class="performance-chart-canvas" data-type="balanced"></canvas>
                     </div>
                     <p class="strategy-chart__note w">С 01.01.2025 все стратегии формируются индивидуально. Примеры выше
                       отражают наш подход.</p>
@@ -228,7 +231,7 @@
                     </div>
                   </div>
                   <div class="gold-button">
-                    <button>ОБСУДИТЬ СТРАТЕГИЮ</button>
+                    <button onclick="openCallbackModal()">ОБСУДИТЬ СТРАТЕГИЮ</button>
                   </div>
                 </div>
               </div>
@@ -258,8 +261,9 @@
                   <h4 class="strategy-assets__title w">Классы активов</h4>
 
                   <div class="strategy-assets__chart-list">
-                    <div class="strategy-assets__chart-wrapper">
-                      <img src="../foto/Ellipse-accordion-service.png" alt="strategy-assets-chart">
+                    <div class="strategy-assets__chart-wrapper" style="width: 300px; height: 300px;">
+                      <canvas class="asset-chart-canvas" data-assets="[90, 10]"
+                        data-labels='["Акции", "Фонды"]'></canvas>
                     </div>
 
                     <div class="strategy-assets__list">
@@ -307,7 +311,7 @@
                   <div class="strategy-chart">
                     <h4 class="strategy-chart__title w">Актуальный график</h4>
                     <div class="strategy-chart__visual">
-                      <img src="../foto/graphic.png" alt="chart-service">
+                      <canvas class="performance-chart-canvas" data-type="aggressive"></canvas>
                     </div>
                     <p class="strategy-chart__note w">С 01.01.2025 все стратегии формируются индивидуально. Примеры
                       выше отражают наш подход.</p>
@@ -335,7 +339,7 @@
                     </div>
                   </div>
                   <div class="gold-button">
-                    <button>ОБСУДИТЬ СТРАТЕГИЮ</button>
+                    <button onclick="openCallbackModal()">ОБСУДИТЬ СТРАТЕГИЮ</button>
                   </div>
                 </div>
               </div>
@@ -366,8 +370,9 @@
                   <h4 class="strategy-assets__title w">Классы активов</h4>
 
                   <div class="strategy-assets__chart-list">
-                    <div class="strategy-assets__chart-wrapper">
-                      <img src="../foto/Ellipse-accordion-service.png" alt="strategy-assets-chart">
+                    <div class="strategy-assets__chart-wrapper" style="width: 300px; height: 300px;">
+                      <canvas class="asset-chart-canvas" data-assets="[80, 20]"
+                        data-labels='["Облигации", "Фьючерс"]'></canvas>
                     </div>
 
                     <div class="strategy-assets__list">
@@ -408,7 +413,7 @@
                   <div class="strategy-chart">
                     <h4 class="strategy-chart__title w">Актуальный график</h4>
                     <div class="strategy-chart__visual">
-                      <img src="../foto/graphic.png" alt="chart-service">
+                      <canvas class="performance-chart-canvas" data-type="conservative"></canvas>
                     </div>
                     <div class="strategy-chart__note_buttom">
                       <div class="divider-assets2 divider-assets-2-1"></div>
@@ -446,7 +451,7 @@
                     </div>
                   </div>
                   <div class="gold-button">
-                    <button>ОБСУДИТЬ СТРАТЕГИЮ</button>
+                    <button onclick="openCallbackModal()">ОБСУДИТЬ СТРАТЕГИЮ</button>
                   </div>
                 </div>
               </div>
@@ -499,12 +504,14 @@
                   <h4 class="strategy-assets__title w">Классы активов</h4>
 
                   <div class="strategy-assets__chart-list">
-                    <div class="strategy-assets__chart-wrapper desktop">
-                      <img src="../foto/Ellipse-accordion-service.png" alt="strategy-assets-chart">
+                    <div class="strategy-assets__chart-wrapper desktop" style="width: 300px; height: 300px;">
+                      <canvas class="asset-chart-canvas" data-assets="[80, 20]"
+                        data-labels='["Акции", "Фонды"]'></canvas>
                     </div>
 
-                    <div class="strategy-assets__chart-wrapper table">
-                      <img src="../foto/Ellipse-accordion-service-table.png" alt="strategy-assets-chart">
+                    <div class="strategy-assets__chart-wrapper table" style="width: 250px; height: 250px;">
+                      <canvas class="asset-chart-canvas" data-assets="[80, 20]"
+                        data-labels='["Акции", "Фонды"]'></canvas>
                     </div>
 
                     <div class="strategy-assets__list">
@@ -556,7 +563,7 @@
                   <div class="strategy-chart">
                     <h4 class="strategy-chart__title w">Актуальный график</h4>
                     <div class="strategy-chart__visual">
-                      <img src="../foto/graphic.png" alt="chart-service">
+                      <canvas class="performance-chart-canvas" data-type="balanced"></canvas>
                     </div>
                     <p class="strategy-chart__note w width_768_none">С 01.01.2025 все стратегии формируются
                       индивидуально. Примеры выше
@@ -586,7 +593,7 @@
                     </div>
                   </div>
                   <div class="gold-button">
-                    <button>ОБСУДИТЬ СТРАТЕГИЮ</button>
+                    <button onclick="openCallbackModal()">ОБСУДИТЬ СТРАТЕГИЮ</button>
                   </div>
                 </div>
               </div>
@@ -652,8 +659,9 @@
                   <h4 class="strategy-assets__title w">Классы активов</h4>
 
                   <div class="strategy-assets__chart-list">
-                    <div class="strategy-assets__chart-wrapper">
-                      <img src="../foto/Ellipse-accordion-service.png" alt="strategy-assets-chart">
+                    <div class="strategy-assets__chart-wrapper" style="width: 300px; height: 300px;">
+                      <canvas class="asset-chart-canvas" data-assets="[90, 10]"
+                        data-labels='["Акции", "Фонды"]'></canvas>
                     </div>
 
                     <div class="strategy-assets__list">
@@ -708,7 +716,7 @@
                   <div class="strategy-chart">
                     <h4 class="strategy-chart__title w">Актуальный график</h4>
                     <div class="strategy-chart__visual">
-                      <img src="../foto/graphic.png" alt="chart-service">
+                      <canvas class="performance-chart-canvas" data-type="aggressive"></canvas>
                     </div>
                     <p class="strategy-chart__note w width_768_none">С 01.01.2025 все стратегии формируются
                       индивидуально. Примеры
@@ -738,7 +746,7 @@
                     </div>
                   </div>
                   <div class="gold-button">
-                    <button>ОБСУДИТЬ СТРАТЕГИЮ</button>
+                    <button onclick="openCallbackModal()">ОБСУДИТЬ СТРАТЕГИЮ</button>
                   </div>
                 </div>
               </div>
@@ -808,8 +816,9 @@
                   <h4 class="strategy-assets__title w">Классы активов</h4>
 
                   <div class="strategy-assets__chart-list">
-                    <div class="strategy-assets__chart-wrapper">
-                      <img src="../foto/Ellipse-accordion-service.png" alt="strategy-assets-chart">
+                    <div class="strategy-assets__chart-wrapper" style="width: 300px; height: 300px;">
+                      <canvas class="asset-chart-canvas" data-assets="[80, 20]"
+                        data-labels='["Облигации", "Фьючерс"]'></canvas>
                     </div>
 
                     <div class="strategy-assets__list">
@@ -857,7 +866,7 @@
                   <div class="strategy-chart">
                     <h4 class="strategy-chart__title w">Актуальный график</h4>
                     <div class="strategy-chart__visual">
-                      <img src="../foto/graphic.png" alt="chart-service">
+                      <canvas class="performance-chart-canvas" data-type="conservative"></canvas>
                     </div>
                   </div>
 
@@ -890,7 +899,7 @@
                     </div>
                   </div>
                   <div class="gold-button">
-                    <button>ОБСУДИТЬ СТРАТЕГИЮ</button>
+                    <button onclick="openCallbackModal()">ОБСУДИТЬ СТРАТЕГИЮ</button>
                   </div>
                 </div>
               </div>
@@ -934,19 +943,29 @@
   <!-- Cookie banner загружается из отдельного файла: components/cookie-banner.html -->
   <div id="cookieBannerContainer"></div>
 
+  <!-- Callback modal -->
+  <div id="callbackModalContainer"></div>
+
   <!-- Footer загружается из отдельного файла: components/footer.html -->
   <div id="footerContainer"></div>
 
   <!-- Загрузка header из отдельного файла -->
   <script src="../js/header-loader.js"></script>
+    <script src="../js/header-dropdown.js"></script>
   <!-- Загрузка cookie banner из отдельного файла -->
   <script src="../js/cookie-banner-loader.js"></script>
+  <!-- Загрузка callback modal -->
+  <script src="../js/callback-modal-loader.js"></script>
   <!-- Загрузка footer из отдельного файла -->
   <script src="../js/footer-loader.js"></script>
   <!-- Основной JavaScript -->
   <script src="../javascript.js"></script>
   <!-- Аккордеон стратегий -->
   <script src="../js/service-strategy-accordion.js"></script>
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Интерактивные графики -->
+  <script src="../js/charts.js"></script>
 </body>
 
 </html>

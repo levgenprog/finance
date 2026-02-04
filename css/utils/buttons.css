@@ -83,6 +83,10 @@
   justify-content: center;
 }
 
+.left {
+  display: block;
+}
+
 .gold-button button {
   width: 350px;
   height: 60px;

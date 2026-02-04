@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="../css/base.css">
   <!-- Стили для страницы service -->
   <link rel="stylesheet" href="../css/pages/service-2.css">
+  <link rel="stylesheet" href="../css/components/callback-modal.css">
   <title>CRESCO FINANCE</title>
 </head>
 
@@ -45,7 +46,7 @@
 
             <!-- Кнопка -->
             <div class="gold-button">
-              <button>ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
+              <button onclick="openCallbackModal()">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
             </div>
           </div>
 
@@ -278,7 +279,7 @@
           </div>
           <p class="strategy-conditions__note w">Счет остается под вашим контролем</p>
           <div class="gold-button">
-            <button>ОБСУДИТЬ СТРАТЕГИЮ</button>
+            <button onclick="openCallbackModal()">ОБСУДИТЬ СТРАТЕГИЮ</button>
           </div>
         </div>
       </div>
@@ -301,7 +302,7 @@
           </div>
           <p class="strategy-conditions__note w">Счет остается под вашим контролем</p>
           <div class="gold-button">
-            <button>ОБСУДИТЬ СТРАТЕГИЮ</button>
+            <button onclick="openCallbackModal()">ОБСУДИТЬ СТРАТЕГИЮ</button>
           </div>
         </div>
       </div>
@@ -311,13 +312,19 @@
   <!-- Cookie banner загружается из отдельного файла: components/cookie-banner.html -->
   <div id="cookieBannerContainer"></div>
 
+  <!-- Callback modal -->
+  <div id="callbackModalContainer"></div>
+
   <!-- Footer загружается из отдельного файла: components/footer.html -->
   <div id="footerContainer"></div>
 
   <!-- Загрузка header из отдельного файла -->
   <script src="../js/header-loader.js"></script>
+    <script src="../js/header-dropdown.js"></script>
   <!-- Загрузка cookie banner из отдельного файла -->
   <script src="../js/cookie-banner-loader.js"></script>
+  <!-- Загрузка callback modal -->
+  <script src="../js/callback-modal-loader.js"></script>
   <!-- Загрузка footer из отдельного файла -->
   <script src="../js/footer-loader.js"></script>
   <!-- Основной JavaScript -->

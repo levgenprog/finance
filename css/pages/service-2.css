@@ -626,6 +626,10 @@
     height: 46px;
   }
 
+  .service-hero__image {
+    display: none;
+  }
+
   .cf-person__name {
     font-size: 16px !important;
   }

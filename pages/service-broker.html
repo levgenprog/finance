@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="../css/base.css">
   <!-- Стили для страницы service -->
   <link rel="stylesheet" href="../css/pages/service-3.css">
+  <link rel="stylesheet" href="../css/components/callback-modal.css">
   <title>CRESCO FINANCE</title>
 </head>
 
@@ -33,23 +34,24 @@
               <span class="service-breadcrumbs__sep">→</span>
               <span class="service-breadcrumbs__item">Брокерское обслуживание</span>
             </nav>
-            
+
             <!-- Заголовок -->
             <h1 class="service-hero__title w">Брокерское обслуживание</h1>
-            
+
             <!-- Описание -->
             <p class="service-hero__description text-section-body w">
-                Мы предлагаем идеи, обеспечиваем аналитикой и оказываем техническую поддержку. Доступ ко всем инструментам российского фогдового рынка. 
-                <br>
-                Вы принимаете решения — мы их реализовываем.
+              Мы предлагаем идеи, обеспечиваем аналитикой и оказываем техническую поддержку. Доступ ко всем инструментам
+              российского фогдового рынка. 
+              <br>
+              Вы принимаете решения — мы их реализовываем.
             </p>
-            
+
             <!-- Кнопка -->
             <div class="gold-button">
-              <button>ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
+              <button onclick="openCallbackModal()">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
             </div>
           </div>
-          
+
           <div class="service-hero__image">
             <img src="../foto/compass-service-3.png" alt="compass-service">
           </div>
@@ -87,11 +89,11 @@
               <img src="../foto/7.jpg" alt="Степан Сумин">
             </div>
             <div>
-                <div class="cf-person__name text-caption-medium">
-                    <span class="cf-person__name-text w">Ваш эксперт</span>
-                    <span>Степан Сумин -</span>
-                </div>
-                <div class="cf-person__role text-caption">Инвестиционный советник</div>
+              <div class="cf-person__name text-caption-medium">
+                <span class="cf-person__name-text w">Ваш эксперт</span>
+                <span>Степан Сумин -</span>
+              </div>
+              <div class="cf-person__role text-caption">Инвестиционный советник</div>
             </div>
           </div>
         </div>
@@ -100,7 +102,8 @@
         <div class="example-block__content">
           <h2 class="example-block__title w">Пример портфеля клиента</h2>
           <p class="example-block__description w">
-            Брокерское обслуживание портфеля в сопровождении инвестиционного советника. Результаты за III квартал 2025 года.
+            Брокерское обслуживание портфеля в сопровождении инвестиционного советника. Результаты за III квартал 2025
+            года.
           </p>
 
           <!-- График -->
@@ -109,7 +112,7 @@
 
             <!-- График -->
             <div class="example-chart__visual">
-              <img src="../foto/graphic.png" alt="График портфеля">
+              <canvas class="performance-chart-canvas" data-type="balanced"></canvas>
             </div>
           </div>
         </div>
@@ -118,47 +121,57 @@
 
 
     <section class="container service-conditions">
-        <div class="strategy-conditions">
-            <h4 class="strategy-conditions__title w">Условия</h4>
-            <div class="strategy-conditions__content">
-                <div class="strategy-conditions__list">
-                    <div class="strategy-conditions__labels">
-                    <span class="strategy-conditions__label w">Вход</span>
-                    <span class="strategy-conditions__label w">Фондовый рынок</span>
-                    <span class="strategy-conditions__label w">Внебиржевой</span>
-                    <span class="strategy-conditions__label w">Срочный рынок</span>
-                    </div>
-                    <div class="strategy-conditions__values">
-                    <span class="strategy-conditions__value w">от 3 000 000 ₽</span>
-                    <span class="strategy-conditions__value w">комиссия 0,2%</span>
-                    <span class="strategy-conditions__value w">0,21%</span>
-                    <span class="strategy-conditions__value w">2,5 ₽ за контракт</span>
-                    </div>
-                </div>
-                <div class="gold-button">
-                    <button>ОБСУДИТЬ СТРАТЕГИЮ</button>
-                </div>
+      <div class="strategy-conditions">
+        <h4 class="strategy-conditions__title w">Условия</h4>
+        <div class="strategy-conditions__content">
+          <div class="strategy-conditions__list">
+            <div class="strategy-conditions__labels">
+              <span class="strategy-conditions__label w">Вход</span>
+              <span class="strategy-conditions__label w">Фондовый рынок</span>
+              <span class="strategy-conditions__label w">Внебиржевой</span>
+              <span class="strategy-conditions__label w">Срочный рынок</span>
             </div>
+            <div class="strategy-conditions__values">
+              <span class="strategy-conditions__value w">от 3 000 000 ₽</span>
+              <span class="strategy-conditions__value w">комиссия 0,2%</span>
+              <span class="strategy-conditions__value w">0,21%</span>
+              <span class="strategy-conditions__value w">2,5 ₽ за контракт</span>
+            </div>
+          </div>
+          <div class="gold-button">
+            <button onclick="openCallbackModal()">ОБСУДИТЬ СТРАТЕГИЮ</button>
+          </div>
         </div>
+      </div>
     </section>
   </main>
 
   <!-- Cookie banner загружается из отдельного файла: components/cookie-banner.html -->
   <div id="cookieBannerContainer"></div>
 
+  <!-- Callback modal -->
+  <div id="callbackModalContainer"></div>
+
   <!-- Footer загружается из отдельного файла: components/footer.html -->
   <div id="footerContainer"></div>
 
   <!-- Загрузка header из отдельного файла -->
   <script src="../js/header-loader.js"></script>
+    <script src="../js/header-dropdown.js"></script>
   <!-- Загрузка cookie banner из отдельного файла -->
   <script src="../js/cookie-banner-loader.js"></script>
+  <!-- Загрузка callback modal -->
+  <script src="../js/callback-modal-loader.js"></script>
   <!-- Загрузка footer из отдельного файла -->
   <script src="../js/footer-loader.js"></script>
   <!-- Основной JavaScript -->
   <script src="../javascript.js"></script>
   <!-- Аккордеон стратегий -->
   <script src="../js/service-strategy-accordion.js"></script>
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Интерактивные графики -->
+  <script src="../js/charts.js"></script>
 </body>
 
 </html>
