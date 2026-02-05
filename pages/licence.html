@@ -9,74 +9,161 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/base.css">
-    <link rel="stylesheet" href="../css/pages/home.css">
+    <link rel="stylesheet" href="../css/pages/licence.css">
+    <link rel="stylesheet" href="../css/components/more-info.css">
     <!-- Стили для страницы contacts -->
+     <link rel="stylesheet" href="../css/pages/home.css">
     <link rel="stylesheet" href="../css/pages/contacts.css">
     <link rel="stylesheet" href="../css/components/callback-modal.css">
-    <title>CRESCO FINANCE</title>
+    <title>CRESCO FINANCE - Лицензии и членство в СРО</title>
 </head>
 
-<body>
+<body class="licence-page">
     <!-- Header загружается из отдельного файла: components/header.html -->
     <header></header>
 
-    <main class="contacts-page">
-        <div class="container container--contacts">
+    <main class="licence-page">
+        <nav class="licence-breadcrumbs text-caption">
+            <a href="home.html" class="licence-breadcrumbs__item">Home</a>
+            <span class="licence-breadcrumbs__sep">→</span>
+            <span class="licence-breadcrumbs__item">О компании</span>
+            <span class="licence-breadcrumbs__sep">→</span>
+            <span class="licence-breadcrumbs__item licence-breadcrumbs__item--current">Основные
+                сведения</span>
+            <span class="licence-breadcrumbs__sep">→</span>
+            <span class="licence-breadcrumbs__item licence-breadcrumbs__item--current">Лицензии и членство в СРО</span>
+        </nav>
 
-            <nav class="contacts-breadcrumbs text-caption">
-                <a href="home.html" class="contacts-breadcrumbs__item">Home</a>
-                <span class="contacts-breadcrumbs__sep">→</span>
-                <span class="contacts-breadcrumbs__item">Контакты</span>
-            </nav>
-
-            <h1 class="contacts-title">Контакты</h1>
-
-            <div class="contacts-list">
-                <!-- Адрес -->
-                <div class="contacts-item">
-                    <div class="contacts-item__label">Адрес</div>
-                    <div class="contacts-item__content">
-                        <p>127473, город Москва, переулок Чернышевского, 15</p>
-                        <p class="contacts-item__note">Наш офис работает:<br>понедельник – пятница с 09:30 до 19:30</p>
-                    </div>
+                <section class="more-info">
+            <div class="more-info-content">
+                <div class="more-info-header">
+                    <button type="button" class="more-info-toggle" id="moreInfoToggle"
+                        aria-label="Toggle more info">
+                        <span class="more-info-toggle__icon"></span>
+                    </button>
+                    <h1 class="info-header__title">Раскрытие информации</h1>
                 </div>
-
-                <!-- Телефон -->
-                <div class="contacts-item">
-                    <div class="contacts-item__label">Телефон</div>
-                    <div class="contacts-item__content">
-                        <a href="tel:88005114877" class="contacts-link contacts-link--tel">8 (800) 511-48-77</a>
+    
+                <div class="more-info-items more-info-items--hidden" id="moreInfoItems">
+                    <div class="more-info-item">
+                        <span class="more-info-item__link">
+                            Основные сведения
+                        </span>
                     </div>
-                </div>
-
-                <!-- Электронная почта -->
-                <div class="contacts-item">
-                    <div class="contacts-item__label">Электронная почта</div>
-                    <div class="contacts-item__content">
-                        <a href="mailto:info@crescofinance.ru" class="contacts-link">info@crescofinance.ru</a>
+                    <div class="more-info-item">
+                        <span class="more-info-item__link">
+                            Руководство и сотрудники
+                        </span>
                     </div>
-                </div>
-
-                <!-- Пресс-центр -->
-                <div class="contacts-item">
-                    <div class="contacts-item__label">Пресс-центр</div>
-                    <div class="contacts-item__content">
-                        <p class="contacts-item__description">Для получения комментариев, участия в радио- и теле-эфирах
-                            экспертов и руководства ИК «CRESCO Finance» просьба обращаться в пресс-службу компании:</p>
-                        <p>+7 (495) 632-02-01 доб. 888</p>
-                        <a href="mailto:info@crescofinance.ru" class="contacts-link">info@crescofinance.ru</a>
+                    <div class="more-info-item">
+                        <span class="more-info-item__link">
+                            Лицензии и членство в СРО
+                        </span>
+                    </div>
+                    <div class="more-info-item">
+                        <span class="more-info-item__link">
+                            Информация об открытых счетах и участие в торгах
+                        </span>
+                    </div>
+                    <div class="more-info-item">
+                        <span class="more-info-item__link">
+                            Бухгалтерская (финансовая) отчетность
+                        </span>
+                    </div>
+                    <div class="more-info-item">
+                        <span class="more-info-item__link">
+                            Расчет размера собственных стредств
+                        </span>
+                    </div>
+                    <div class="more-info-item">
+                        <span class="more-info-item__link">
+                            Перечень информации, относящейся к инсайдерской
+                        </span>
+                    </div>
+                    <div class="more-info-item">
+                        <span class="more-info-item__link">
+                            Аффилированные лица
+                        </span>
+                    </div>
+                    <div class="more-info-item">
+                        <span class="more-info-item__link">
+                            Сообщения о судебных спорах
+                        </span>
+                    </div>
+                    <div class="more-info-item">
+                        <span class="more-info-item__link">
+                            Конфликт интересов
+                        </span>
+                    </div>
+                    <div class="more-info-item">
+                        <span class="more-info-item__link">
+                            Иностранные налогоплательщики
+                        </span>
+                    </div>
+                    <div class="more-info-item">
+                        <span class="more-info-item__link">
+                            О соблюдении требований FATCA
+                        </span>
+                    </div>
+                    <div class="more-info-item">
+                        <span class="more-info-item__link">
+                            Обработка персональных данных
+                        </span>
+                    </div>
+                    <div class="more-info-item">
+                        <span class="more-info-item__link">
+                            Результаты СОУТ
+                        </span>
+                    </div>
+                    <div class="gold-button">
+                        <button type="button" class="gold-button">
+                            стать клиентом
+                        </button>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div class="contacts-map" id="map">
-                <!-- Карта будет загружена здесь -->
-                <div
-                    style="width: 100%; height: 450px; background-color: var(--color-secondary-bg); display: flex; align-items: center; justify-content: center; border-radius: 4px; overflow: hidden;">
-                    <span class="text-gray">Интерактивная карта</span>
+        <section class="licence-section">
+            <div class="licence-section__inner">
+                <h1 class="licence-inner-header">Лицензии и членство в СРО</h1>
+
+                <div class="licence-inner-content">
+                    <div class="licence-inner-content-header">
+                        ООО ИК «КРЭСКО Финанс»:
+                    </div>
+                    <div class="licence-inner-content-main">
+                        Член Национальной Ассоциации Участников Фондового Рынка (НАУФОР) с 25.12.2009 года.
+                    </div>
+                    <div class="licence-inner-content-main">
+                        Обладатель всех необходимых лицензий ФСФР России на осуществление дилерской и брокерской деятельности, деятельности по управлению ценными бумагами.
+                    </div>
+                </div>
+
+                <div class="licence-panel">
+                    <div class="licence-panel-item">
+                        <img src="../img/licence/lic1.png" alt="lic1">
+                        <p>Лицензия на осуществление брокерской деятельности</p>
+                    </div>
+                    <div class="licence-panel-item">
+                        <img src="../img/licence/lic2.png" alt="lic2">
+                        <p>Лицензия на осуществление дилерской деятельности</p>
+                    </div>
+                    <div class="licence-panel-item">
+                        <img src="../img/licence/lic3.png" alt="lic3">
+                        <p>Лицензия на осуществление деятельности по управлению ценными бумагами</p>
+                    </div>
+                    <div class="licence-panel-item">
+                        <img src="../img/licence/lic4.jpg" alt="lic4">
+                        <p>Свидетельство членства в Национальной Ассоциации Участников Фондового Рынка</p>
+                    </div>
+                    <div class="licence-panel-item">
+                        <img src="../img/licence/lic5.jpg" alt="lic5">
+                        <p>Уведомление о внесении сведений в единый реестр инвестиционных советников</p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
 
     <!-- Cookie banner загружается из отдельного файла: components/cookie-banner.html -->

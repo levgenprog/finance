@@ -1,0 +1,128 @@
+.more-info {
+    background-color: #323A48;
+    padding: 40px 0;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.more-info-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.more-info-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.more-info-toggle {
+    background: none;
+    border: none;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.more-info-toggle__icon {
+    position: relative;
+    width: 30px;
+    height: 1px;
+    background-color: #F6F7F8;
+}
+
+.more-info-toggle__icon::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: inherit;
+    transform: rotate(90deg);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.more-info-toggle.active .more-info-toggle__icon::after {
+    transform: rotate(0deg);
+    opacity: 0;
+}
+
+.info-header__title {
+    font-size: 44px;
+    line-height: 1.06;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    margin-bottom: 0;
+}
+
+.more-info-items {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px 30px;
+    margin-top: 40px;
+}
+
+.more-info-items--hidden {
+    display: none;
+}
+
+.more-info-item {
+    display: flex;
+    align-items: flex-start;
+}
+
+.more-info-item__link {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 117%;
+    letter-spacing: 0%;
+    color: #F6F7F8;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.more-info-item__link:hover,
+.more-info-item__link:active,
+.more-info-item__link--clicked {
+    color: #C7AB6B;
+}
+
+.gold-button {
+    width: fit-content;
+}
+
+.gold-button button {
+    width: auto;
+    padding: 20px 50px;
+}
+
+@media (max-width: 1024px) {
+    .more-info-items {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .more-info {
+        padding: 40px 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .info-header__title {
+        font-size: 36px;
+    }
+
+    .more-info-items {
+        grid-template-columns: 1fr;
+        margin-top: 32px;
+    }
+
+    .more-info {
+        padding: 32px 16px;
+    }
+}

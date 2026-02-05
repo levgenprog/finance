@@ -45,10 +45,12 @@ if (document.readyState === "loading") {
   document.addEventListener("DOMContentLoaded", () => {
     setTimeout(initCookieBanner, 500); // Даем время на загрузку через fetch
     initMobileMenu();
+    initMoreInfo();
   });
 } else {
   setTimeout(initCookieBanner, 500);
   initMobileMenu();
+  initMoreInfo();
 }
 
 // ===== MOBILE MENU УПРАВЛЕНИЕ =====
@@ -103,5 +105,43 @@ function initMobileMenu() {
       menuOverlay.classList.remove("active");
       document.body.classList.remove("menu-open");
     }
+  });
+}
+
+// ===== MORE INFO SECTION УПРАВЛЕНИЕ =====
+
+/**
+ * Инициализация секции "Раскрытие информации"
+ * Управляет раскрытием списка и изменением цвета ссылок при нажатии
+ */
+function initMoreInfo() {
+  const toggleBtn = document.getElementById("moreInfoToggle");
+  const itemsContainer = document.getElementById("moreInfoItems");
+  const header = document.querySelector(".more-info-header");
+
+  if (!toggleBtn || !itemsContainer) return;
+
+  const toggle = () => {
+    toggleBtn.classList.toggle("active");
+    itemsContainer.classList.toggle("more-info-items--hidden");
+  };
+
+  // Клик по кнопке или всему заголовку
+  if (header) {
+    header.addEventListener("click", toggle);
+  } else {
+    toggleBtn.addEventListener("click", toggle);
+  }
+
+  // Изменение цвета ссылок при нажатии
+  const links = itemsContainer.querySelectorAll(".more-info-item__link");
+  links.forEach(link => {
+    link.addEventListener("click", function () {
+      // Снимаем выделение со всех ссылок
+      links.forEach(l => l.classList.remove("more-info-item__link--clicked"));
+
+      // Выделяем текущую
+      this.classList.add("more-info-item__link--clicked");
+    });
   });
 }

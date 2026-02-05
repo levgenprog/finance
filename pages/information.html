@@ -9,74 +9,298 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/components/more-info.css">
+    <!-- Стили страниц -->
     <link rel="stylesheet" href="../css/pages/home.css">
-    <!-- Стили для страницы contacts -->
-    <link rel="stylesheet" href="../css/pages/contacts.css">
+    <link rel="stylesheet" href="../css/pages/information.css">
     <link rel="stylesheet" href="../css/components/callback-modal.css">
-    <title>CRESCO FINANCE</title>
+    <title>CRESCO FINANCE — Основные сведения</title>
 </head>
 
-<body>
+<body class="information-page">
     <!-- Header загружается из отдельного файла: components/header.html -->
     <header></header>
 
-    <main class="contacts-page">
-        <div class="container container--contacts">
+    <main class="information-main">
+        <nav class="information-breadcrumbs text-caption">
+            <a href="home.html" class="information-breadcrumbs__item">Home</a>
+            <span class="information-breadcrumbs__sep">→</span>
+            <span class="information-breadcrumbs__item">О компании</span>
+            <span class="information-breadcrumbs__sep">→</span>
+            <span class="information-breadcrumbs__item information-breadcrumbs__item--current">Основные
+                сведения</span>
+        </nav>
 
-            <nav class="contacts-breadcrumbs text-caption">
-                <a href="home.html" class="contacts-breadcrumbs__item">Home</a>
-                <span class="contacts-breadcrumbs__sep">→</span>
-                <span class="contacts-breadcrumbs__item">Контакты</span>
-            </nav>
-
-            <h1 class="contacts-title">Контакты</h1>
-
-            <div class="contacts-list">
-                <!-- Адрес -->
-                <div class="contacts-item">
-                    <div class="contacts-item__label">Адрес</div>
-                    <div class="contacts-item__content">
-                        <p>127473, город Москва, переулок Чернышевского, 15</p>
-                        <p class="contacts-item__note">Наш офис работает:<br>понедельник – пятница с 09:30 до 19:30</p>
-                    </div>
+        <section class="more-info">
+            <div class="more-info-content">
+                <div class="more-info-header">
+                    <button type="button" class="more-info-toggle" id="moreInfoToggle"
+                        aria-label="Toggle more info">
+                        <span class="more-info-toggle__icon"></span>
+                    </button>
+                    <h1 class="info-header__title">Раскрытие информации</h1>
                 </div>
-
-                <!-- Телефон -->
-                <div class="contacts-item">
-                    <div class="contacts-item__label">Телефон</div>
-                    <div class="contacts-item__content">
-                        <a href="tel:88005114877" class="contacts-link contacts-link--tel">8 (800) 511-48-77</a>
+    
+                <div class="more-info-items more-info-items--hidden" id="moreInfoItems">
+                    <div class="more-info-item">
+                        <span class="more-info-item__link">
+                            Основные сведения
+                        </span>
                     </div>
-                </div>
-
-                <!-- Электронная почта -->
-                <div class="contacts-item">
-                    <div class="contacts-item__label">Электронная почта</div>
-                    <div class="contacts-item__content">
-                        <a href="mailto:info@crescofinance.ru" class="contacts-link">info@crescofinance.ru</a>
+                    <div class="more-info-item">
+                        <span class="more-info-item__link">
+                            Руководство и сотрудники
+                        </span>
                     </div>
-                </div>
-
-                <!-- Пресс-центр -->
-                <div class="contacts-item">
-                    <div class="contacts-item__label">Пресс-центр</div>
-                    <div class="contacts-item__content">
-                        <p class="contacts-item__description">Для получения комментариев, участия в радио- и теле-эфирах
-                            экспертов и руководства ИК «CRESCO Finance» просьба обращаться в пресс-службу компании:</p>
-                        <p>+7 (495) 632-02-01 доб. 888</p>
-                        <a href="mailto:info@crescofinance.ru" class="contacts-link">info@crescofinance.ru</a>
+                    <div class="more-info-item">
+                        <span class="more-info-item__link">
+                            Лицензии и членство в СРО
+                        </span>
+                    </div>
+                    <div class="more-info-item">
+                        <span class="more-info-item__link">
+                            Информация об открытых счетах и участие в торгах
+                        </span>
+                    </div>
+                    <div class="more-info-item">
+                        <span class="more-info-item__link">
+                            Бухгалтерская (финансовая) отчетность
+                        </span>
+                    </div>
+                    <div class="more-info-item">
+                        <span class="more-info-item__link">
+                            Расчет размера собственных стредств
+                        </span>
+                    </div>
+                    <div class="more-info-item">
+                        <span class="more-info-item__link">
+                            Перечень информации, относящейся к инсайдерской
+                        </span>
+                    </div>
+                    <div class="more-info-item">
+                        <span class="more-info-item__link">
+                            Аффилированные лица
+                        </span>
+                    </div>
+                    <div class="more-info-item">
+                        <span class="more-info-item__link">
+                            Сообщения о судебных спорах
+                        </span>
+                    </div>
+                    <div class="more-info-item">
+                        <span class="more-info-item__link">
+                            Конфликт интересов
+                        </span>
+                    </div>
+                    <div class="more-info-item">
+                        <span class="more-info-item__link">
+                            Иностранные налогоплательщики
+                        </span>
+                    </div>
+                    <div class="more-info-item">
+                        <span class="more-info-item__link">
+                            О соблюдении требований FATCA
+                        </span>
+                    </div>
+                    <div class="more-info-item">
+                        <span class="more-info-item__link">
+                            Обработка персональных данных
+                        </span>
+                    </div>
+                    <div class="more-info-item">
+                        <span class="more-info-item__link">
+                            Результаты СОУТ
+                        </span>
+                    </div>
+                    <div class="gold-button">
+                        <button type="button" class="gold-button">
+                            стать клиентом
+                        </button>
                     </div>
                 </div>
             </div>
+        </section>
+        <section class="information-section">
+            <div class="information-section__inner">
 
-            <div class="contacts-map" id="map">
-                <!-- Карта будет загружена здесь -->
-                <div
-                    style="width: 100%; height: 450px; background-color: var(--color-secondary-bg); display: flex; align-items: center; justify-content: center; border-radius: 4px; overflow: hidden;">
-                    <span class="text-gray">Интерактивная карта</span>
+
+
+
+                <div class="information-table">
+                    <!-- <div class="information-table__topline"></div> -->
+                    <div class="information-table__head-meta">
+
+                        <h1 class="information-header__title">Основные сведения</h1>
+                        <div class="information-table__head-meta-item">Дата и время раскрытия</div>
+                        <div class="information-table__head-meta-item">Срок актуальности</div>
+                    </div>
+
+                    <article class="information-row">
+                        <div class="information-row__label">
+                            Полное и сокращенное фирменное наименование профессионального участника рынка ценных бумаг,
+                            в том числе на иностранном языке (при наличии двух последних)
+                        </div>
+                        <div class="information-row__value">
+                            <p><strong>Полное наименование на русском языке:</strong> Общество с ограниченной
+                                ответственностью Инвестиционная Компания «КРЭСКО Финанс»</p>
+                            <p><strong>Краткое наименование на русском языке:</strong> ООО ИК «КРЭСКО Финанс»</p>
+                            <p><strong>Полное наименование на иностранном языке:</strong> «CRESCO Finance»</p>
+                        </div>
+                        <div class="information-row__meta">
+                            <div class="information-row__meta-item">
+                                <span class="information-row__meta-label mobile-only">Дата и время раскрытия</span>
+                                <div class="information-row__meta-date">12.01.2017, 10:00</div>
+                            </div>
+                            <div class="information-row__meta-item">
+                                <span class="information-row__meta-label mobile-only">Срок актуальности</span>
+                                <div class="information-row__meta-status">актуально</div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="information-row">
+                        <div class="information-row__label">
+                            Идентификационный номер налогоплательщика
+                        </div>
+                        <div class="information-row__value">
+                            <p>7703703056</p>
+                        </div>
+                        <div class="information-row__meta">
+                            <div class="information-row__meta-item">
+                                <span class="information-row__meta-label mobile-only">Дата и время раскрытия</span>
+                                <div class="information-row__meta-date">12.01.2017, 10:00</div>
+                            </div>
+                            <div class="information-row__meta-item">
+                                <span class="information-row__meta-label mobile-only">Срок актуальности</span>
+                                <div class="information-row__meta-status">актуально</div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="information-row">
+                        <div class="information-row__label">
+                            Основной государственный регистрационный номер
+                        </div>
+                        <div class="information-row__value">
+                            <p>1097746422531</p>
+                        </div>
+                        <div class="information-row__meta">
+                            <div class="information-row__meta-item">
+                                <span class="information-row__meta-label mobile-only">Дата и время раскрытия</span>
+                                <div class="information-row__meta-date">26.03.2024, 11:00</div>
+                            </div>
+                            <div class="information-row__meta-item">
+                                <span class="information-row__meta-label mobile-only">Срок актуальности</span>
+                                <div class="information-row__meta-status">актуально</div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="information-row">
+                        <div class="information-row__label">
+                            Адрес профессионального участника рынка ценных бумаг, указанный в ЕГРЮЛ
+                        </div>
+                        <div class="information-row__value">
+                            <p>127473, г. Москва, переулок Чернышевского, д. 15</p>
+                        </div>
+                        <div class="information-row__meta">
+                            <div class="information-row__meta-item">
+                                <span class="information-row__meta-label mobile-only">Дата и время раскрытия</span>
+                                <div class="information-row__meta-date">26.03.2024, 10:00</div>
+                            </div>
+                            <div class="information-row__meta-item">
+                                <span class="information-row__meta-label mobile-only">Срок актуальности</span>
+                                <div class="information-row__meta-status">актуально</div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="information-row">
+                        <div class="information-row__label">
+                            Номер телефона, факса (при наличии последнего) профессионального участника рынка ценных
+                            бумаг
+                        </div>
+                        <div class="information-row__value">
+                            <p>тел./факс: +7 (495) 632-02-01</p>
+                        </div>
+                        <div class="information-row__meta">
+                            <div class="information-row__meta-item">
+                                <span class="information-row__meta-label mobile-only">Дата и время раскрытия</span>
+                                <div class="information-row__meta-date">26.03.2024, 10:00</div>
+                            </div>
+                            <div class="information-row__meta-item">
+                                <span class="information-row__meta-label mobile-only">Срок актуальности</span>
+                                <div class="information-row__meta-status">актуально</div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="information-row">
+                        <div class="information-row__label">
+                            Адрес электронной почты профессионального участника рынка ценных бумаг
+                        </div>
+                        <div class="information-row__value">
+                            <p>info@crescofinance.ru</p>
+                        </div>
+                        <div class="information-row__meta">
+                            <div class="information-row__meta-item">
+                                <span class="information-row__meta-label mobile-only">Дата и время раскрытия</span>
+                                <div class="information-row__meta-date">26.03.2024, 10:00</div>
+                            </div>
+                            <div class="information-row__meta-item">
+                                <span class="information-row__meta-label mobile-only">Срок актуальности</span>
+                                <div class="information-row__meta-status">актуально</div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="information-row">
+                        <div class="information-row__label">
+                            Информация об официальных сайтах, на которых предлагаются услуги профессионального участника
+                        </div>
+                        <div class="information-row__value">
+                            <p>https://crescofinance.ru</p>
+                        </div>
+                        <div class="information-row__meta">
+                            <div class="information-row__meta-item">
+                                <span class="information-row__meta-label mobile-only">Дата и время раскрытия</span>
+                                <div class="information-row__meta-date">26.03.2011, 11:00</div>
+                            </div>
+                            <div class="information-row__meta-item">
+                                <span class="information-row__meta-label mobile-only">Срок актуальности</span>
+                                <div class="information-row__meta-status">актуально</div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="information-row">
+                        <div class="information-row__label">
+                            Информация о членстве в саморегулируемых организациях профессиональных участников рынка
+                            ценных бумаг (далее — СРО), в случае исключения из СРО профессиональный участник рынка
+                            ценных бумаг раскрывает информацию об этом с указанием даты и причины исключения
+                        </div>
+                        <div class="information-row__value">
+                            <p>Наименование СРО: Национальная ассоциация участников фондового рынка (НАУФОР)</p>
+                        </div>
+                        <div class="information-row__meta">
+                            <div class="information-row__meta-item">
+                                <span class="information-row__meta-label mobile-only">Дата и время раскрытия</span>
+                                <div class="information-row__meta-date">26.03.2017, 10:00</div>
+                            </div>
+                            <div class="information-row__meta-item">
+                                <span class="information-row__meta-label mobile-only">Срок актуальности</span>
+                                <div class="information-row__meta-status">актуально</div>
+                            </div>
+                        </div>
+                    </article>
                 </div>
+
+                <p class="information-note">
+                    Компания не взимает оплату за изготовление документов на бумажном носителе в случаях,
+                    предусмотренных законодательством РФ о рынке ценных бумаг.
+                </p>
             </div>
-        </div>
+        </section>
     </main>
 
     <!-- Cookie banner загружается из отдельного файла: components/cookie-banner.html -->

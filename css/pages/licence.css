@@ -1,0 +1,145 @@
+/* Information Page – based on Figma group 4771:1319 (Основные сведения)
+   https://www.figma.com/design/oWC36KtK0MESU3SNSxRhAR/CF?node-id=4771-1319 */
+
+.licence-page {
+    color: #F6F7F8;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.licence-section {
+    max-width: 1280px;
+    margin: 72px auto 80px;
+}
+
+.licence-section__inner {
+    padding: 0 30px;
+}
+
+/* Breadcrumbs */
+.licence-breadcrumbs {
+    max-width: 1200px;
+    margin: 1rem auto 32px;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #666A70;
+    margin-bottom: 32px;
+}
+
+.licence-breadcrumbs__item {
+    color: inherit;
+}
+
+.licence-breadcrumbs__item[href] {
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.licence-breadcrumbs__item[href]:hover {
+    color: #FFFFFF;
+}
+
+.licence-breadcrumbs__item--current {
+    color: #9CA0A6;
+}
+
+.licence-breadcrumbs__sep {
+    margin: 0 6px;
+    color: #4B4F55;
+}
+
+/* Header */
+.information-header__title {
+    font-size: 56px;
+    line-height: 1.06;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    margin-bottom: 0;
+}
+
+.licence-inner-header {
+    color: #F6F7F8;
+    font-size: 56px;
+    padding-bottom: 36px;
+    border-bottom: 1px solid #8D97A6;
+}
+
+.licence-inner-content {
+    margin-top: 30px;
+}
+
+.licence-inner-content-header {
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 117%;
+    letter-spacing: 0%;
+}
+
+.licence-inner-content-main {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 117%;
+    letter-spacing: 0%;
+    padding: 6px 0 1rem;
+}
+
+.licence-panel {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.licence-panel-item > img {
+    max-width: 345px;
+}
+
+.licence-panel-item > p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 117%;
+    letter-spacing: 0%;
+    padding: .7rem;
+}
+
+.licence-panel-item {
+    max-width: 345px;
+}
+
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .licence-breadcrumbs {
+        display: none;
+    }
+
+    .licence-section__inner {
+        padding: 0;
+    }
+
+    .licence-section {
+        padding: 0 1rem;
+    }
+
+    .licence-inner-header {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .licence-breadcrumbs {
+        display: none;
+    }
+
+    .licence-inner-header {
+        font-size: 27px;
+    }
+
+    .licence-inner-content-header {
+        font-size: 17px;
+    }
+
+    .licence-inner-content-main {
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,267 @@
+/* Information Page – based on Figma group 4771:1319 (Основные сведения)
+   https://www.figma.com/design/oWC36KtK0MESU3SNSxRhAR/CF?node-id=4771-1319 */
+
+.information-page {
+    color: #F6F7F8;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.mobile-only {
+    display: none;
+}
+
+
+.information-section {
+    max-width: 1280px;
+    margin: 72px auto 80px;
+}
+
+.information-section__inner {
+    padding: 0 30px;
+}
+
+/* Breadcrumbs */
+.information-breadcrumbs {
+    max-width: 1200px;
+    margin: 1rem auto 32px;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #666A70;
+    margin-bottom: 32px;
+}
+
+.information-breadcrumbs__item {
+    color: inherit;
+}
+
+.information-breadcrumbs__item[href] {
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.information-breadcrumbs__item[href]:hover {
+    color: #FFFFFF;
+}
+
+.information-breadcrumbs__item--current {
+    color: #9CA0A6;
+}
+
+.information-breadcrumbs__sep {
+    margin: 0 6px;
+    color: #4B4F55;
+}
+
+/* Header */
+.information-header__title {
+    font-size: 56px;
+    line-height: 1.06;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    margin-bottom: 0;
+}
+
+/* Table layout */
+.information-table {
+    position: relative;
+    margin-top: 8px;
+}
+
+.information-table__topline {
+    height: 1px;
+    width: 100%;
+    background-color: #8D97A6;
+    margin-bottom: 24px;
+}
+
+.information-table__head-meta {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    align-items: baseline;
+    gap: 24px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #8D97A6;
+    padding-bottom: 31px;
+}
+
+.information-table__head-meta-item {
+    font-size: 20px;
+    line-height: 1.2;
+    color: #7A848F;
+    font-family: 'TT Fors Trial', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.information-row {
+    display: grid;
+    grid-template-columns: minmax(0, 470px) minmax(0, 1fr) minmax(260px, 320px);
+    gap: 30px;
+    padding: 24px 24px;
+    background-color: #323A48;
+    border-radius: 0;
+    margin-bottom: 16px;
+}
+
+.information-row:nth-child(even) {
+    background-color: transparent;
+}
+
+.information-row__label {
+    font-size: 20px;
+    line-height: 1.17;
+    color: #F6F7F8;
+}
+
+.information-row__value {
+    font-size: 20px;
+    line-height: 1.17;
+    color: #F6F7F8;
+}
+
+.information-row__value p+p {
+    margin-top: 12px;
+}
+
+.information-row__value strong {
+    font-weight: 600;
+}
+
+.information-row__meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 32px;
+    font-size: 20px;
+    line-height: 1.17;
+}
+
+.information-row__meta-label {
+    font-size: 20px;
+    line-height: 1.2;
+    color: #7A848F;
+    font-family: 'TT Fors Trial', sans-serif;
+    margin-bottom: 8px;
+}
+
+.information-row__meta-date {
+    color: #F6F7F8;
+    font-family: 'TT Norms Pro Trial', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.information-row__meta-status {
+    color: #F6F7F8;
+    text-transform: lowercase;
+    font-family: 'TT Norms Pro Trial', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.information-note {
+    margin-top: 40px;
+    font-size: 27px;
+    line-height: 1.17;
+    color: #F6F7F8;
+    padding-bottom: 112px;
+    border-bottom: 1px solid #8D97A6;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .information-breadcrumbs {
+        display: none;
+    }
+
+    .information-section__inner {
+        padding: 0;
+    }
+
+    .information-note {
+        padding: 0 1rem 3rem 1rem;
+    }
+
+    .information-row {
+        grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr) minmax(0, 1fr);
+        grid-template-areas:
+            "label value meta meta";
+    }
+
+    .information-row__label {
+        grid-area: label;
+    }
+
+    .information-row__value {
+        grid-area: value;
+    }
+
+    .information-row__meta {
+        grid-area: meta;
+        justify-items: flex-end;
+        text-align: right;
+    }
+
+    .information-table__head-meta {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .information-breadcrumbs {
+        display: none;
+    }
+
+    .information-table__head-meta {
+        grid-template-columns: 1fr;
+        padding-bottom: 24px;
+        margin-bottom: 24px;
+    }
+
+    .information-table__head-meta-item {
+        display: none;
+    }
+
+    .information-header__title {
+        font-size: 36px;
+    }
+
+    .information-row__meta-item {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .information-row__meta-label {
+        width: 50%;
+    }
+
+    .information-row {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "label label"
+            "value value"
+            "meta meta"
+            "meta meta";
+        padding: 24px 16px;
+        gap: 24px;
+    }
+
+    .information-row__meta {
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 8px;
+    }
+
+    .mobile-only {
+        display: block;
+    }
+
+    .information-row {
+        grid-template-columns: 1fr;
+        padding: 20px 16px;
+    }
+
+    .information-row__meta {
+        justify-items: flex-start;
+        text-align: left;
+        margin-top: 12px;
+    }
+}
