@@ -856,10 +856,17 @@
   display: none;
 }
 
+.strategy-assets__chart-wrapper.mob {
+  display: none;
+}
+
 /* Адаптивность для аккордеона стратегий */
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .width_1024_block {
     display: block;
+  }
+  .strategy-chart__title {
+    border-top: none;
   }
 
   .width_1024_none {
@@ -905,7 +912,8 @@
 
   .strategy-assets__title {
     position: absolute;
-    top: 80px;
+    top: 180px;
+    left: 95px;
     max-width: 70px;
     font-size: 21px;
     line-height: 1.17;
@@ -916,9 +924,13 @@
   }
 
   .strategy-assets__chart-wrapper.table {
+    display: none;
+  }
+
+  .strategy-assets__chart-wrapper.mob {
     display: block;
-    top: 20px;
-    left: -56px;
+    top: 100px;
+    left: 10px;
   }
 
   .strategy-conditions {
@@ -944,6 +956,9 @@
 
   .strategy-chart__note {
     width: 300px;
+    position: absolute;
+    top: 650px;
+    left: 650px;
   }
 
   .divider-assets2 {
@@ -971,6 +986,8 @@
   .strategy-info {
     width: 100%;
     align-items: flex-end;
+    position: relative;
+    border-top: 1px solid #8D97A6;
   }
 
   .strategy-chart__visual,
@@ -1017,6 +1034,16 @@
 @media (max-width: 768px) {
   .width_768_block {
     display: block;
+  }
+
+  .strategy-assets__chart-wrapper.mob {
+    display: none;
+  }
+
+  .strategy-assets__chart-wrapper.table {
+    display: block;
+    top: 20px;
+    left: -56px;
   }
 
   .strategy-chart__title {
