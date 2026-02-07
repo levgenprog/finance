@@ -227,9 +227,17 @@
         padding-bottom: 72px;
     }
 
+    .news-header__title {
+        font-size: 36px;
+    }
+
     .news-header__text {
         flex-direction: column;
         gap: 24px;
+    }
+
+    .news-year {
+        font-size: 17px;
     }
 
     .team-cta {
@@ -237,17 +245,17 @@
         margin-right: 16px;
     }
 
-
-    .news-header {
-        margin: 48px 16px 32px;
+    .news-item__title {
+        font-size: 27px;
     }
 
-    .news-list {
-        margin: 0 16px;
+    .news-item__date {
+        font-size: 17px;
     }
 
     .news-item {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column-reverse;
         row-gap: 8px;
         padding: 24px 0;
     }

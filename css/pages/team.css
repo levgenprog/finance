@@ -200,7 +200,7 @@
 }
 
 .team-item__photo {
-    width: 100%;
+    width: 130px;
     height: 100%;
     object-fit: cover;
     display: block;
@@ -304,7 +304,6 @@
 
 .gold-button {
     margin-top: 20px;
-    width: fit-content;
 }
 
 .gold-button button {
@@ -315,14 +314,18 @@
 
 
 /* Responsive */
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
     .team-breadcrumbs {
         display: none;
     }
 
+    .team-section {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
     .team-list {
         width: 100%;
-        /* padding: 0 16px; */
     }
 
     .team-hero {
@@ -379,22 +382,29 @@
 }
 
 @media (max-width: 768px) {
+    .team-hero__content {
+        padding: 15px;
+    }
+
+    .team-hero__title {
+        font-size: 36px;
+    }
+
+    .team-hero__description {
+        font-size: 17px;
+    }
+
     .team-main {
         padding-bottom: 72px;
     }
 
     .team-hero {
-        margin: 40px 16px 56px;
+        margin: 30px 0 50px;
     }
 
-    .team-section,
-    .team-cta {
+    .team-section {
         margin-left: 16px;
         margin-right: 16px;
-    }
-
-    .team-item__photo-wrapper {
-        width: 107px;
     }
 
     .team-item__exp {
@@ -404,13 +414,14 @@
     .team-item {
         padding-top: 1.5rem;
         display: grid;
-        grid-template-columns: 107px 1fr;
+        grid-template-columns: 107px 1fr auto;
         column-gap: 16px;
         row-gap: 4px;
     }
 
     .team-item__photo-wrapper {
         width: 107px;
+        height: 155px;
         grid-column: 1;
         grid-row: 1 / span 2;
     }
@@ -421,28 +432,35 @@
 
     .team-item__name,
     .team-item__position-wrapper {
-        grid-column: 2;
+        grid-column: 2 / span 2;
     }
 
     .team-item__name {
+        grid-column: 2;
         grid-row: 1;
         align-self: center;
-        font-size: 24px;
+        font-size: 23px;
         line-height: 1.2;
     }
 
     .team-item__position-wrapper {
-        grid-row: 2;
-        align-self: start;
-        margin-top: 4px;
+        display: contents;
     }
 
     .team-item__position {
-        font-size: 14px;
+        grid-column: 2 / span 2;
+        grid-row: 2;
+        align-self: start;
+        margin-top: 4px;
+        font-size: 17px;
     }
 
     .team-item__toggle {
+        grid-column: 3;
+        grid-row: 1;
         display: flex;
+        align-self: center;
+        justify-self: end;
         /* Visible on mobile */
     }
 
@@ -468,7 +486,7 @@
     }
 
     .team-item__bio {
-        font-size: 16px;
+        font-size: 13px;
     }
 
     .team-cta {

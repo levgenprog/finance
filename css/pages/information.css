@@ -77,7 +77,7 @@
 
 .information-table__head-meta {
     display: grid;
-    grid-template-columns: 1fr auto auto;
+    grid-template-columns: 2fr .5fr 0fr;
     align-items: baseline;
     gap: 24px;
     margin-bottom: 16px;
